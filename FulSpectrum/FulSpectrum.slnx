@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FulSpectrum.Api/FulSpectrum.Api.csproj" />
+  <Project Path="FulSpectrum.Application/FulSpectrum.Application.csproj" />
+  <Project Path="FulSpectrum.Domain/FulSpectrum.Domain.csproj" />
+  <Project Path="FulSpectrum.Infrastructure/FulSpectrum.Infrastructure.csproj" />
+</Solution>

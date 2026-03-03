@@ -1,0 +1,13 @@
+:root {
+  --color-bg: 255 255 255;
+  --color-fg: 17 24 39;
+  --color-primary: 59 130 246;
+
+  --radius-md: 12px;
+}
+
+.dark {
+  --color-bg: 17 24 39;
+  --color-fg: 243 244 246;
+  --color-primary: 96 165 250;
+}

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\FulSpectrum.Application\FulSpectrum.Application.csproj" />
+    <ProjectReference Include="..\FulSpectrum.Domain\FulSpectrum.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logging\" />
+    <Folder Include="Catalog\" />
+    <Folder Include="Identity\" />
+    <Folder Include="Orders\" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
