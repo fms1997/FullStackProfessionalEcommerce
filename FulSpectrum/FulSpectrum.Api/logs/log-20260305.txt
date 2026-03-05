@@ -110,3 +110,19 @@ Error Number:2,State:0,Class:20
 2026-03-05 16:42:03.678 -03:00 [INF] Hosting environment: Development
 2026-03-05 16:42:03.682 -03:00 [INF] Content root path: C:\Users\Brio\Desktop\EcommerceFullStack\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
 2026-03-05 16:43:15.319 -03:00 [INF] Application is shutting down...
+2026-03-05 20:12:30.222 -03:00 [INF] Initializing UI Database
+2026-03-05 20:12:31.010 -03:00 [INF] Executing database migrations
+2026-03-05 20:12:31.843 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-05 20:12:31.959 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-05 20:12:31.961 -03:00 [INF] Hosting environment: Development
+2026-03-05 20:12:31.964 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-05 20:12:35.389 -03:00 [INF] Application is shutting down...
+2026-03-05 20:12:45.124 -03:00 [INF] Initializing UI Database
+2026-03-05 20:12:46.859 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-05 20:12:46.949 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-05 20:12:46.951 -03:00 [INF] Hosting environment: Development
+2026-03-05 20:12:46.954 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-05 20:29:20.898 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-05 20:29:21.119 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 443.8534 ms
+2026-03-05 20:29:21.174 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 11.0652 ms
+2026-03-05 20:41:39.846 -03:00 [INF] Application is shutting down...

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj": {}
+    "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj": {
+    "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
         "projectName": "FulSpectrum.Api",
-        "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
-        "packagesPath": "C:\\Users\\Brio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\obj\\",
+        "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
+        "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Brio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj": {
-                "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj"
+              "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj": {
+                "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj"
               },
-              "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj"
+              "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj"
               }
             }
           }
@@ -553,20 +553,20 @@
         }
       }
     },
-    "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj": {
+    "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj",
         "projectName": "FulSpectrum.Application",
-        "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj",
-        "packagesPath": "C:\\Users\\Brio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\obj\\",
+        "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj",
+        "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Brio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -581,8 +581,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj": {
-                "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj"
+              "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj": {
+                "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj"
               }
             }
           }
@@ -896,20 +896,20 @@
         }
       }
     },
-    "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj": {
+    "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj",
         "projectName": "FulSpectrum.Domain",
-        "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj",
-        "packagesPath": "C:\\Users\\Brio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj",
+        "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Brio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1235,20 +1235,20 @@
         }
       }
     },
-    "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj": {
+    "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj",
         "projectName": "FulSpectrum.Infrastructure",
-        "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Brio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Franc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Brio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1263,11 +1263,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj": {
-                "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj"
+              "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj": {
+                "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Application\\FulSpectrum.Application.csproj"
               },
-              "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj": {
-                "projectPath": "C:\\Users\\Brio\\Desktop\\EcommerceFullStack\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj"
+              "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj": {
+                "projectPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\FulSpectrum.Domain.csproj"
               }
             }
           }
@@ -1299,6 +1299,18 @@
               "version": "[10.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[10.0.3, )"
             }

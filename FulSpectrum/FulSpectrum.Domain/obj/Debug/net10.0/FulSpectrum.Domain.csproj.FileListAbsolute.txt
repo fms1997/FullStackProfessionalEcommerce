@@ -10,3 +10,15 @@ C:\Users\Brio\Desktop\EcommerceFullStack\FullStackProfessionalEcommerce\FulSpect
 C:\Users\Brio\Desktop\EcommerceFullStack\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\refint\FulSpectrum.Domain.dll
 C:\Users\Brio\Desktop\EcommerceFullStack\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.pdb
 C:\Users\Brio\Desktop\EcommerceFullStack\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\ref\FulSpectrum.Domain.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\bin\Debug\net10.0\FulSpectrum.Domain.deps.json
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\bin\Debug\net10.0\FulSpectrum.Domain.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\bin\Debug\net10.0\FulSpectrum.Domain.pdb
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.AssemblyInfoInputs.cache
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.AssemblyInfo.cs
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.sourcelink.json
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\refint\FulSpectrum.Domain.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\FulSpectrum.Domain.pdb
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Domain\obj\Debug\net10.0\ref\FulSpectrum.Domain.dll
