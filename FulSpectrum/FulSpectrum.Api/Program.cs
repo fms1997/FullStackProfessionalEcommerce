@@ -102,14 +102,21 @@ builder.Services.AddCors(options =>
 });
 // --------------------
 // Health checks
-// --------------------
+// ------------------ 
+
 builder.Services.AddHealthChecks();
 
+var hcUiCs = builder.Configuration.GetConnectionString("HealthChecksUI")
+    ?? throw new InvalidOperationException("Missing ConnectionStrings:HealthChecksUI");
+
+builder.Services
+    .AddHealthChecksUI()
+    .AddSqlServerStorage(hcUiCs);
 // --------------------
 // App DI (Infra)
 // --------------------
-//builder.Services.AddInfrastructure(builder.Configuration);
-
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddHealthChecks();
 // --------------------
 // Middlewares DI
 // --------------------
@@ -163,5 +170,8 @@ app.MapHealthChecks("/health/ready", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
-
+app.MapHealthChecksUI(options =>
+{
+    options.UIPath = "/health-ui";
+});
 app.Run();
