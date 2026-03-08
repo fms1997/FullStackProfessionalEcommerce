@@ -98,7 +98,7 @@ builder.Services.AddRateLimiter(options =>
             partitionKey: httpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown",
             factory: _ => new FixedWindowRateLimiterOptions
             {
-                PermitLimit = 60,
+                PermitLimit = 40,
                 Window = TimeSpan.FromMinutes(1),
                 QueueLimit = 0
             }));
@@ -134,11 +134,13 @@ app.UseHttpsRedirection();
 });
 
 app.UseCors("Default");
- 
+app.UseRateLimiter();
+
 app.UseAuthorization();
 
 app.MapControllers();
-
+Console.WriteLine("ENV: " + builder.Environment.EnvironmentName);
+Console.WriteLine("DefaultConnection: " + builder.Configuration.GetConnectionString("DefaultConnection"));
 // Health endpoints
 app.MapHealthChecks("/health/live", new HealthCheckOptions
 {

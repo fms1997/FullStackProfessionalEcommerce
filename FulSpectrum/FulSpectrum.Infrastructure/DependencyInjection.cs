@@ -9,7 +9,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration config)
     {
-        var cs = config.GetConnectionString("Default");
+        var cs = config.GetConnectionString("DefaultConnection");
         if (string.IsNullOrWhiteSpace(cs))
             throw new InvalidOperationException("Missing ConnectionStrings:Default");
 
