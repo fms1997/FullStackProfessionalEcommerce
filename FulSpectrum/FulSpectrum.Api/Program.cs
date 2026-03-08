@@ -6,25 +6,19 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.OpenApi;
 using Serilog;
 using Serilog.Events;
-
+using FluentValidation;
+using FulSpectrum.Api.Validators;
+using FulSpectrum.Application.Catalog.Dtos;
+using FulSpectrum.Application.Catalog.Queries;
+using Microsoft.AspNetCore.RateLimiting;
+using System.Threading.RateLimiting;
 var builder = WebApplication.CreateBuilder(args);
 
-// --------------------
-// Serilog (host-level)
-// --------------------
-//Log.Logger = new LoggerConfiguration()
-//    .MinimumLevel.Information()
-//    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-//    .Enrich.FromLogContext()
-//    .Enrich.WithEnvironmentName()
-//    .Enrich.WithThreadId()
-//    .WriteTo.Console()
-//    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
-//    .CreateLogger();
+ 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-    .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Information) // <-- clave
+    .MinimumLevel.Override("Microsoft.Hosting.Lifetime", LogEventLevel.Information)  
     .Enrich.FromLogContext()
     .Enrich.WithEnvironmentName()
     .Enrich.WithThreadId()
@@ -33,50 +27,35 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 builder.Host.UseSerilog();
-
-// --------------------
-// Controllers
-// --------------------
+ 
 builder.Services.AddControllers();
 
-// --------------------
-// API Versioning
-// --------------------
-builder.Services
-    .AddApiVersioning(options =>
+ 
+builder.Services.AddApiVersioning(options =>
     {
         options.DefaultApiVersion = new ApiVersion(1, 0);
         options.AssumeDefaultVersionWhenUnspecified = true;
         options.ReportApiVersions = true;
-        options.ApiVersionReader = ApiVersionReader.Combine(
-            new UrlSegmentApiVersionReader()
-        );
+         
+        options.ApiVersionReader = ApiVersionReader.Combine(new UrlSegmentApiVersionReader());
     })
     .AddApiExplorer(options =>
     {
         options.GroupNameFormat = "'v'VVV";
         options.SubstituteApiVersionInUrl = true;
     });
-
-// --------------------
-// Swagger
-// --------------------
+ 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    // docs por versión (v1)
-    options.SwaggerDoc("v1", new OpenApiInfo
+     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "FulSpectrum API",
         Version = "v1"
     });
 
-    // Si luego agregás auth JWT, acá agregás security scheme
-});
+ });
 
-// --------------------
-// CORS
-// --------------------
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Default", policy =>
@@ -87,46 +66,53 @@ builder.Services.AddCors(options =>
 
         if (origins is { Length: > 0 })
         {
-            policy.WithOrigins(origins)
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
+            policy
+                .WithOrigins(origins)
+                .AllowAnyHeader()
+                .AllowAnyMethod();
         }
         else
         {
-            // Dev fallback (no rompe)
-            policy.AllowAnyOrigin()
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
+            policy
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
         }
     });
 });
-// --------------------
-// Health checks
-// ------------------ 
-
 builder.Services.AddHealthChecks();
 
 var hcUiCs = builder.Configuration.GetConnectionString("HealthChecksUI")
     ?? throw new InvalidOperationException("Missing ConnectionStrings:HealthChecksUI");
 
-builder.Services
-    .AddHealthChecksUI()
-    .AddSqlServerStorage(hcUiCs);
-// --------------------
-// App DI (Infra)
-// --------------------
+builder.Services.AddHealthChecksUI().AddSqlServerStorage(hcUiCs);
+builder.Services.AddInfrastructure(builder.Configuration);
+ 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddHealthChecks();
-// --------------------
-// Middlewares DI
-// --------------------
+builder.Services.AddRateLimiter(options =>
+{
+    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+    options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(httpContext =>
+        RateLimitPartition.GetFixedWindowLimiter(
+            partitionKey: httpContext.Connection.RemoteIpAddress?.ToString() ?? "unknown",
+            factory: _ => new FixedWindowRateLimiterOptions
+            {
+                PermitLimit = 60,
+                Window = TimeSpan.FromMinutes(1),
+                QueueLimit = 0
+            }));
+});
+
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductRequestValidator>();
+builder.Services.AddScoped<IValidator<CreateProductRequest>, CreateProductRequestValidator>();
+builder.Services.AddScoped<IValidator<UpdateProductRequest>, UpdateProductRequestValidator>();
+builder.Services.AddScoped<IValidator<ProductListQuery>, ProductListQueryValidator>();
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
 var app = builder.Build();
 
-// --------------------
-// Pipeline
-// --------------------
+ 
 app.UseSerilogRequestLogging();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
@@ -134,16 +120,12 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(o =>
-    {
-        o.SwaggerEndpoint("/swagger/v1/swagger.json", "FulSpectrum API v1");
-    });
+    app.UseSwaggerUI(o => { o.SwaggerEndpoint("/swagger/v1/swagger.json", "FulSpectrum API v1"); });
 }
 
 app.UseHttpsRedirection();
 
-// Security headers (mínimos)
-app.Use(async (ctx, next) =>
+ app.Use(async (ctx, next) =>
 {
     ctx.Response.Headers["X-Content-Type-Options"] = "nosniff";
     ctx.Response.Headers["X-Frame-Options"] = "DENY";
@@ -152,10 +134,7 @@ app.Use(async (ctx, next) =>
 });
 
 app.UseCors("Default");
-
-// Auth preparada (Etapa 0): no agregamos JWT todavía.
-// Cuando la actives:
-// app.UseAuthentication();
+ 
 app.UseAuthorization();
 
 app.MapControllers();
@@ -170,8 +149,5 @@ app.MapHealthChecks("/health/ready", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
-app.MapHealthChecksUI(options =>
-{
-    options.UIPath = "/health-ui";
-});
+app.MapHealthChecksUI(options => { options.UIPath = "/health-ui"; });
 app.Run();

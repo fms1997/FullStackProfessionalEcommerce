@@ -7,8 +7,6 @@
   <ItemGroup>
     <Folder Include="Abstractions\" />
     <Folder Include="Catalog\Commands\" />
-    <Folder Include="Catalog\Dtos\" />
-    <Folder Include="Catalog\Queries\" />
     <Folder Include="Identity\" />
     <Folder Include="Orders\" />
   </ItemGroup>
