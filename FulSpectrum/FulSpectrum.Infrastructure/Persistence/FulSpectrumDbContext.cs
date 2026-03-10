@@ -15,7 +15,8 @@ public sealed class FulSpectrumDbContext : DbContext
     public DbSet<ProductVariant> Variants => Set<ProductVariant>();
     public DbSet<InventoryItem> Inventory => Set<InventoryItem>();
     public DbSet<AppUser> Users => Set<AppUser>();
-
+    public DbSet<RefreshSession> RefreshSessions => Set<RefreshSession>();
+    public DbSet<PasswordResetToken> PasswordResetTokens => Set<PasswordResetToken>();
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(FulSpectrumDbContext).Assembly);

@@ -329,6 +329,11 @@ namespace FulSpectrum.Infrastructure.Persistence.Migrations
                         .HasMaxLength(512)
                         .HasColumnType("nvarchar(512)");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasMaxLength(24)
+                        .HasColumnType("nvarchar(24)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedEmail")
@@ -337,19 +342,74 @@ namespace FulSpectrum.Infrastructure.Persistence.Migrations
                     b.HasIndex("IsActive", "CreatedAtUtc");
 
                     b.ToTable("Users", (string)null);
+                });
 
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("af2fbf41-5fb8-4840-a8d0-a869b9159ff9"),
-                            CreatedAtUtc = new DateTime(2026, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Email = "admin@fulspectrum.local",
-                            FirstName = "System",
-                            IsActive = true,
-                            LastName = "Admin",
-                            NormalizedEmail = "ADMIN@FULSPECTRUM.LOCAL",
-                            PasswordHash = "$2a$11$example.hash.replace.in.real.env"
-                        });
+            modelBuilder.Entity("FulSpectrum.Domain.Identity.PasswordResetToken", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAtUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ExpiresAtUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TokenHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UsedAtUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PasswordResetTokens");
+                });
+
+            modelBuilder.Entity("FulSpectrum.Domain.Identity.RefreshSession", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAtUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedByIp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ExpiresAtUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("JwtId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("ReplacedBySessionId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("RevokedAtUtc")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TokenHash")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("RefreshSessions");
                 });
 
             modelBuilder.Entity("FulSpectrum.Domain.Catalog.InventoryItem", b =>
@@ -385,6 +445,28 @@ namespace FulSpectrum.Infrastructure.Persistence.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("FulSpectrum.Domain.Identity.PasswordResetToken", b =>
+                {
+                    b.HasOne("FulSpectrum.Domain.Identity.AppUser", "User")
+                        .WithMany("PasswordResetTokens")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FulSpectrum.Domain.Identity.RefreshSession", b =>
+                {
+                    b.HasOne("FulSpectrum.Domain.Identity.AppUser", "User")
+                        .WithMany("RefreshSessions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("FulSpectrum.Domain.Catalog.Category", b =>
                 {
                     b.Navigation("Products");
@@ -398,6 +480,13 @@ namespace FulSpectrum.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("FulSpectrum.Domain.Catalog.ProductVariant", b =>
                 {
                     b.Navigation("Inventory");
+                });
+
+            modelBuilder.Entity("FulSpectrum.Domain.Identity.AppUser", b =>
+                {
+                    b.Navigation("PasswordResetTokens");
+
+                    b.Navigation("RefreshSessions");
                 });
 #pragma warning restore 612, 618
         }

@@ -6,12 +6,13 @@ using FulSpectrum.Application.Catalog.Queries;
 using FulSpectrum.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Authorization;
 namespace FulSpectrum.Api.Controllers;
 
 [ApiController]
 [ApiVersion("1.0")]
 [Route("api/v{version:apiVersion}/products")]
+[Authorize]
 public sealed class ProductsController : ControllerBase
 {
     private readonly FulSpectrumDbContext _db;
@@ -32,6 +33,7 @@ public sealed class ProductsController : ControllerBase
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<ActionResult<PagedResponse<ProductDto>>> GetAll([FromQuery] ProductListQuery query, CancellationToken ct)
     {
         var validation = await _queryValidator.ValidateAsync(query, ct);
@@ -91,6 +93,7 @@ public sealed class ProductsController : ControllerBase
     }
 
     [HttpGet("{id:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult<ProductDto>> GetById(Guid id, CancellationToken ct)
     {
         var product = await _db.Products.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id, ct);
@@ -103,6 +106,7 @@ public sealed class ProductsController : ControllerBase
     }
 
     [HttpPost]
+    [Authorize(Policy = "CanManageCatalog")]
     public async Task<ActionResult<ProductDto>> Create([FromBody] CreateProductRequest request, CancellationToken ct)
     {
         var validation = await _createValidator.ValidateAsync(request, ct);
@@ -140,6 +144,7 @@ public sealed class ProductsController : ControllerBase
     }
 
     [HttpPut("{id:guid}")]
+    [Authorize(Policy = "CanManageCatalog")]
     public async Task<ActionResult<ProductDto>> Update(Guid id, [FromBody] UpdateProductRequest request, CancellationToken ct)
     {
         var validation = await _updateValidator.ValidateAsync(request, ct);
@@ -168,6 +173,7 @@ public sealed class ProductsController : ControllerBase
     }
 
     [HttpDelete("{id:guid}")]
+    [Authorize(Policy = "CanManageCatalog")]
     public async Task<IActionResult> Delete(Guid id, CancellationToken ct)
     {
         var product = await _db.Products.FirstOrDefaultAsync(p => p.Id == id, ct);

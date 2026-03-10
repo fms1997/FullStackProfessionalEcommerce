@@ -916,3 +916,454 @@ Error Number:2601,State:1,Class:14
 2026-03-08 11:42:35.147 -03:00 [INF] HTTP GET /api/v1/products responded 429 in 0.3144 ms
 2026-03-08 11:42:36.424 -03:00 [INF] HTTP GET /api/v1/products responded 429 in 0.2518 ms
 2026-03-08 11:44:20.729 -03:00 [INF] Application is shutting down...
+2026-03-08 11:44:45.098 -03:00 [INF] Initializing UI Database
+2026-03-08 11:44:49.183 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 11:44:49.343 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 11:44:49.347 -03:00 [INF] Hosting environment: Development
+2026-03-08 11:44:49.352 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 11:44:54.668 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 222.4754 ms
+2026-03-08 11:44:55.066 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 13.0404 ms
+2026-03-08 11:44:55.066 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 15.2489 ms
+2026-03-08 11:44:55.081 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 23.1988 ms
+2026-03-08 11:44:55.552 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.4575 ms
+2026-03-08 11:44:55.558 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 13.3279 ms
+2026-03-08 11:45:01.794 -03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 0.3436 ms
+2026-03-08 11:45:02.124 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 367.5570 ms
+2026-03-08 11:45:10.456 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-08 11:45:12.635 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 2187.8052 ms
+2026-03-08 11:46:04.020 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 59.6359 ms
+2026-03-08 11:46:54.415 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 47.8103 ms
+2026-03-08 12:18:34.749 -03:00 [INF] Application is shutting down...
+2026-03-08 13:53:14.801 -03:00 [INF] Initializing UI Database
+2026-03-08 13:53:33.725 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 13:53:33.763 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 13:53:34.984 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 13:53:35.002 -03:00 [INF] Hosting environment: Development
+2026-03-08 13:53:35.011 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 13:53:41.095 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 1068.3220 ms
+2026-03-08 13:53:41.779 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 233.7269 ms
+2026-03-08 13:53:41.779 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 233.3280 ms
+2026-03-08 13:53:41.782 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 237.3830 ms
+2026-03-08 13:53:41.851 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 13.1382 ms
+2026-03-08 13:53:41.892 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 66.3250 ms
+2026-03-08 13:53:42.599 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 201.1112 ms
+2026-03-08 14:25:34.138 -03:00 [INF] Initializing UI Database
+2026-03-08 14:25:35.617 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 14:25:35.641 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 14:25:36.670 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 14:25:36.689 -03:00 [INF] Hosting environment: Development
+2026-03-08 14:25:36.707 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 14:25:37.937 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 228.1519 ms
+2026-03-08 14:25:38.071 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 37.1453 ms
+2026-03-08 14:25:38.295 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 261.2345 ms
+2026-03-08 14:25:38.295 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 261.1949 ms
+2026-03-08 14:25:38.295 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 260.8395 ms
+2026-03-08 14:25:38.330 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 296.0653 ms
+2026-03-08 14:25:38.543 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 50.2044 ms
+2026-03-08 14:25:50.100 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 1020.0719 ms
+2026-03-08 14:26:28.352 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 765.8260 ms
+2026-03-08 14:47:59.336 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 563.4245 ms
+2026-03-08 14:48:43.801 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 56.1300 ms
+2026-03-08 14:48:43.982 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 13.5227 ms
+2026-03-08 14:48:43.982 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 5.3282 ms
+2026-03-08 14:48:44.079 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 5.0593 ms
+2026-03-08 14:48:43.990 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 4.2495 ms
+2026-03-08 14:48:43.991 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 2.0665 ms
+2026-03-08 14:48:44.994 -03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 304 in 69.2454 ms
+2026-03-08 14:48:45.105 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 179.4932 ms
+2026-03-08 14:49:38.433 -03:00 [INF] Initializing UI Database
+2026-03-08 14:49:44.354 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 14:49:44.467 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 14:49:50.305 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 14:49:50.980 -03:00 [INF] Hosting environment: Development
+2026-03-08 14:49:51.710 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 14:49:54.156 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 618.4161 ms
+2026-03-08 14:49:54.617 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 2.1550 ms
+2026-03-08 14:49:54.717 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 102.7859 ms
+2026-03-08 14:49:54.727 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 112.6224 ms
+2026-03-08 14:49:54.727 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 113.0555 ms
+2026-03-08 14:49:54.747 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 132.9553 ms
+2026-03-08 14:49:55.644 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 178.1821 ms
+2026-03-08 14:51:05.129 -03:00 [INF] Initializing UI Database
+2026-03-08 14:51:08.331 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 14:51:08.362 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 14:51:10.850 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 14:51:10.887 -03:00 [INF] Hosting environment: Development
+2026-03-08 14:51:10.913 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 14:51:12.110 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 354.9594 ms
+2026-03-08 14:51:12.285 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 4.2863 ms
+2026-03-08 14:51:12.451 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 169.8160 ms
+2026-03-08 14:51:12.451 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 169.0654 ms
+2026-03-08 14:51:12.489 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 207.6827 ms
+2026-03-08 14:51:12.527 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 245.9578 ms
+2026-03-08 14:51:12.925 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 67.4075 ms
+2026-03-08 15:04:25.590 -03:00 [INF] Initializing UI Database
+2026-03-08 15:04:28.015 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 15:04:28.029 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 15:04:29.344 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 15:04:29.356 -03:00 [INF] Hosting environment: Development
+2026-03-08 15:04:29.371 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 15:04:31.879 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 233.3081 ms
+2026-03-08 15:04:32.073 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 31.4514 ms
+2026-03-08 15:04:32.233 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 191.8159 ms
+2026-03-08 15:04:32.236 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 194.3094 ms
+2026-03-08 15:04:32.237 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 195.7499 ms
+2026-03-08 15:04:32.257 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 215.6655 ms
+2026-03-08 15:04:32.774 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 52.2236 ms
+2026-03-08 15:07:00.907 -03:00 [ERR] Unhandled exception. TraceId=0HNJT7KHUB4G9:00000011
+System.InvalidOperationException: Unable to resolve service for type 'FulSpectrum.Api.Auth.ITokenService' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 198
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:07:01.167 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 2075.0326 ms
+2026-03-08 15:09:43.423 -03:00 [INF] Initializing UI Database
+2026-03-08 15:09:49.247 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 15:09:49.378 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 15:09:54.208 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 15:09:54.479 -03:00 [INF] Hosting environment: Development
+2026-03-08 15:09:54.849 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 15:09:57.950 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 762.6244 ms
+2026-03-08 15:09:58.875 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 285.3648 ms
+2026-03-08 15:09:58.873 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 284.2866 ms
+2026-03-08 15:09:58.928 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 338.1879 ms
+2026-03-08 15:09:59.230 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 15.6171 ms
+2026-03-08 15:09:59.382 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 0.6966 ms
+2026-03-08 15:10:20.107 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 239.9353 ms
+2026-03-08 15:12:03.048 -03:00 [ERR] Unhandled exception. TraceId=0HNJT7NHJS9V0:00000001
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 198
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:12:03.316 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 2203.8583 ms
+2026-03-08 15:12:11.325 -03:00 [ERR] Unhandled exception. TraceId=0HNJT7NHJS9V0:00000003
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 198
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:12:11.347 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 262.6151 ms
+2026-03-08 15:12:17.587 -03:00 [ERR] Unhandled exception. TraceId=0HNJT7NHJS9V0:00000005
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 198
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:12:17.623 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 231.6189 ms
+2026-03-08 15:14:34.609 -03:00 [INF] Initializing UI Database
+2026-03-08 15:14:36.658 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 15:14:36.664 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 15:14:37.508 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 15:14:37.515 -03:00 [INF] Hosting environment: Development
+2026-03-08 15:14:37.524 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 15:14:41.045 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 1147.0017 ms
+2026-03-08 15:14:41.237 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 2.1603 ms
+2026-03-08 15:14:41.406 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 171.4974 ms
+2026-03-08 15:14:41.406 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 171.6229 ms
+2026-03-08 15:14:41.406 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 172.1294 ms
+2026-03-08 15:14:41.454 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 219.3115 ms
+2026-03-08 15:14:41.813 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 96.2960 ms
+2026-03-08 15:15:37.847 -03:00 [ERR] Unhandled exception. TraceId=0HNJT7Q7AQRB5:00000001
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 198
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:15:38.107 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 2454.0011 ms
+2026-03-08 15:22:28.440 -03:00 [INF] Initializing UI Database
+2026-03-08 15:22:30.845 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 15:22:30.855 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 15:22:33.752 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 15:22:33.952 -03:00 [INF] Hosting environment: Development
+2026-03-08 15:22:34.131 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 15:22:35.960 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 514.2175 ms
+2026-03-08 15:22:36.031 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 2.5327 ms
+2026-03-08 15:22:36.255 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 226.9096 ms
+2026-03-08 15:22:36.256 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 227.1727 ms
+2026-03-08 15:22:36.257 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 228.6813 ms
+2026-03-08 15:22:36.288 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 259.3284 ms
+2026-03-08 15:22:36.581 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 97.1016 ms
+2026-03-08 15:23:03.344 -03:00 [ERR] Unhandled exception. TraceId=0HNJT7UKK18UD:00000011
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 198
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:23:03.656 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 3466.5444 ms
+2026-03-08 15:25:34.213 -03:00 [INF] Initializing UI Database
+2026-03-08 15:25:37.361 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 15:25:37.397 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 15:25:40.115 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 15:25:40.490 -03:00 [INF] Hosting environment: Development
+2026-03-08 15:25:40.929 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 15:25:42.464 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 332.5290 ms
+2026-03-08 15:25:42.538 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 8.7460 ms
+2026-03-08 15:25:42.682 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 153.1288 ms
+2026-03-08 15:25:42.682 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 153.2942 ms
+2026-03-08 15:25:42.682 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 153.0310 ms
+2026-03-08 15:25:42.697 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 168.2367 ms
+2026-03-08 15:25:42.960 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 86.3171 ms
+2026-03-08 15:26:11.745 -03:00 [ERR] Unhandled exception. TraceId=0HNJT80C64G5L:00000001
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 197
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:26:11.900 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 1319.8502 ms
+2026-03-08 15:26:19.451 -03:00 [ERR] Unhandled exception. TraceId=0HNJT80C64G5L:00000003
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.PasswordHasher`1[FulSpectrum.Domain.Identity.AppUser]' while attempting to activate 'FulSpectrum.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method101(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_8>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 197
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-08 15:26:19.466 -03:00 [ERR] HTTP POST /api/v1/auth/register responded 500 in 242.4803 ms
+2026-03-08 15:30:10.712 -03:00 [INF] Initializing UI Database
+2026-03-08 15:30:13.585 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 15:30:13.603 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 15:30:17.652 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 15:30:17.753 -03:00 [INF] Hosting environment: Development
+2026-03-08 15:30:17.807 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 15:30:19.955 -03:00 [INF] HTTP GET /swagger/index.html responded 304 in 350.8624 ms
+2026-03-08 15:30:20.097 -03:00 [INF] HTTP GET /swagger/index.js responded 304 in 12.3621 ms
+2026-03-08 15:30:20.460 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 304 in 375.8732 ms
+2026-03-08 15:30:20.460 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 304 in 375.0837 ms
+2026-03-08 15:30:20.461 -03:00 [INF] HTTP GET /swagger/index.css responded 304 in 377.1058 ms
+2026-03-08 15:30:20.492 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 304 in 407.5517 ms
+2026-03-08 15:30:21.494 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 525.3828 ms
+2026-03-08 15:30:35.556 -03:00 [INF] HTTP POST /api/v1/auth/register responded 200 in 1723.2360 ms
+2026-03-08 15:32:48.144 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 352.0201 ms
+2026-03-08 16:03:18.780 -03:00 [INF] Initializing UI Database
+2026-03-08 16:03:21.197 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 16:03:21.205 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 16:03:23.234 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 16:03:23.250 -03:00 [INF] Hosting environment: Development
+2026-03-08 16:03:23.266 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 16:03:24.378 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 429.1389 ms
+2026-03-08 16:03:24.478 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 172.7021 ms
+2026-03-08 16:03:24.478 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 172.7409 ms
+2026-03-08 16:03:24.652 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 347.0609 ms
+2026-03-08 16:03:25.169 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 93.0880 ms
+2026-03-08 16:05:20.066 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 3580.7634 ms
+2026-03-08 16:05:57.841 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 167.7779 ms
+2026-03-08 16:06:44.327 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 29.9820 ms
+2026-03-08 16:06:44.400 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 5.8072 ms
+2026-03-08 16:06:45.107 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3974 ms
+2026-03-08 16:06:45.177 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3538 ms
+2026-03-08 16:07:08.619 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3487 ms
+2026-03-08 16:07:09.223 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4991 ms
+2026-03-08 16:07:09.393 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2426 ms
+2026-03-08 16:07:09.551 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2908 ms
+2026-03-08 16:08:26.304 -03:00 [INF] Initializing UI Database
+2026-03-08 16:08:28.352 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 16:08:28.357 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 16:08:30.201 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 16:08:30.232 -03:00 [INF] Hosting environment: Development
+2026-03-08 16:08:30.253 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 16:08:31.260 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 256.6914 ms
+2026-03-08 16:08:31.767 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 68.9135 ms
+2026-03-08 16:08:44.521 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 294.3545 ms
+2026-03-08 16:10:05.571 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 2324.7839 ms
+2026-03-08 16:10:56.759 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 54.4402 ms
+2026-03-08 16:10:57.631 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 3.8731 ms
+2026-03-08 16:14:08.293 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 184.7979 ms
+2026-03-08 16:14:12.854 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4507 ms
+2026-03-08 16:14:12.960 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 3.2257 ms
+2026-03-08 16:15:26.288 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 2696.9748 ms
+2026-03-08 16:16:54.824 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 31.5951 ms
+2026-03-08 16:16:55.639 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.6757 ms
+2026-03-08 16:16:55.788 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 12.6523 ms
+2026-03-08 16:16:56.055 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 2.2165 ms
+2026-03-08 16:16:56.531 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 3.4271 ms
+2026-03-08 16:16:56.671 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 1.2177 ms
+2026-03-08 16:16:56.812 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.6219 ms
+2026-03-08 16:16:56.978 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3325 ms
+2026-03-08 16:16:57.130 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 6.5253 ms
+2026-03-08 16:16:57.272 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.9677 ms
+2026-03-08 19:40:39.635 -03:00 [INF] Initializing UI Database
+2026-03-08 19:40:45.325 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 19:40:45.342 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 19:40:46.950 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 19:40:46.956 -03:00 [INF] Hosting environment: Development
+2026-03-08 19:40:46.963 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 19:40:59.711 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 423.3110 ms
+2026-03-08 19:41:00.446 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 232.4082 ms
+2026-03-08 19:43:26.114 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 5085.4589 ms
+2026-03-08 19:45:04.130 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 1393.6015 ms
+2026-03-08 19:45:12.314 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 44.9496 ms
+2026-03-08 19:45:23.490 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 3.7556 ms
+2026-03-08 19:45:25.563 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.9041 ms
+2026-03-08 19:45:52.029 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.5056 ms
+2026-03-08 19:45:56.939 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4502 ms
+2026-03-08 19:46:07.730 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 489.4920 ms
+2026-03-08 19:46:43.919 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4179 ms
+2026-03-08 19:46:44.490 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3468 ms
+2026-03-08 19:46:44.632 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3567 ms
+2026-03-08 19:46:51.180 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 16.8404 ms
+2026-03-08 19:46:51.460 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 39.0548 ms
+2026-03-08 19:46:51.488 -03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 43.9945 ms
+2026-03-08 19:47:17.702 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 2.2518 ms
+2026-03-08 19:47:33.237 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4965 ms
+2026-03-08 19:47:33.673 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3809 ms
+2026-03-08 19:47:33.868 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.5173 ms
+2026-03-08 19:48:35.049 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 438.4939 ms
+2026-03-08 19:48:41.717 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 11.8527 ms
+2026-03-08 19:49:09.583 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 7.3905 ms
+2026-03-08 19:49:39.727 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 196.2015 ms
+2026-03-08 19:50:33.683 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 1.5724 ms
+2026-03-08 19:50:34.162 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 2.0660 ms
+2026-03-08 19:50:34.370 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.7744 ms
+2026-03-08 19:50:34.438 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2133 ms
+2026-03-08 19:50:34.506 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4017 ms
+2026-03-08 19:50:34.676 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.3940 ms
+2026-03-08 19:50:34.828 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2361 ms
+2026-03-08 19:50:47.815 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 17.2627 ms
+2026-03-08 19:50:48.034 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 103.8833 ms
+2026-03-08 19:50:48.034 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 141.5789 ms
+2026-03-08 19:50:48.079 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 175.9243 ms
+2026-03-08 19:50:50.190 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 36.5780 ms
+2026-03-08 19:51:12.300 -03:00 [INF] HTTP GET /api/v1/auth/me responded 307 in 16.1954 ms
+2026-03-08 19:51:12.355 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.7995 ms
+2026-03-08 19:52:12.807 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.3030 ms
+2026-03-08 19:52:12.822 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 2.7691 ms
+2026-03-08 19:52:17.900 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.0957 ms
+2026-03-08 19:52:17.921 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 1.5117 ms
+2026-03-08 19:52:48.467 -03:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 95.5082 ms
+2026-03-08 19:53:04.166 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.1931 ms
+2026-03-08 19:53:04.183 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1566 ms
+2026-03-08 19:53:24.894 -03:00 [INF] HTTP POST /api/v1/auth/login responded 401 in 12.0089 ms
+2026-03-08 19:53:57.256 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 319.4851 ms
+2026-03-08 19:54:04.168 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.1492 ms
+2026-03-08 19:54:04.176 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1575 ms
+2026-03-08 19:54:07.697 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.1401 ms
+2026-03-08 19:54:07.711 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2680 ms
+2026-03-08 19:54:08.148 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.1990 ms
+2026-03-08 19:54:08.171 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2396 ms
+2026-03-08 19:54:08.377 -03:00 [INF] HTTP POST /api/v1/auth/login responded 307 in 0.1162 ms
+2026-03-08 19:54:08.392 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.2224 ms
+2026-03-08 19:54:32.203 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 202.8733 ms
+2026-03-08 19:55:03.435 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 18.0860 ms
+2026-03-08 19:55:03.869 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.1702 ms
+2026-03-08 19:55:04.089 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2500 ms
+2026-03-08 19:55:04.278 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2623 ms
+2026-03-08 19:55:10.954 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.4216 ms
+2026-03-08 19:55:16.157 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 0.2859 ms
+2026-03-08 20:00:59.613 -03:00 [INF] Initializing UI Database
+2026-03-08 20:01:01.567 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-08 20:01:01.580 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-08 20:01:03.165 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-08 20:01:03.275 -03:00 [INF] Hosting environment: Development
+2026-03-08 20:01:03.282 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-08 20:01:03.935 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 228.1777 ms
+2026-03-08 20:01:04.322 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 46.5364 ms
+2026-03-08 20:01:23.946 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 1182.2606 ms
+2026-03-08 20:01:50.988 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 69.9162 ms
+2026-03-08 20:01:58.217 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 7.5608 ms
+2026-03-08 20:02:05.715 -03:00 [INF] HTTP GET /api/v1/auth/me responded 200 in 153.2596 ms
+2026-03-08 20:02:55.625 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 502.6567 ms
+2026-03-08 20:03:41.012 -03:00 [INF] HTTP POST /api/v1/auth/logout responded 204 in 64.1801 ms
+2026-03-08 20:04:30.176 -03:00 [INF] HTTP POST /api/v1/auth/logout responded 204 in 10.5210 ms
