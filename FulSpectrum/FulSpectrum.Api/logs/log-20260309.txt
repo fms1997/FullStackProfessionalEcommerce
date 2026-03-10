@@ -1,0 +1,30 @@
+2026-03-09 22:07:34.080 -03:00 [INF] Initializing UI Database
+2026-03-09 22:07:40.174 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-09 22:07:40.384 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-09 22:07:43.586 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-09 22:07:43.792 -03:00 [INF] Hosting environment: Development
+2026-03-09 22:07:43.957 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-09 22:07:59.666 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 527.4612 ms
+2026-03-09 22:08:01.067 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 128.6428 ms
+2026-03-09 22:45:17.031 -03:00 [INF] Initializing UI Database
+2026-03-09 22:45:20.256 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-09 22:45:20.272 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-09 22:45:23.216 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-09 22:45:23.245 -03:00 [INF] Hosting environment: Development
+2026-03-09 22:45:23.251 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-09 22:45:23.898 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 292.4790 ms
+2026-03-09 22:45:24.261 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 74.8954 ms
+2026-03-09 22:58:50.710 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 14819.3652 ms
+2026-03-09 23:03:03.663 -03:00 [INF] HTTP GET /api/v1/cart responded 401 in 771.0116 ms
+2026-03-09 23:03:33.115 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 8471.9044 ms
+2026-03-09 23:04:13.722 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 224.9034 ms
+2026-03-09 23:04:15.950 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 49.6691 ms
+2026-03-09 23:07:44.535 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 916.5077 ms
+2026-03-09 23:08:04.194 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 1493.2676 ms
+2026-03-09 23:11:19.996 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 162.5927 ms
+2026-03-09 23:11:23.221 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 68.9884 ms
+2026-03-09 23:11:55.442 -03:00 [INF] HTTP POST /api/v1/cart/items responded 400 in 90.9106 ms
+2026-03-09 23:11:59.649 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 22.6087 ms
+2026-03-09 23:59:33.087 -03:00 [INF] HTTP POST /api/v1/cart/items responded 401 in 185.0130 ms
+2026-03-09 23:59:44.892 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 998.8410 ms
+2026-03-09 23:59:47.076 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 216.4959 ms

@@ -1,5 +1,5 @@
- import { env } from "../config/env";
-import type { PagedResponse, ProductDto, ProductListQuery } from "../types/api";
+import { env } from "../config/env";
+import type { CartDto, PagedResponse, ProductDto, ProductListQuery } from "../types/api";
 import {
   createApi,
   fetchBaseQuery,
@@ -65,7 +65,7 @@ const baseQueryWithReauth: BaseQueryFn<string | FetchArgs, unknown, FetchBaseQue
 export const catalogApi = createApi({
   reducerPath: "catalogApi",
  baseQuery: baseQueryWithReauth,
-  tagTypes: ["Products", "Auth"],
+  tagTypes: ["Products", "Auth", "Cart"],
   endpoints: (builder) => ({
     login: builder.mutation<AuthResponse, { email: string; password: string }>({
       query: (body) => ({ url: "/api/v1/auth/login", method: "POST", body }),
@@ -94,8 +94,28 @@ export const catalogApi = createApi({
       providesTags: ["Products"],
     }),
     deleteProduct: builder.mutation<void, string>({
-           query: (id) => ({ url: `/api/v1/products/${id}`, method: "DELETE" }),
-      invalidatesTags: ["Products"],
+      query: (id) => ({ url: `/api/v1/products/${id}`, method: "DELETE" }),
+            invalidatesTags: ["Products"],
+    }),
+     getCart: builder.query<CartDto, void>({
+      query: () => "/api/v1/cart",
+      providesTags: ["Cart"],
+    }),
+    addCartItem: builder.mutation<CartDto, { productId: string; quantity: number; rowVersion?: string }>({
+      query: (body) => ({ url: "/api/v1/cart/items", method: "POST", body }),
+      invalidatesTags: ["Cart"],
+    }),
+    updateCartItem: builder.mutation<CartDto, { productId: string; quantity: number; rowVersion?: string }>({
+      query: ({ productId, ...body }) => ({ url: `/api/v1/cart/items/${productId}`, method: "PUT", body }),
+      invalidatesTags: ["Cart"],
+    }),
+    removeCartItem: builder.mutation<CartDto, { productId: string; rowVersion?: string }>({
+      query: ({ productId, rowVersion }) => ({ url: `/api/v1/cart/items/${productId}?rowVersion=${rowVersion ?? ""}`, method: "DELETE" }),
+      invalidatesTags: ["Cart"],
+    }),
+    mergeCart: builder.mutation<CartDto, { items: Array<{ productId: string; quantity: number }>; rowVersion?: string }>({
+      query: (body) => ({ url: "/api/v1/cart/merge", method: "POST", body }),
+      invalidatesTags: ["Cart"],
     }),
   }),
 });
@@ -109,4 +129,9 @@ export const {
   useLogoutMutation,
   useGetProductsQuery,
   useDeleteProductMutation,
+  useGetCartQuery,
+  useAddCartItemMutation,
+  useUpdateCartItemMutation,
+  useRemoveCartItemMutation,
+  useMergeCartMutation,
 } = catalogApi;

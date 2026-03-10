@@ -1,2 +1,3 @@
 git push origin main 
- 
+ dotnet ef migrations add SyncModel --context FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext
+dotnet ef database update --context FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext

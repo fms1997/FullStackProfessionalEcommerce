@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FulSpectrum.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2893779c6cdfc9aa0018d413ef22c00d82bf1e2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c11ca220408b2bac5c471f4b08632707500365cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("FulSpectrum.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FulSpectrum.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

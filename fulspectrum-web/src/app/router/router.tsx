@@ -5,8 +5,8 @@ import NotFound from "../../pages/NotFound";
 import Login from "../../pages/auth/Login";
 import Register from "../../pages/auth/Register";
 import ForgotPassword from "../../pages/auth/ForgotPassword";
-import Forbidden from "../../pages/Forbidden";
-import RequireAuth from "../../shared/components/auth/RequireAuth";
+ import RequireAuth from "../../shared/components/auth/RequireAuth";
+import Forbidden from "../../pages/Forbiddden";
 export const router = createBrowserRouter([
   {
     path: "/",

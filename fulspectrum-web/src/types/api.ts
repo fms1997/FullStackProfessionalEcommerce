@@ -31,3 +31,24 @@ export type ProductListQuery = {
   page?: number;
   pageSize?: number;
 };
+export type CartItemDto = {
+  id: string;
+  productId: string;
+  productName: string;
+  sku: string;
+  unitPrice: number;
+  quantity: number;
+  maxAllowedQuantity: number;
+  availableStock: number;
+  lineTotal: number;
+};
+
+export type CartDto = {
+  id: string;
+  userId: string;
+  rowVersion: string;
+  items: CartItemDto[];
+  totalItems: number;
+  subtotal: number;
+  currency: string;
+};

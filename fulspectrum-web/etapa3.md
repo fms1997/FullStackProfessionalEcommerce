@@ -61,9 +61,9 @@ npm run dev
 ## 2) Smoke checks del backend
 
 ```bash
-curl -i http://localhost:5000/health/live
+curl -i http://localhost:5006/health/live
 curl -i http://localhost:5000/health/ready
-curl -i http://localhost:5000/api/v1/products
+curl -i http://localhost:5006/api/v1/products
 ```
 
 Esperado:
