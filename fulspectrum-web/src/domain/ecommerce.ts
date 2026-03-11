@@ -15,7 +15,7 @@ export interface Product {
   slug: string;
   sku: string;
   basePrice: number;
-  currency: 'USD' | 'EUR' | 'MXN';
+  currency: "USD" | "EUR" | "MXN";
   isPublished: boolean;
 }
 

@@ -19,7 +19,8 @@ const storageKey = "fulspectrum_auth";
 const loadInitialState = (): AuthState => {
   try {
     const raw = localStorage.getItem(storageKey);
-    if (!raw) return { accessToken: null, profile: null, forbiddenMessage: null };
+    if (!raw)
+      return { accessToken: null, profile: null, forbiddenMessage: null };
     const parsed = JSON.parse(raw) as AuthState;
     return {
       accessToken: parsed.accessToken,
@@ -34,7 +35,11 @@ const loadInitialState = (): AuthState => {
 const persist = (state: AuthState) => {
   localStorage.setItem(
     storageKey,
-    JSON.stringify({ accessToken: state.accessToken, profile: state.profile, forbiddenMessage: null }),
+    JSON.stringify({
+      accessToken: state.accessToken,
+      profile: state.profile,
+      forbiddenMessage: null,
+    }),
   );
 };
 
@@ -44,7 +49,10 @@ const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    setCredentials(state, action: PayloadAction<{ accessToken: string; profile: UserProfile }>) {
+    setCredentials(
+      state,
+      action: PayloadAction<{ accessToken: string; profile: UserProfile }>,
+    ) {
       state.accessToken = action.payload.accessToken;
       state.profile = action.payload.profile;
       state.forbiddenMessage = null;

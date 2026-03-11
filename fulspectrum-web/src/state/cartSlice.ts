@@ -46,9 +46,16 @@ const cartSlice = createSlice({
       state.localItems = [];
       persistLocal(state.localItems);
     },
-    addLocalItem(state, action: PayloadAction<Omit<LocalCartItem, "quantity"> & { quantity?: number }>) {
+    addLocalItem(
+      state,
+      action: PayloadAction<
+        Omit<LocalCartItem, "quantity"> & { quantity?: number }
+      >,
+    ) {
       const qty = action.payload.quantity ?? 1;
-      const existing = state.localItems.find((x) => x.productId === action.payload.productId);
+      const existing = state.localItems.find(
+        (x) => x.productId === action.payload.productId,
+      );
       if (existing) {
         existing.quantity += qty;
       } else {
@@ -56,18 +63,33 @@ const cartSlice = createSlice({
       }
       persistLocal(state.localItems);
     },
-    updateLocalItem(state, action: PayloadAction<{ productId: string; quantity: number }>) {
+    updateLocalItem(
+      state,
+      action: PayloadAction<{ productId: string; quantity: number }>,
+    ) {
       state.localItems = state.localItems
-        .map((x) => (x.productId === action.payload.productId ? { ...x, quantity: action.payload.quantity } : x))
+        .map((x) =>
+          x.productId === action.payload.productId
+            ? { ...x, quantity: action.payload.quantity }
+            : x,
+        )
         .filter((x) => x.quantity > 0);
       persistLocal(state.localItems);
     },
     removeLocalItem(state, action: PayloadAction<string>) {
-      state.localItems = state.localItems.filter((x) => x.productId !== action.payload);
+      state.localItems = state.localItems.filter(
+        (x) => x.productId !== action.payload,
+      );
       persistLocal(state.localItems);
     },
   },
 });
 
-export const { hydrateServerCart, clearLocalCart, addLocalItem, updateLocalItem, removeLocalItem } = cartSlice.actions;
+export const {
+  hydrateServerCart,
+  clearLocalCart,
+  addLocalItem,
+  updateLocalItem,
+  removeLocalItem,
+} = cartSlice.actions;
 export default cartSlice.reducer;

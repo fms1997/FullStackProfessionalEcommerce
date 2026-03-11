@@ -1,4 +1,10 @@
-import type { CatalogSnapshot, Category, InventoryItem, Product, ProductVariant } from '../domain/ecommerce';
+import type {
+  CatalogSnapshot,
+  Category,
+  InventoryItem,
+  Product,
+  ProductVariant,
+} from "../domain/ecommerce";
 
 type EntityMap<T extends { id: string }> = Record<string, T>;
 
@@ -18,25 +24,33 @@ const toMap = <T extends { id: string }>(items: T[]): EntityMap<T> =>
     return acc;
   }, {});
 
-export const normalizeCatalog = (snapshot: CatalogSnapshot): NormalizedCatalogState => {
+export const normalizeCatalog = (
+  snapshot: CatalogSnapshot,
+): NormalizedCatalogState => {
   const categories = toMap(snapshot.categories);
   const products = toMap(snapshot.products);
   const variants = toMap(snapshot.variants);
   const inventory = toMap(snapshot.inventory);
 
-  const productIdsByCategoryId = snapshot.products.reduce<Record<string, string[]>>((acc, product) => {
+  const productIdsByCategoryId = snapshot.products.reduce<
+    Record<string, string[]>
+  >((acc, product) => {
     acc[product.categoryId] ??= [];
     acc[product.categoryId].push(product.id);
     return acc;
   }, {});
 
-  const variantIdsByProductId = snapshot.variants.reduce<Record<string, string[]>>((acc, variant) => {
+  const variantIdsByProductId = snapshot.variants.reduce<
+    Record<string, string[]>
+  >((acc, variant) => {
     acc[variant.productId] ??= [];
     acc[variant.productId].push(variant.id);
     return acc;
   }, {});
 
-  const inventoryIdByVariantId = snapshot.inventory.reduce<Record<string, string>>((acc, item) => {
+  const inventoryIdByVariantId = snapshot.inventory.reduce<
+    Record<string, string>
+  >((acc, item) => {
     acc[item.variantId] = item.id;
     return acc;
   }, {});

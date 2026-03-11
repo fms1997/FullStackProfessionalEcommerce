@@ -377,3 +377,51 @@ Error Number:-2,State:0,Class:11
 2026-03-10 19:20:35.162 -03:00 [INF] HTTP POST /api/v1/auth/logout responded 204 in 20.6869 ms
 2026-03-10 19:20:38.087 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0489 ms
 2026-03-10 19:20:38.371 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 277.3840 ms
+2026-03-10 21:19:41.754 -03:00 [INF] Initializing UI Database
+2026-03-10 21:19:43.932 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-10 21:19:44.443 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-10 21:19:44.463 -03:00 [INF] Hosting environment: Development
+2026-03-10 21:19:44.475 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-10 21:20:21.959 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-10 21:20:22.133 -03:00 [INF] HTTP HEAD /swagger/index.html responded 404 in 244.1671 ms
+2026-03-10 21:20:48.019 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 493.1568 ms
+2026-03-10 21:22:59.504 -03:00 [INF] Application is shutting down...
+2026-03-10 21:23:40.728 -03:00 [INF] Initializing UI Database
+2026-03-10 21:23:41.583 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-10 21:23:41.757 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-10 21:23:41.761 -03:00 [INF] Hosting environment: Development
+2026-03-10 21:23:41.765 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-10 21:34:31.706 -03:00 [INF] Application is shutting down...
+2026-03-10 21:34:57.160 -03:00 [INF] Initializing UI Database
+2026-03-10 21:34:58.055 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-10 21:34:58.423 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-10 21:34:58.429 -03:00 [INF] Hosting environment: Development
+2026-03-10 21:34:58.434 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-10 21:36:21.322 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 294.9045 ms
+2026-03-10 21:37:05.294 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 7.3244 ms
+2026-03-10 21:37:19.243 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 13.0886 ms
+2026-03-10 21:37:21.421 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 601.4783 ms
+2026-03-10 21:37:56.055 -03:00 [INF] Application is shutting down...
+2026-03-10 21:38:34.914 -03:00 [INF] Initializing UI Database
+2026-03-10 21:38:36.329 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-10 21:38:36.346 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-10 21:38:36.979 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-10 21:38:36.984 -03:00 [INF] Hosting environment: Development
+2026-03-10 21:38:36.988 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-10 21:38:38.018 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 175.1203 ms
+2026-03-10 21:38:38.251 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 53.6387 ms
+2026-03-10 21:38:57.351 -03:00 [INF] HTTP GET /swagger responded 301 in 6.0794 ms
+2026-03-10 21:38:57.464 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 8.9188 ms
+2026-03-10 21:38:57.867 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 119.9288 ms
+2026-03-10 21:38:57.868 -03:00 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 134.4219 ms
+2026-03-10 21:38:58.009 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 266.7877 ms
+2026-03-10 21:39:01.838 -03:00 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 0.8365 ms
+2026-03-10 21:39:01.841 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 58.0671 ms
+2026-03-10 21:39:44.324 -03:00 [INF] HTTP GET /api/v1/ping responded 307 in 16.3409 ms
+2026-03-10 21:40:13.025 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 847.0026 ms
+2026-03-10 21:42:09.993 -03:00 [INF] HTTP GET /api/v1/ping responded 307 in 43.0386 ms
+2026-03-10 21:42:41.034 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 60.3285 ms
+2026-03-10 21:42:46.314 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 17.1165 ms
+2026-03-10 21:42:47.353 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 1.2802 ms
+2026-03-10 21:42:48.261 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 1.8062 ms
+2026-03-10 21:42:48.910 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 1.0363 ms

@@ -1,5 +1,10 @@
 import { env } from "../config/env";
-import type { CartDto, PagedResponse, ProductDto, ProductListQuery } from "../types/api";
+import type {
+  CartDto,
+  PagedResponse,
+  ProductDto,
+  ProductListQuery,
+} from "../types/api";
 import {
   createApi,
   fetchBaseQuery,
@@ -7,13 +12,19 @@ import {
   type FetchArgs,
   type FetchBaseQueryError,
 } from "@reduxjs/toolkit/query/react";
-import { clearAuth, setCredentials, setForbidden, type UserProfile } from "./authSlice";
+import {
+  clearAuth,
+  setCredentials,
+  setForbidden,
+  type UserProfile,
+} from "./authSlice";
 import type { RootState } from "./store";
 const toQueryString = (query: ProductListQuery) => {
   const params = new URLSearchParams();
 
   if (query.search) params.set("search", query.search);
-  if (typeof query.isPublished === "boolean") params.set("isPublished", String(query.isPublished));
+  if (typeof query.isPublished === "boolean")
+    params.set("isPublished", String(query.isPublished));
   if (query.sortBy) params.set("sortBy", query.sortBy);
   if (query.sortDirection) params.set("sortDirection", query.sortDirection);
   if (query.page) params.set("page", String(query.page));
@@ -37,19 +48,28 @@ const rawBaseQuery = fetchBaseQuery({
   },
 });
 
-const baseQueryWithReauth: BaseQueryFn<string | FetchArgs, unknown, FetchBaseQueryError> = async (
-  args,
-  api,
-  extraOptions,
-) => {
+const baseQueryWithReauth: BaseQueryFn<
+  string | FetchArgs,
+  unknown,
+  FetchBaseQueryError
+> = async (args, api, extraOptions) => {
   let result = await rawBaseQuery(args, api, extraOptions);
 
   if (result.error?.status === 401) {
-    const refreshResult = await rawBaseQuery({ url: "/api/v1/auth/refresh", method: "POST" }, api, extraOptions);
+    const refreshResult = await rawBaseQuery(
+      { url: "/api/v1/auth/refresh", method: "POST" },
+      api,
+      extraOptions,
+    );
 
     if (refreshResult.data) {
       const auth = refreshResult.data as AuthResponse;
-      api.dispatch(setCredentials({ accessToken: auth.accessToken, profile: auth.profile }));
+      api.dispatch(
+        setCredentials({
+          accessToken: auth.accessToken,
+          profile: auth.profile,
+        }),
+      );
       result = await rawBaseQuery(args, api, extraOptions);
     } else {
       api.dispatch(clearAuth());
@@ -64,22 +84,39 @@ const baseQueryWithReauth: BaseQueryFn<string | FetchArgs, unknown, FetchBaseQue
 };
 export const catalogApi = createApi({
   reducerPath: "catalogApi",
- baseQuery: baseQueryWithReauth,
+  baseQuery: baseQueryWithReauth,
   tagTypes: ["Products", "Auth", "Cart"],
   endpoints: (builder) => ({
     login: builder.mutation<AuthResponse, { email: string; password: string }>({
       query: (body) => ({ url: "/api/v1/auth/login", method: "POST", body }),
       invalidatesTags: ["Auth"],
     }),
-    register: builder.mutation<AuthResponse, { email: string; password: string; firstName: string; lastName: string }>({
+    register: builder.mutation<
+      AuthResponse,
+      { email: string; password: string; firstName: string; lastName: string }
+    >({
       query: (body) => ({ url: "/api/v1/auth/register", method: "POST", body }),
       invalidatesTags: ["Auth"],
     }),
-    forgotPassword: builder.mutation<{ message: string; resetToken?: string }, { email: string }>({
-      query: (body) => ({ url: "/api/v1/auth/forgot-password", method: "POST", body }),
+    forgotPassword: builder.mutation<
+      { message: string; resetToken?: string },
+      { email: string }
+    >({
+      query: (body) => ({
+        url: "/api/v1/auth/forgot-password",
+        method: "POST",
+        body,
+      }),
     }),
-    resetPassword: builder.mutation<{ message: string }, { token: string; newPassword: string }>({
-      query: (body) => ({ url: "/api/v1/auth/reset-password", method: "POST", body }),
+    resetPassword: builder.mutation<
+      { message: string },
+      { token: string; newPassword: string }
+    >({
+      query: (body) => ({
+        url: "/api/v1/auth/reset-password",
+        method: "POST",
+        body,
+      }),
     }),
     getMe: builder.query<UserProfile, void>({
       query: () => "/api/v1/auth/me",
@@ -95,25 +132,47 @@ export const catalogApi = createApi({
     }),
     deleteProduct: builder.mutation<void, string>({
       query: (id) => ({ url: `/api/v1/products/${id}`, method: "DELETE" }),
-            invalidatesTags: ["Products"],
+      invalidatesTags: ["Products"],
     }),
-     getCart: builder.query<CartDto, void>({
+    getCart: builder.query<CartDto, void>({
       query: () => "/api/v1/cart",
       providesTags: ["Cart"],
     }),
-    addCartItem: builder.mutation<CartDto, { productId: string; quantity: number; rowVersion?: string }>({
+    addCartItem: builder.mutation<
+      CartDto,
+      { productId: string; quantity: number; rowVersion?: string }
+    >({
       query: (body) => ({ url: "/api/v1/cart/items", method: "POST", body }),
       invalidatesTags: ["Cart"],
     }),
-    updateCartItem: builder.mutation<CartDto, { productId: string; quantity: number; rowVersion?: string }>({
-      query: ({ productId, ...body }) => ({ url: `/api/v1/cart/items/${productId}`, method: "PUT", body }),
+    updateCartItem: builder.mutation<
+      CartDto,
+      { productId: string; quantity: number; rowVersion?: string }
+    >({
+      query: ({ productId, ...body }) => ({
+        url: `/api/v1/cart/items/${productId}`,
+        method: "PUT",
+        body,
+      }),
       invalidatesTags: ["Cart"],
     }),
-    removeCartItem: builder.mutation<CartDto, { productId: string; rowVersion?: string }>({
-      query: ({ productId, rowVersion }) => ({ url: `/api/v1/cart/items/${productId}?rowVersion=${rowVersion ?? ""}`, method: "DELETE" }),
+    removeCartItem: builder.mutation<
+      CartDto,
+      { productId: string; rowVersion?: string }
+    >({
+      query: ({ productId, rowVersion }) => ({
+        url: `/api/v1/cart/items/${productId}?rowVersion=${rowVersion ?? ""}`,
+        method: "DELETE",
+      }),
       invalidatesTags: ["Cart"],
     }),
-    mergeCart: builder.mutation<CartDto, { items: Array<{ productId: string; quantity: number }>; rowVersion?: string }>({
+    mergeCart: builder.mutation<
+      CartDto,
+      {
+        items: Array<{ productId: string; quantity: number }>;
+        rowVersion?: string;
+      }
+    >({
       query: (body) => ({ url: "/api/v1/cart/merge", method: "POST", body }),
       invalidatesTags: ["Cart"],
     }),

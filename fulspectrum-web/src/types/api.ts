@@ -1,5 +1,5 @@
 export type PingResponse = {
-   ok: boolean;
+  ok: boolean;
   ts: string;
 };
 

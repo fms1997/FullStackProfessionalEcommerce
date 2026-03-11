@@ -174,6 +174,8 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IPasswordHasher<AppUser>, PasswordHasher<AppUser>>();
      var app = builder.Build();
 
+Console.WriteLine($"ENVIRONMENT: {app.Environment.EnvironmentName}");
+Console.WriteLine($"IsDevelopment: {app.Environment.IsDevelopment()}");
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<FulSpectrumDbContext>();

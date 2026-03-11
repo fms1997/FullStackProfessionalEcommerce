@@ -51,6 +51,7 @@ curl -i "$API/api/v1/products"
 ```
 
 Esperado:
+
 - `200 OK` en health.
 - catálogo responde con productos.
 
@@ -98,6 +99,7 @@ curl -i "$API/api/v1/cart" \
 ```
 
 Esperado:
+
 - `200 OK`
 - body con `id`, `rowVersion`, `items`.
 
@@ -125,6 +127,7 @@ curl -i -X POST "$API/api/v1/cart/items" \
 ```
 
 Esperado:
+
 - `200 OK`
 - item agregado
 - `rowVersion` nuevo.
@@ -142,6 +145,7 @@ curl -i -X PUT "$API/api/v1/cart/items/$PRODUCT_ID" \
 ```
 
 Esperado:
+
 - `200 OK`
 - cantidad actualizada.
 
@@ -156,6 +160,7 @@ curl -i -X DELETE "$API/api/v1/cart/items/$PRODUCT_ID?rowVersion=$ROW_VERSION_2"
 ```
 
 Esperado:
+
 - `200 OK`
 - item removido.
 
@@ -177,6 +182,7 @@ curl -i -X POST "$API/api/v1/cart/merge" \
 ```
 
 Esperado:
+
 - `200 OK`
 - cantidades mergeadas y limitadas por reglas.
 
@@ -191,6 +197,7 @@ curl -i -X DELETE "$API/api/v1/cart?rowVersion=$ROW_VERSION_4" \
 ```
 
 Esperado:
+
 - `200 OK`
 - carrito sin items.
 
@@ -221,6 +228,7 @@ curl -i -X POST "$API/api/v1/cart/items" \
 ```
 
 Esperado:
+
 - no debe permitir superar límite/capacidad de stock.
 - respuesta de conflicto o ajuste según lógica implementada.
 
@@ -241,6 +249,7 @@ Abrir **dos terminales** (A y B), ambos con mismo usuario y carrito.
 4. B intenta `POST /cart/items` usando **RV1 viejo**.
 
 Esperado:
+
 - B debe recibir `409 Conflict` por versión desactualizada.
 
 ---
@@ -252,9 +261,11 @@ Esperado:
 3. Recargar página.
 
 Esperado:
+
 - los items siguen presentes (persistencia localStorage).
 
 Verificación opcional (DevTools):
+
 - `Application > Local Storage` y revisar clave del carrito anónimo.
 
 ---
@@ -266,6 +277,7 @@ Verificación opcional (DevTools):
 3. Vuelve a Home.
 
 Esperado:
+
 - el carrito local se fusiona al carrito del servidor.
 - el carrito anónimo local queda limpio tras merge exitoso.
 
@@ -277,6 +289,7 @@ Esperado:
 2. Observa la UI inmediatamente.
 
 Esperado:
+
 - la cantidad/lista refleja el cambio **antes** de terminar roundtrip de red.
 - luego se reconcilia con respuesta del backend.
 
@@ -288,6 +301,7 @@ Esperado:
 2. En Network, filtra requests a `/api/v1/cart/items/{productId}`.
 
 Esperado:
+
 - no se envía una request por cada tecla.
 - se envía update consolidado tras la ventana de debounce.
 

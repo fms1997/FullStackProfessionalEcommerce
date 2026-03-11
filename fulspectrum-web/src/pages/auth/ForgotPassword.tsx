@@ -41,14 +41,11 @@
 //   );
 // }
 
-
-
-
-
-
-
 import { useState } from "react";
-import { useForgotPasswordMutation, useResetPasswordMutation } from "../../state/api";
+import {
+  useForgotPasswordMutation,
+  useResetPasswordMutation,
+} from "../../state/api";
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -93,9 +90,7 @@ export default function ForgotPassword() {
         </button>
 
         {previewToken && (
-          <p className="text-xs break-all">
-            Token demo: {previewToken}
-          </p>
+          <p className="text-xs break-all">Token demo: {previewToken}</p>
         )}
       </form>
 

@@ -5,13 +5,13 @@ import NotFound from "../../pages/NotFound";
 import Login from "../../pages/auth/Login";
 import Register from "../../pages/auth/Register";
 import ForgotPassword from "../../pages/auth/ForgotPassword";
- import RequireAuth from "../../shared/components/auth/RequireAuth";
+import RequireAuth from "../../shared/components/auth/RequireAuth";
 import Forbidden from "../../pages/Forbiddden";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
- children: [
+    children: [
       {
         element: <RequireAuth roles={["Admin", "Customer"]} />,
         children: [{ index: true, element: <Home /> }],
@@ -20,6 +20,7 @@ export const router = createBrowserRouter([
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
       { path: "forgot-password", element: <ForgotPassword /> },
-    ],  },
+    ],
+  },
   { path: "*", element: <NotFound /> },
 ]);
