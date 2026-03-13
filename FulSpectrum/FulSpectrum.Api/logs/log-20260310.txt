@@ -425,3 +425,5 @@ Error Number:-2,State:0,Class:11
 2026-03-10 21:42:47.353 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 1.2802 ms
 2026-03-10 21:42:48.261 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 1.8062 ms
 2026-03-10 21:42:48.910 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 1.0363 ms
+2026-03-10 21:44:44.613 -03:00 [INF] HTTP OPTIONS /api/v1/ping responded 204 in 38.8043 ms
+2026-03-10 21:45:00.846 -03:00 [INF] HTTP OPTIONS /api/v1/ping responded 204 in 1.5236 ms
