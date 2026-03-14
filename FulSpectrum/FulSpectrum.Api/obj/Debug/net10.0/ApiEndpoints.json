@@ -294,6 +294,115 @@
     ]
   },
   {
+    "ContainingType": "FulSpectrum.Api.Controllers.CheckoutController",
+    "Method": "PlaceOrder",
+    "RelativePath": "api/v1/checkout/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.PlaceOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.OrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.CheckoutController",
+    "Method": "GetOrderById",
+    "RelativePath": "api/v1/checkout/orders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.OrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.CheckoutController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/v1/checkout/orders/{id}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.UpdateOrderStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.OrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.CheckoutController",
+    "Method": "Preview",
+    "RelativePath": "api/v1/checkout/preview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.CheckoutPreviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.CheckoutPreviewDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FulSpectrum.Api.Controllers.PingController",
     "Method": "Get",
     "RelativePath": "api/v1/ping",

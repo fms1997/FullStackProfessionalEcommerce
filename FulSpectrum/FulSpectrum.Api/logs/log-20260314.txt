@@ -120,3 +120,231 @@
 2026-03-14 12:01:25.720 -03:00 [INF] HTTP POST /api/v1/auth/reset-password responded 400 in 9.5734 ms
 2026-03-14 12:01:33.695 -03:00 [INF] HTTP OPTIONS /api/v1/auth/reset-password responded 204 in 0.0841 ms
 2026-03-14 12:01:33.711 -03:00 [INF] HTTP POST /api/v1/auth/reset-password responded 400 in 8.0629 ms
+2026-03-14 13:15:39.500 -03:00 [INF] Initializing UI Database
+2026-03-14 13:15:43.279 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-14 13:15:43.332 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-14 13:15:48.124 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-14 13:15:50.755 -03:00 [INF] Hosting environment: Development
+2026-03-14 13:15:50.769 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-14 13:15:53.933 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 1513.1932 ms
+2026-03-14 13:15:55.976 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 92.9778 ms
+2026-03-14 13:16:15.243 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 1175.1079 ms
+2026-03-14 13:16:35.490 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 511.9103 ms
+2026-03-14 13:16:41.345 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 22.2824 ms
+2026-03-14 13:16:41.974 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 10.6961 ms
+2026-03-14 13:16:42.485 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 5.4316 ms
+2026-03-14 13:48:14.385 -03:00 [INF] Initializing UI Database
+2026-03-14 13:48:17.344 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-14 13:48:17.370 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-14 13:48:19.001 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-14 13:48:19.107 -03:00 [INF] Hosting environment: Development
+2026-03-14 13:48:19.162 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-14 13:48:21.259 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 685.7973 ms
+2026-03-14 13:48:23.744 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 146.6522 ms
+2026-03-14 14:07:11.025 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 1491.9086 ms
+2026-03-14 14:07:23.568 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 4665.6043 ms
+2026-03-14 14:08:04.831 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 1052.2158 ms
+2026-03-14 14:08:27.055 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 263.4900 ms
+2026-03-14 14:08:48.263 -03:00 [INF] HTTP GET /api/v1/auth/me responded 200 in 1125.7579 ms
+2026-03-14 14:09:05.708 -03:00 [INF] HTTP POST /api/v1/products responded 400 in 721.0206 ms
+2026-03-14 14:09:31.254 -03:00 [INF] HTTP POST /api/v1/products responded 201 in 592.6035 ms
+2026-03-14 14:09:47.504 -03:00 [INF] HTTP POST /api/v1/products responded 201 in 783.4721 ms
+2026-03-14 14:10:05.435 -03:00 [INF] HTTP POST /api/v1/products responded 201 in 30.5164 ms
+2026-03-14 14:10:24.613 -03:00 [INF] HTTP POST /api/v1/products responded 201 in 58.4907 ms
+2026-03-14 14:10:38.380 -03:00 [INF] HTTP POST /api/v1/products responded 201 in 23.3296 ms
+2026-03-14 14:11:39.901 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 966.0082 ms
+2026-03-14 14:16:24.930 -03:00 [INF] HTTP POST /api/v1/cart/items responded 400 in 152.5216 ms
+2026-03-14 14:17:54.404 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 2367.9149 ms
+2026-03-14 14:18:26.848 -03:00 [INF] HTTP POST /api/v1/cart/items responded 400 in 39.6153 ms
+2026-03-14 14:18:31.608 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 210.3171 ms
+2026-03-14 14:18:36.693 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 20.8656 ms
+2026-03-14 14:18:49.981 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 192.4445 ms
+2026-03-14 14:25:11.195 -03:00 [INF] Initializing UI Database
+2026-03-14 14:25:13.096 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-14 14:25:13.103 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-14 14:25:15.130 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-14 14:25:15.257 -03:00 [INF] Hosting environment: Development
+2026-03-14 14:25:15.436 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-14 14:25:16.737 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 266.3402 ms
+2026-03-14 14:25:17.093 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 100.0467 ms
+2026-03-14 14:25:40.111 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 385.1098 ms
+2026-03-14 14:25:46.432 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 858.2099 ms
+2026-03-14 14:26:09.652 -03:00 [INF] HTTP GET /api/v1/auth/me responded 200 in 188.2020 ms
+2026-03-14 14:26:35.336 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 943.5173 ms
+2026-03-14 14:43:02.934 -03:00 [INF] HTTP POST /api/v1/cart/items responded 401 in 421.8076 ms
+2026-03-14 14:43:18.381 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 1420.2361 ms
+2026-03-14 14:43:49.410 -03:00 [INF] HTTP POST /api/v1/cart/items responded 401 in 5.5929 ms
+2026-03-14 14:43:50.301 -03:00 [INF] HTTP POST /api/v1/cart/items responded 401 in 6.1637 ms
+2026-03-14 14:43:58.666 -03:00 [INF] HTTP POST /api/v1/cart/items responded 401 in 5.1994 ms
+2026-03-14 14:44:28.345 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 232.8520 ms
+2026-03-14 14:53:30.303 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 2407.8346 ms
+2026-03-14 14:54:15.373 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 892.8000 ms
+2026-03-14 14:54:32.600 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 233.1729 ms
+2026-03-14 14:58:12.034 -03:00 [INF] Initializing UI Database
+2026-03-14 14:58:14.386 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-14 14:58:14.410 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-14 14:58:15.657 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-14 14:58:15.755 -03:00 [INF] Hosting environment: Development
+2026-03-14 14:58:15.803 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-14 14:58:16.477 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 250.4220 ms
+2026-03-14 14:58:16.806 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 100.3955 ms
+2026-03-14 14:59:14.147 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 958.9078 ms
+2026-03-14 14:59:22.364 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 1314.8390 ms
+2026-03-14 14:59:55.678 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 1100.5688 ms
+2026-03-14 15:00:35.702 -03:00 [INF] HTTP POST /api/v1/cart/items responded 409 in 1030.3775 ms
+2026-03-14 15:30:38.180 -03:00 [INF] Initializing UI Database
+2026-03-14 15:30:43.694 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-14 15:30:43.714 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-14 15:30:46.393 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-14 15:30:46.484 -03:00 [INF] Hosting environment: Development
+2026-03-14 15:30:46.577 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-14 15:30:47.325 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 239.7757 ms
+2026-03-14 15:30:48.327 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 420.6018 ms
+2026-03-14 15:31:03.348 -03:00 [INF] HTTP POST /api/v1/auth/login responded 400 in 750.4826 ms
+2026-03-14 15:31:09.966 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 2066.2234 ms
+2026-03-14 15:31:42.155 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 1294.2552 ms
+2026-03-14 15:33:34.079 -03:00 [INF] HTTP POST /api/v1/cart/items responded 200 in 1108.1746 ms
+2026-03-14 15:34:31.127 -03:00 [INF] HTTP PUT /api/v1/cart/items/2409DD48-A554-4A21-A890-4793FF7D564E responded 200 in 160.6841 ms
+2026-03-14 15:34:45.378 -03:00 [INF] HTTP PUT /api/v1/cart/items/2409DD48-A554-4A21-A890-4793FF7D564E responded 200 in 46.8276 ms
+2026-03-14 15:34:56.211 -03:00 [INF] HTTP PUT /api/v1/cart/items/2409DD48-A554-4A21-A890-4793FF7D564E responded 200 in 56.9765 ms
+2026-03-14 15:35:57.587 -03:00 [INF] HTTP DELETE /api/v1/cart/items/2409dd48-a554-4a21-a890-4793ff7d564e responded 200 in 117.7432 ms
+2026-03-14 15:36:13.608 -03:00 [INF] HTTP POST /api/v1/cart/items responded 200 in 44.8239 ms
+2026-03-14 15:38:06.814 -03:00 [INF] HTTP POST /api/v1/cart/merge responded 409 in 531.0611 ms
+2026-03-14 15:38:13.636 -03:00 [INF] HTTP POST /api/v1/cart/merge responded 200 in 40.9497 ms
+2026-03-14 15:38:19.336 -03:00 [INF] HTTP POST /api/v1/cart/merge responded 200 in 26.1248 ms
+2026-03-14 15:39:13.483 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 14.6317 ms
+2026-03-14 15:39:14.036 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 515.7386 ms
+2026-03-14 15:39:14.135 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 1.0800 ms
+2026-03-14 15:39:14.136 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.4349 ms
+2026-03-14 15:39:14.270 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 51.7026 ms
+2026-03-14 15:39:15.197 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 940.3838 ms
+2026-03-14 15:39:17.849 -03:00 [INF] HTTP OPTIONS /api/v1/cart/items responded 204 in 0.2552 ms
+2026-03-14 15:39:17.870 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 12.6335 ms
+2026-03-14 15:39:17.916 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 36.0369 ms
+2026-03-14 15:39:18.348 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 12.0094 ms
+2026-03-14 15:39:18.418 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 28.0646 ms
+2026-03-14 15:39:18.541 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 9.3905 ms
+2026-03-14 15:39:18.583 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 28.4659 ms
+2026-03-14 15:39:18.694 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 11.2238 ms
+2026-03-14 15:39:18.724 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 17.3483 ms
+2026-03-14 15:39:18.821 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 12.3868 ms
+2026-03-14 15:39:18.898 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 58.5634 ms
+2026-03-14 15:39:18.920 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 57.1227 ms
+2026-03-14 15:39:18.967 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 25.8911 ms
+2026-03-14 15:39:19.006 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 6.1572 ms
+2026-03-14 15:39:19.064 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 36.1651 ms
+2026-03-14 15:39:19.076 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 8.4247 ms
+2026-03-14 15:39:19.103 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 17.5498 ms
+2026-03-14 15:39:40.116 -03:00 [INF] HTTP OPTIONS /api/v1/cart/items responded 204 in 0.3753 ms
+2026-03-14 15:39:40.150 -03:00 [INF] HTTP POST /api/v1/cart/items responded 404 in 21.5025 ms
+2026-03-14 15:39:40.165 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0803 ms
+2026-03-14 15:39:40.193 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 22.3449 ms
+2026-03-14 15:39:59.967 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.2803 ms
+2026-03-14 15:39:59.968 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.3182 ms
+2026-03-14 15:40:00.121 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 137.4575 ms
+2026-03-14 15:40:00.231 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 252.3717 ms
+2026-03-14 15:40:16.896 -03:00 [INF] HTTP OPTIONS /api/v1/auth/logout responded 204 in 101.4049 ms
+2026-03-14 15:40:16.948 -03:00 [INF] HTTP OPTIONS /api/v1/auth/logout responded 204 in 0.0822 ms
+2026-03-14 15:40:17.403 -03:00 [INF] HTTP POST /api/v1/auth/logout responded 204 in 93.3721 ms
+2026-03-14 15:40:17.404 -03:00 [INF] HTTP POST /api/v1/auth/logout responded 204 in 78.8811 ms
+2026-03-14 15:40:28.692 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0898 ms
+2026-03-14 15:40:28.992 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 292.2035 ms
+2026-03-14 15:45:45.791 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 17.2329 ms
+2026-03-14 15:45:45.791 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 17.2442 ms
+2026-03-14 15:45:46.136 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 198.6487 ms
+2026-03-14 15:45:46.249 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 398.0211 ms
+2026-03-14 15:45:49.374 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 30.9196 ms
+2026-03-14 15:45:49.508 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 153.9548 ms
+2026-03-14 15:45:52.062 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.4486 ms
+2026-03-14 15:45:52.062 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0839 ms
+2026-03-14 15:45:52.092 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 16.3522 ms
+2026-03-14 15:45:52.168 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 82.6601 ms
+2026-03-14 15:45:55.192 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 47.2683 ms
+2026-03-14 15:45:55.262 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 118.0455 ms
+2026-03-14 15:45:59.539 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.0949 ms
+2026-03-14 15:45:59.539 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0351 ms
+2026-03-14 15:45:59.561 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 13.1326 ms
+2026-03-14 15:45:59.579 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 19.6581 ms
+2026-03-14 15:46:03.236 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 23.5713 ms
+2026-03-14 15:46:03.262 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 49.3840 ms
+2026-03-14 15:46:09.563 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.0822 ms
+2026-03-14 15:46:09.579 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0530 ms
+2026-03-14 15:46:09.610 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 20.1160 ms
+2026-03-14 15:46:09.658 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 84.6234 ms
+2026-03-14 15:46:15.002 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.0558 ms
+2026-03-14 15:46:15.003 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.1059 ms
+2026-03-14 15:46:15.051 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 20.9197 ms
+2026-03-14 15:46:15.069 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 52.5656 ms
+2026-03-14 15:46:21.857 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.1018 ms
+2026-03-14 15:46:21.858 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0317 ms
+2026-03-14 15:46:21.904 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 22.8261 ms
+2026-03-14 15:46:21.924 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 52.3654 ms
+2026-03-14 15:46:27.220 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.0922 ms
+2026-03-14 15:46:27.221 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.1223 ms
+2026-03-14 15:46:27.267 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 20.7851 ms
+2026-03-14 15:46:27.352 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 109.8435 ms
+2026-03-14 15:46:30.910 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 29.1004 ms
+2026-03-14 15:46:31.092 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 211.2685 ms
+2026-03-14 15:46:35.344 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.0787 ms
+2026-03-14 15:46:35.377 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 14.3484 ms
+2026-03-14 15:46:35.402 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0514 ms
+2026-03-14 15:46:35.451 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 18.1652 ms
+2026-03-14 15:46:39.546 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 16.5573 ms
+2026-03-14 15:46:39.586 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 19.2000 ms
+2026-03-14 15:46:44.902 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.2211 ms
+2026-03-14 15:46:44.905 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.0900 ms
+2026-03-14 15:46:44.995 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 37.6536 ms
+2026-03-14 15:46:45.018 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 61.1816 ms
+2026-03-14 15:46:48.884 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 9.2793 ms
+2026-03-14 15:46:48.974 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 105.7523 ms
+2026-03-14 15:47:21.840 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.2675 ms
+2026-03-14 15:47:21.840 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.1351 ms
+2026-03-14 15:47:22.352 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 16.0130 ms
+2026-03-14 15:47:22.656 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 318.7998 ms
+2026-03-14 17:06:25.372 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 23.2265 ms
+2026-03-14 17:06:25.372 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 23.8824 ms
+2026-03-14 17:07:51.664 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 2448.2397 ms
+2026-03-14 17:08:54.648 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 288.7950 ms
+2026-03-14 17:10:59.094 -03:00 [INF] HTTP POST /api/v1/cart/items responded 200 in 744.5601 ms
+2026-03-14 17:18:38.102 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 76.3078 ms
+2026-03-14 17:18:38.102 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 76.6086 ms
+2026-03-14 17:18:39.211 -03:00 [INF] HTTP GET /api/v1/cart responded 401 in 920.4122 ms
+2026-03-14 17:18:39.727 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 1436.2859 ms
+2026-03-14 17:18:43.168 -03:00 [INF] HTTP OPTIONS /api/v1/auth/refresh responded 204 in 0.1575 ms
+2026-03-14 17:18:43.987 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 401 in 784.3072 ms
+2026-03-14 17:23:58.293 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:23:58.574 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:23:58.591 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:23:58.605 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:23:58.623 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:23:58.640 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:24:03.004 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:24:03.056 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:24:03.069 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:24:03.092 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:24:03.111 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:24:03.180 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:19.721 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:20.002 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:20.013 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:20.024 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:20.041 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:20.049 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:22.777 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:22.848 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:22.877 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:22.926 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:23.008 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:25:23.055 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:31:37.196 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:09.358 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:09.442 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:09.463 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:09.481 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:09.509 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:11.704 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:11.715 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:11.756 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:11.778 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:11.791 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-14 17:32:11.800 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.

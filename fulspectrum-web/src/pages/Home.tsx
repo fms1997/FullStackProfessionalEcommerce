@@ -11,7 +11,8 @@ import {
   useRemoveCartItemMutation,
   useUpdateCartItemMutation,
 } from "../state/api";
-import { addLocalItem, hydrateServerCart } from "../state/cartSlice";
+// import { addLocalItem, hydrateServerCart } from "../state/cartSlice";
+import { addLocalItem, hydrateServerCart, removeLocalItem, updateLocalItem } from "../state/cartSlice";
 const parseBoolean = (value: string | null): boolean | undefined => {
   if (value === "true") return true;
   if (value === "false") return false;

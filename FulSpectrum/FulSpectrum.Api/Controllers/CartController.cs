@@ -30,6 +30,185 @@ public sealed class CartController : ControllerBase
         return Ok(await MapCartAsync(cart.Id, ct));
     }
 
+    //[HttpPost("items")]
+    //public async Task<ActionResult<CartDto>> AddItem([FromBody] AddCartItemRequest request, CancellationToken ct)
+    //{
+    //    if (request.Quantity <= 0)
+    //    {
+    //        return ValidationProblem(new ValidationProblemDetails(
+    //            new Dictionary<string, string[]>
+    //            {
+    //                [nameof(request.Quantity)] = ["La cantidad debe ser mayor a 0."]
+    //            }));
+    //    }
+
+    //    var cart = await GetOrCreateCartAsync(ct);
+
+    //    if (!TryApplyRowVersion(cart, request.RowVersion, out var error))
+    //    {
+    //        return Conflict(new { message = error });
+    //    }
+
+    //    var product = await _db.Products
+    //        .AsNoTracking()
+    //        .FirstOrDefaultAsync(p => p.Id == request.ProductId && p.IsPublished, ct);
+
+    //    if (product is null)
+    //    {
+    //        return NotFound(new { message = "Producto no encontrado o no publicado." });
+    //    }
+
+    //    var available = await GetAvailableStockAsync(request.ProductId, ct);
+    //    var existing = cart.Items.FirstOrDefault(x => x.ProductId == request.ProductId);
+
+    //    if (existing is null && cart.Items.Count >= MaxDistinctItems)
+    //    {
+    //        return Conflict(new
+    //        {
+    //            message = $"El carrito permite hasta {MaxDistinctItems} productos distintos."
+    //        });
+    //    }
+
+    //    var desired = (existing?.Quantity ?? 0) + request.Quantity;
+    //    var capped = Math.Min(desired, MaxUnitsPerProduct);
+
+    //    if (capped > available)
+    //    {
+    //        return Conflict(new
+    //        {
+    //            message = "No hay stock suficiente para la cantidad solicitada.",
+    //            availableStock = available
+    //        });
+    //    }
+
+    //    if (existing is null)
+    //    {
+    //        cart.Items.Add(new CartItem
+    //        {
+    //            Id = Guid.NewGuid(),
+    //            CartId = cart.Id,
+    //            ProductId = request.ProductId,
+    //            Quantity = capped,
+    //            CreatedAtUtc = DateTime.UtcNow,
+    //            UpdatedAtUtc = DateTime.UtcNow
+    //        });
+    //    }
+    //    else
+    //    {
+    //        existing.Quantity = capped;
+    //        existing.UpdatedAtUtc = DateTime.UtcNow;
+    //    }
+
+    //    cart.UpdatedAtUtc = DateTime.UtcNow;
+
+    //    try
+    //    {
+    //        await _db.SaveChangesAsync(ct);
+    //    }
+    //    catch (DbUpdateConcurrencyException)
+    //    {
+    //        return Conflict(new
+    //        {
+    //            message = "El carrito fue modificado por otro proceso. Recargá el carrito e intentá nuevamente."
+    //        });
+    //    }
+
+    //    return Ok(await MapCartAsync(cart.Id, ct));
+    //}
+
+
+    //[HttpPost("items")]
+    //public async Task<ActionResult<CartDto>> AddItem([FromBody] AddCartItemRequest request, CancellationToken ct)
+    //{
+    //    if (request.Quantity <= 0)
+    //    {
+    //        return ValidationProblem(new ValidationProblemDetails(
+    //            new Dictionary<string, string[]>
+    //            {
+    //                [nameof(request.Quantity)] = ["La cantidad debe ser mayor a 0."]
+    //            }));
+    //    }
+
+    //    var cart = await GetOrCreateCartAsync(ct);
+
+    //    var product = await _db.Products
+    //        .AsNoTracking()
+    //        .FirstOrDefaultAsync(p => p.Id == request.ProductId && p.IsPublished, ct);
+
+    //    if (product is null)
+    //    {
+    //        return NotFound(new { message = "Producto no encontrado o no publicado." });
+    //    }
+
+    //    var available = await GetAvailableStockAsync(request.ProductId, ct);
+    //    var existing = cart.Items.FirstOrDefault(x => x.ProductId == request.ProductId);
+
+    //    if (existing is null && cart.Items.Count >= MaxDistinctItems)
+    //    {
+    //        return Conflict(new
+    //        {
+    //            message = $"El carrito permite hasta {MaxDistinctItems} productos distintos."
+    //        });
+    //    }
+
+    //    var desired = (existing?.Quantity ?? 0) + request.Quantity;
+    //    var capped = Math.Min(desired, MaxUnitsPerProduct);
+
+    //    if (capped > available)
+    //    {
+    //        return Conflict(new
+    //        {
+    //            message = "No hay stock suficiente para la cantidad solicitada.",
+    //            availableStock = available
+    //        });
+    //    }
+
+    //    if (existing is null)
+    //    {
+    //        cart.Items.Add(new CartItem
+    //        {
+    //            Id = Guid.NewGuid(),
+    //            CartId = cart.Id,
+    //            ProductId = request.ProductId,
+    //            Quantity = capped,
+    //            CreatedAtUtc = DateTime.UtcNow,
+    //            UpdatedAtUtc = DateTime.UtcNow
+    //        });
+    //    }
+    //    else
+    //    {
+    //        existing.Quantity = capped;
+    //        existing.UpdatedAtUtc = DateTime.UtcNow;
+    //    }
+
+    //    cart.UpdatedAtUtc = DateTime.UtcNow;
+
+    //    try
+    //    {
+    //        await _db.SaveChangesAsync(ct);
+    //    }
+    //    catch (DbUpdateConcurrencyException ex)
+    //    {
+    //        return Conflict(new
+    //        {
+    //            message = "Conflicto de concurrencia al guardar el carrito.",
+    //            entries = ex.Entries.Select(e => new
+    //            {
+    //                entity = e.Metadata.Name,
+    //                state = e.State.ToString(),
+    //                originalValues = e.Properties.ToDictionary(
+    //                    p => p.Metadata.Name,
+    //                    p => e.OriginalValues[p.Metadata.Name]
+    //                )
+    //            })
+    //        });
+    //    }
+
+    //    return Ok(await MapCartAsync(cart.Id, ct));
+    //}
+
+
+
     [HttpPost("items")]
     public async Task<ActionResult<CartDto>> AddItem([FromBody] AddCartItemRequest request, CancellationToken ct)
     {
@@ -44,11 +223,6 @@ public sealed class CartController : ControllerBase
 
         var cart = await GetOrCreateCartAsync(ct);
 
-        if (!TryApplyRowVersion(cart, request.RowVersion, out var error))
-        {
-            return Conflict(new { message = error });
-        }
-
         var product = await _db.Products
             .AsNoTracking()
             .FirstOrDefaultAsync(p => p.Id == request.ProductId && p.IsPublished, ct);
@@ -59,9 +233,14 @@ public sealed class CartController : ControllerBase
         }
 
         var available = await GetAvailableStockAsync(request.ProductId, ct);
-        var existing = cart.Items.FirstOrDefault(x => x.ProductId == request.ProductId);
 
-        if (existing is null && cart.Items.Count >= MaxDistinctItems)
+        var existing = await _db.CartItems
+            .FirstOrDefaultAsync(x => x.CartId == cart.Id && x.ProductId == request.ProductId, ct);
+
+        var distinctItemsCount = await _db.CartItems
+            .CountAsync(x => x.CartId == cart.Id, ct);
+
+        if (existing is null && distinctItemsCount >= MaxDistinctItems)
         {
             return Conflict(new
             {
@@ -83,7 +262,7 @@ public sealed class CartController : ControllerBase
 
         if (existing is null)
         {
-            cart.Items.Add(new CartItem
+            _db.CartItems.Add(new CartItem
             {
                 Id = Guid.NewGuid(),
                 CartId = cart.Id,
@@ -109,12 +288,22 @@ public sealed class CartController : ControllerBase
         {
             return Conflict(new
             {
-                message = "El carrito fue modificado por otro proceso. Recargá el carrito e intentá nuevamente."
+                message = "El carrito cambió mientras intentabas actualizarlo. Recargá e intentá de nuevo."
             });
         }
 
         return Ok(await MapCartAsync(cart.Id, ct));
     }
+
+
+
+
+
+
+
+
+
+
 
     [HttpPut("items/{productId:guid}")]
     public async Task<ActionResult<CartDto>> UpdateItem(Guid productId, [FromBody] UpdateCartItemRequest request, CancellationToken ct)

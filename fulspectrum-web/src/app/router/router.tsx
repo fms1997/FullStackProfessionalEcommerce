@@ -7,6 +7,7 @@ import Register from "../../pages/auth/Register";
 import ForgotPassword from "../../pages/auth/ForgotPassword";
 import RequireAuth from "../../shared/components/auth/RequireAuth";
 import Forbidden from "../../pages/Forbiddden";
+import Checkout from "../../pages/Checkout";
 // import ErrorTest from "../../shared/components/ErrorTest";
  export const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ import Forbidden from "../../pages/Forbiddden";
     children: [
       {
         element: <RequireAuth roles={["Admin", "Customer"]} />,
-        children: [{ index: true, element: <Home /> }],
+  children: [{ index: true, element: <Home /> }, { path: "checkout", element: <Checkout /> }],
       },
       { path: "forbidden", element: <Forbidden /> },
       { path: "login", element: <Login /> },

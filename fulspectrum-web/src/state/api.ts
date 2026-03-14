@@ -1,10 +1,10 @@
 import { env } from "../config/env";
-import type {
-  CartDto,
-  PagedResponse,
-  ProductDto,
-  ProductListQuery,
-} from "../types/api";
+// import type {
+//   CartDto,
+//   PagedResponse,
+//   ProductDto,
+//   ProductListQuery,
+// } from "../types/api";
 import {
   createApi,
   fetchBaseQuery,
@@ -19,6 +19,7 @@ import {
   type UserProfile,
 } from "./authSlice";
 import type { RootState } from "./store";
+import type { CartDto, CheckoutPreview, OrderDto, PagedResponse, ProductDto, ProductListQuery, ShippingAddress } from "../types/api";
 const toQueryString = (query: ProductListQuery) => {
   const params = new URLSearchParams();
 
@@ -166,15 +167,29 @@ export const catalogApi = createApi({
       }),
       invalidatesTags: ["Cart"],
     }),
-    mergeCart: builder.mutation<
-      CartDto,
-      {
-        items: Array<{ productId: string; quantity: number }>;
-        rowVersion?: string;
-      }
-    >({
+    // mergeCart: builder.mutation<
+    //   CartDto,
+    //   {
+    //     items: Array<{ productId: string; quantity: number }>;
+    //     rowVersion?: string;
+    //   }
+    // >({
+    //   query: (body) => ({ url: "/api/v1/cart/merge", method: "POST", body }),
+    //   invalidatesTags: ["Cart"],
+    // }),
+    mergeCart: builder.mutation<CartDto, { items: Array<{ productId: string; quantity: number }>; rowVersion?: string }>({
       query: (body) => ({ url: "/api/v1/cart/merge", method: "POST", body }),
       invalidatesTags: ["Cart"],
+    }),
+    previewCheckout: builder.mutation<CheckoutPreview, { shippingAddress: ShippingAddress }>({
+      query: (body) => ({ url: "/api/v1/checkout/preview", method: "POST", body }),
+    }),
+    placeOrder: builder.mutation<OrderDto, { shippingAddress: ShippingAddress }>({
+      query: (body) => ({ url: "/api/v1/checkout/orders", method: "POST", body }),
+      invalidatesTags: ["Cart"],
+    }),
+    updateOrderStatus: builder.mutation<OrderDto, { orderId: string; status: string }>({
+      query: ({ orderId, status }) => ({ url: `/api/v1/checkout/orders/${orderId}/status`, method: "PATCH", body: { status } }),
     }),
   }),
 });
@@ -193,4 +208,7 @@ export const {
   useUpdateCartItemMutation,
   useRemoveCartItemMutation,
   useMergeCartMutation,
+  usePreviewCheckoutMutation,
+  usePlaceOrderMutation,
+  useUpdateOrderStatusMutation,
 } = catalogApi;

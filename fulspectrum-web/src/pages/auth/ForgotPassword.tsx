@@ -97,7 +97,8 @@ export default function ForgotPassword() {
       <form
         onSubmit={async (e) => {
           e.preventDefault();
-          await resetPassword({ email, token, newPassword });
+          // await resetPassword({ email, token, newPassword });
+          await resetPassword({ token, newPassword });
         }}
         className="space-y-3 border rounded p-4"
       >

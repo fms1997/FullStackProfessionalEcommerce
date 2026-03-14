@@ -1,328 +1,207 @@
-# Etapa 4 — Carrito avanzado + sincronización (paso a paso)
-
-Esta guía sirve para probar de punta a punta:
-
-- **Backend:** carrito persistente, endpoints completos, reglas de negocio, concurrencia básica con row version.
-- **Frontend:** carrito anónimo, merge al loguear, optimistic UI y debounce de updates.
-
----
-
-## 0) Prerrequisitos
-
-- Backend corriendo (`FulSpectrum.Api`).
-- Frontend corriendo (`fulspectrum-web`).
-- Base de datos accesible.
-- `curl` instalado.
-
-> Variables usadas en ejemplos:
-
-```bash
-API="http://localhost:5000"
-WEB="http://localhost:5173"
-```
-
----
-
 ## 1) Levantar servicios
-
-### 1.1 Backend
-
-```bash
+## 1.1 Backend
 cd FulSpectrum
 dotnet run --project FulSpectrum.Api
-```
-
-### 1.2 Frontend
-
-```bash
+## 1.2 Frontend
 cd fulspectrum-web
 npm install
 npm run dev
-```
-
----
-
 ## 2) Smoke checks iniciales
-
-```bash
 curl -i "$API/health/live"
 curl -i "$API/health/ready"
 curl -i "$API/api/v1/products"
-```
-
 Esperado:
 
-- `200 OK` en health.
-- catálogo responde con productos.
+200 OK en health.
 
----
+Catálogo responde con productos.
 
-## 3) Preparar usuario autenticado para pruebas de carrito
+## 3) Preparar autenticación y carrito
+## 3.1 Register/Login
+Si no existe el usuario de pruebas:
 
-### 3.1 Register (si no existe)
-
-```bash
 curl -i -c cookies.txt -X POST "$API/api/v1/auth/register" \
   -H "Content-Type: application/json" \
   -d '{
-    "email":"cliente.cart@test.com",
+    "email":"cliente.checkout@test.com",
     "password":"Cliente123!",
     "firstName":"Cliente",
-    "lastName":"Cart"
+    "lastName":"Checkout"
   }'
-```
+Si ya existe:
 
-Si ya existe, usa login:
-
-```bash
 curl -i -c cookies.txt -X POST "$API/api/v1/auth/login" \
   -H "Content-Type: application/json" \
-  -d '{"email":"cliente.cart@test.com","password":"Cliente123!"}'
-```
+  -d '{"email":"cliente.checkout@test.com","password":"Cliente123!"}'
+Guardar accessToken:
 
-Guarda el `accessToken` en variable:
+ACCESS_TOKEN="<pega_access_token_aqui>"
+## 3.2 Cargar carrito con ítems
+Tomar un producto del catálogo:
 
-```bash
-ACCESS_TOKEN="<pega_token_aqui>"
-```
+PRODUCT_ID=$(curl -s "$API/api/v1/products" | jq -r '.items[0].id')
+Obtener carrito para leer rowVersion:
 
----
-
-## 4) Backend — endpoints completos de carrito
-
-## 4.1 Obtener carrito (creación implícita)
-
-```bash
-curl -i "$API/api/v1/cart" \
+curl -s "$API/api/v1/cart" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -b cookies.txt
-```
+  -b cookies.txt > cart.json
 
-Esperado:
+ROW_VERSION=$(jq -r '.rowVersion' cart.json)
+Agregar producto:
 
-- `200 OK`
-- body con `id`, `rowVersion`, `items`.
-
-Guarda valores:
-
-```bash
-CART_ROW_VERSION="<row_version_actual>"
-PRODUCT_ID="<id_producto_existente>"
-```
-
-> Puedes sacar un `PRODUCT_ID` desde:
-
-```bash
-curl -s "$API/api/v1/products" | jq -r '.items[0].id'
-```
-
-## 4.2 Agregar item al carrito
-
-```bash
 curl -i -X POST "$API/api/v1/cart/items" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/json" \
   -b cookies.txt \
-  -d "{\"productId\":\"$PRODUCT_ID\",\"quantity\":1,\"rowVersion\":\"$CART_ROW_VERSION\"}"
-```
+  -d "{\"productId\":\"$PRODUCT_ID\",\"quantity\":2,\"rowVersion\":\"$ROW_VERSION\"}"
+## 4) Backend — preview del checkout
+Este endpoint valida dirección y calcula subtotal/shipping/tax/total en servidor.
 
-Esperado:
-
-- `200 OK`
-- item agregado
-- `rowVersion` nuevo.
-
-## 4.3 Actualizar cantidad
-
-```bash
-NEW_ROW_VERSION="<row_version_nuevo>"
-
-curl -i -X PUT "$API/api/v1/cart/items/$PRODUCT_ID" \
+curl -i -X POST "$API/api/v1/checkout/preview" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/json" \
   -b cookies.txt \
-  -d "{\"quantity\":3,\"rowVersion\":\"$NEW_ROW_VERSION\"}"
-```
+  -d '{
+    "shippingAddress": {
+      "fullName": "Ada Lovelace",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "Depto 2",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "62701",
+      "countryCode": "US"
+    }
+  }'
+Validar en respuesta:
 
+items[] con snapshot de checkout (productName, sku, unitPrice, quantity, lineTotal).
+
+totals.subtotal, totals.shippingAmount, totals.taxAmount, totals.total.
+
+shippingAddress reflejando la dirección validada.
+
+## 5) Backend — crear orden
+curl -i -X POST "$API/api/v1/checkout/orders" \
+  -H "Authorization: Bearer $ACCESS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -b cookies.txt \
+  -d '{
+    "shippingAddress": {
+      "fullName": "Ada Lovelace",
+      "addressLine1": "742 Evergreen Terrace",
+      "addressLine2": "Depto 2",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "62701",
+      "countryCode": "US"
+    }
+  }' | tee order-create.json
 Esperado:
 
-- `200 OK`
-- cantidad actualizada.
+201 Created.
 
-## 4.4 Quitar item
+Estado inicial de orden: PendingPayment.
 
-```bash
-ROW_VERSION_2="<row_version_actual>"
+Items persistidos con snapshot (nombre/SKU/precio/cantidad).
 
-curl -i -X DELETE "$API/api/v1/cart/items/$PRODUCT_ID?rowVersion=$ROW_VERSION_2" \
+Carrito vacío luego de crear la orden.
+
+Guardar ID:
+
+ORDER_ID=$(jq -r '.id' order-create.json)
+## 6) Backend — consultar orden y verificar snapshot
+curl -i "$API/api/v1/checkout/orders/$ORDER_ID" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -b cookies.txt
-```
+Validar:
 
-Esperado:
+Totales consistentes con preview/creación.
 
-- `200 OK`
-- item removido.
+Snapshot de ítems/precios persistido en la orden.
 
-## 4.5 Merge de carrito anónimo
+La orden no depende del catálogo en tiempo real para mostrar histórico.
 
-```bash
-ROW_VERSION_3="<row_version_actual>"
-
-curl -i -X POST "$API/api/v1/cart/merge" \
+## 7) Backend — state machine de orden
+## 7.1 Transición válida
+curl -i -X PATCH "$API/api/v1/checkout/orders/$ORDER_ID/status" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/json" \
   -b cookies.txt \
-  -d "{
-    \"items\": [
-      { \"productId\": \"$PRODUCT_ID\", \"quantity\": 2 }
-    ],
-    \"rowVersion\": \"$ROW_VERSION_3\"
-  }"
-```
+  -d '{"status":"Paid"}'
+Esperado: 200 OK y estado actualizado.
 
-Esperado:
-
-- `200 OK`
-- cantidades mergeadas y limitadas por reglas.
-
-## 4.6 Limpiar carrito completo
-
-```bash
-ROW_VERSION_4="<row_version_actual>"
-
-curl -i -X DELETE "$API/api/v1/cart?rowVersion=$ROW_VERSION_4" \
-  -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -b cookies.txt
-```
-
-Esperado:
-
-- `200 OK`
-- carrito sin items.
-
----
-
-## 5) Backend — reglas de negocio
-
-### 5.1 Validar cantidad inválida (<= 0)
-
-```bash
-curl -i -X POST "$API/api/v1/cart/items" \
+## 7.2 Transición inválida (debe fallar)
+curl -i -X PATCH "$API/api/v1/checkout/orders/$ORDER_ID/status" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/json" \
   -b cookies.txt \
-  -d '{"productId":"'$PRODUCT_ID'","quantity":0}'
-```
-
-Esperado: error de validación (400).
-
-### 5.2 Validar límite por producto
-
-```bash
-curl -i -X POST "$API/api/v1/cart/items" \
-  -H "Authorization: Bearer $ACCESS_TOKEN" \
-  -H "Content-Type: application/json" \
-  -b cookies.txt \
-  -d '{"productId":"'$PRODUCT_ID'","quantity":999}'
-```
-
+  -d '{"status":"Completed"}'
 Esperado:
 
-- no debe permitir superar límite/capacidad de stock.
-- respuesta de conflicto o ajuste según lógica implementada.
+409 Conflict.
 
-### 5.3 Validar stock insuficiente
+Mensaje indicando transición inválida.
 
-Repite con un producto de stock bajo y cantidad alta.
-Esperado: conflicto por stock insuficiente.
+## 8) Frontend — validar wizard de checkout
+Abrir http://localhost:5173.
 
----
+Iniciar sesión con usuario Customer.
 
-## 6) Backend — concurrencia básica (row version)
+Agregar productos al carrito.
 
-Abrir **dos terminales** (A y B), ambos con mismo usuario y carrito.
+Ir a Checkout desde el header.
 
-1. A pide carrito y guarda `rowVersion = RV1`.
-2. B pide carrito y guarda también `RV1`.
-3. A hace `POST /cart/items` usando `RV1` (éxito, ahora rowVersion cambia a `RV2`).
-4. B intenta `POST /cart/items` usando **RV1 viejo**.
+Paso Dirección:
 
-Esperado:
+Intentar continuar con campos vacíos.
 
-- B debe recibir `409 Conflict` por versión desactualizada.
+Deben aparecer errores por campo.
 
----
+Completar dirección válida y continuar.
 
-## 7) Frontend — carrito anónimo
+Paso Revisión:
 
-1. Abrir la web en incógnito **sin login**.
-2. En Home, click en “Agregar al carrito” en 2–3 productos.
-3. Recargar página.
+Confirmar ítems + totales calculados por backend.
 
-Esperado:
+Confirmar compra.
 
-- los items siguen presentes (persistencia localStorage).
+Paso Resultado:
 
-Verificación opcional (DevTools):
+Ver ID de orden, estado y total final.
 
-- `Application > Local Storage` y revisar clave del carrito anónimo.
+Accesibilidad mínima esperada
+Cambio de foco al título/encabezado del paso actual.
 
----
+Mensajes de progreso con aria-live.
 
-## 8) Frontend — merge al loguear
+Resumen de errores de validación con role="alert".
 
-1. Sin login, agrega items al carrito.
-2. Inicia sesión con usuario customer.
-3. Vuelve a Home.
+## 9) Checklist de aceptación (Etapa 5)
+ Dirección validada correctamente por backend.
 
-Esperado:
+ Shipping e impuestos aplicados en backend.
 
-- el carrito local se fusiona al carrito del servidor.
-- el carrito anónimo local queda limpio tras merge exitoso.
+ Totales finales vienen del backend (fuente de verdad).
 
----
+ Snapshot de ítems/precios guardado al crear orden.
 
-## 9) Frontend — optimistic UI
+ State machine de orden activa (acepta/rechaza transiciones correctamente).
 
-1. Ya logueado, click “Agregar al carrito”.
-2. Observa la UI inmediatamente.
+ Wizard frontend por pasos funcionando.
 
-Esperado:
+ Validación por paso funcionando en UI.
 
-- la cantidad/lista refleja el cambio **antes** de terminar roundtrip de red.
-- luego se reconcilia con respuesta del backend.
+ Accesibilidad básica (foco + alertas + live region) presente.
 
----
+## 10) Casos de error recomendados
+countryCode inválido (no ISO de 2 letras) en preview/create.
 
-## 10) Frontend — debounce en updates
+Crear orden con carrito vacío.
 
-1. Ya logueado, cambia cantidad en input rápidamente (ej: 1 → 2 → 3 → 4).
-2. En Network, filtra requests a `/api/v1/cart/items/{productId}`.
+Estado inexistente en PATCH (ej. "RandomStatus") ⇒ validación.
 
-Esperado:
+Transición inválida en state machine ⇒ 409.
 
-- no se envía una request por cada tecla.
-- se envía update consolidado tras la ventana de debounce.
+Leer orden de otro usuario ⇒ 404.
 
----
-
-## 11) Checklist final de aceptación
-
-- [ ] Carrito backend persiste por usuario.
-- [ ] Endpoints de carrito responden correctamente.
-- [ ] Reglas de stock/límites aplican.
-- [ ] Concurrencia por row version devuelve conflicto cuando corresponde.
-- [ ] Carrito anónimo persiste en frontend.
-- [ ] Merge al loguear funciona.
-- [ ] Optimistic UI se percibe fluido.
-- [ ] Debounce reduce tráfico de updates.
-
----
-
-## 12) Troubleshooting rápido
-
-- Si `401` en carrito: revisar `ACCESS_TOKEN` y cookie refresh.
-- Si `403`: revisar rol y policy (`CustomerOrAdmin`).
-- Si no mergea en frontend: revisar request `POST /api/v1/cart/merge` en Network.
-- Si no persiste anónimo: validar `localStorage` y ausencia de errores JS.
+Producto ya no publicado entre carrito y checkout ⇒ error consistente

@@ -38,10 +38,10 @@ export default function AppLayout() {
   return (
     <div className="min-h-screen">
       <header className="border-b p-4 flex items-center justify-between">
-        <div className="font-semibold">FulSpectrum</div>
-        <div className="font-semibold">FulSpectrum</div>
+         <div className="font-semibold">FulSpectrum</div>
         <nav className="flex items-center gap-3 text-sm">
           <Link to="/">Inicio</Link>
+                    {profile && <Link to="/checkout">Checkout</Link>}
           {!profile ? (
             <>
               <Link to="/login">Login</Link>
