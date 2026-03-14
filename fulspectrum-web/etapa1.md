@@ -41,10 +41,10 @@ La API aplica migraciones al iniciar y crea usuario admin por código de inicial
 Comprobar con SQL:
 
 ```sql
-SELECT COUNT(*) AS CategoriesCount FROM Categories;
+SELECT) AS CategoriesCount FROM Categories;
 SELECT COUNT(*) AS ProductsCount FROM Products;
 SELECT COUNT(*) AS VariantsCount FROM Variants;
-SELECT COUNT(*) AS InventoryCount FROM Inventory;
+SELECT COUNT(*) AS InventoryCount FROM Inventory; COUNT(*
 SELECT Email, Role FROM Users WHERE NormalizedEmail = 'ADMIN@FULSPECTRUM.LOCAL';
 ```
 
