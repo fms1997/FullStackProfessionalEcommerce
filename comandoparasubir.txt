@@ -1,3 +1,16 @@
-git push origin main 
- dotnet ef migrations add SyncModel --context FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext
-dotnet ef database update --context FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext
+- git push origin main 
+- dotnet ef migrations add SyncModel --context FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext
+- dotnet ef database update --context FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext
+
+
+- email de prueba:
+{
+  "email":"franco.sassi97@gmail.com",
+    "password":"Avenida.1997"
+}
+
+
+{
+  "email":"cliente1@test.com",
+    "password":"Nueva123!"
+}

@@ -78,8 +78,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -90,8 +98,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\InventoryItemConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:34:29.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:34:29.173Z"
             },
             {
               "$type": "Document",
@@ -101,7 +108,7 @@
               "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-14T02:33:47.773Z",
               "EditorCaption": ""
@@ -116,8 +123,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\AppUserConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:34:57.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:34:57.335Z"
             },
             {
               "$type": "Document",
@@ -129,8 +135,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seed\\ProductConfiguration.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:09.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:33:09.538Z"
             },
             {
               "$type": "Document",
@@ -142,8 +147,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260305193023_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:24.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:33:24.116Z"
             },
             {
               "$type": "Document",
@@ -155,8 +159,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedMarker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:18.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:33:18.635Z"
             },
             {
               "$type": "Document",
@@ -168,8 +171,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedIds.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:14.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:33:14.023Z"
             },
             {
               "$type": "Document",
@@ -181,8 +183,7 @@
               "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:30:24.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:30:24.626Z"
             },
             {
               "$type": "Document",
@@ -194,8 +195,7 @@
               "RelativeToolTip": "FulSpectrum.Domain\\Identity\\UserRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:30:13.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T02:30:13.484Z"
             },
             {
               "$type": "Document",
@@ -207,16 +207,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T01:13:15.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2026-03-14T01:13:15.023Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\logs\\log-20260312.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-14T01:11:37.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T01:11:37.364Z"
             },
             {
               "$type": "Document",
@@ -241,21 +231,19 @@
               "RelativeToolTip": "FulSpectrum.Api\\FulSpectrum.Api.csproj.Backup.tmp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-14T01:09:20.766Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T01:09:20.766Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "FulSpectrum.Api",
+              "Title": "FulSpectrum.Api.csproj",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "RelativeToolTip": "FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-14T01:09:12.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-14T01:09:12.1Z"
             },
             {
               "$type": "Document",
@@ -267,8 +255,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAQwHwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T02:59:06.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T02:59:06.821Z"
             },
             {
               "$type": "Document",
@@ -304,8 +291,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T00:18:15.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-11T00:18:15.032Z"
             }
           ]
         }
