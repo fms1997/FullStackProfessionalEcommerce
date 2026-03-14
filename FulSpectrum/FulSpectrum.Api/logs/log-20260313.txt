@@ -30,3 +30,6 @@
 2026-03-13 21:51:06.549 -03:00 [WRN] Failed to determine the https port for redirect.
 2026-03-13 21:51:07.109 -03:00 [INF] HTTP GET /health/live responded 200 in 614.5023 ms
 2026-03-13 21:51:27.023 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 127.2565 ms
+2026-03-13 21:56:20.161 -03:00 [INF] HTTP HEAD /api/v1/ping responded 405 in 12.5265 ms
+2026-03-13 21:57:22.949 -03:00 [INF] HTTP GET /api/v1/ping responded 200 in 167.8705 ms
+2026-03-13 21:57:38.020 -03:00 [INF] HTTP OPTIONS /api/v1/ping responded 204 in 73.0338 ms
