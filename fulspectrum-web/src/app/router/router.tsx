@@ -7,7 +7,8 @@ import Register from "../../pages/auth/Register";
 import ForgotPassword from "../../pages/auth/ForgotPassword";
 import RequireAuth from "../../shared/components/auth/RequireAuth";
 import Forbidden from "../../pages/Forbiddden";
-export const router = createBrowserRouter([
+// import ErrorTest from "../../shared/components/ErrorTest";
+ export const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
@@ -20,6 +21,8 @@ export const router = createBrowserRouter([
       { path: "login", element: <Login /> },
       { path: "register", element: <Register /> },
       { path: "forgot-password", element: <ForgotPassword /> },
+       //    { path: "error-test", element: <ErrorTest /> },
+
     ],
   },
   { path: "*", element: <NotFound /> },

@@ -19,3 +19,14 @@
 2026-03-13 00:04:40.332 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 19.2164 ms
 2026-03-13 00:04:47.477 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 30.5387 ms
 2026-03-13 00:04:50.801 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 12.6182 ms
+2026-03-13 21:46:35.143 -03:00 [INF] Initializing UI Database
+2026-03-13 21:46:37.538 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-13 21:46:38.619 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-13 21:46:38.705 -03:00 [INF] Hosting environment: Development
+2026-03-13 21:46:38.737 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-13 21:48:44.522 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 635.8620 ms
+2026-03-13 21:48:51.070 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 430.8867 ms
+2026-03-13 21:48:54.295 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 51.4269 ms
+2026-03-13 21:51:06.549 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-13 21:51:07.109 -03:00 [INF] HTTP GET /health/live responded 200 in 614.5023 ms
+2026-03-13 21:51:27.023 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 127.2565 ms
