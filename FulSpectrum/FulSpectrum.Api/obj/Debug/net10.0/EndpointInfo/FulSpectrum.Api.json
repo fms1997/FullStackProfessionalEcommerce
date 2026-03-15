@@ -812,6 +812,13 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "X-Signature",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "requestBody": {

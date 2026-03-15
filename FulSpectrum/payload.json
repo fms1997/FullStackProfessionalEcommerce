@@ -1,0 +1,10 @@
+{
+  "eventId": "evt-1001",
+  "eventType": "payment.updated",
+  "paymentId": "<providerPaymentId_del_attempt>",
+  "status": "Succeeded",
+  "amount": 120.5,
+  "currency": "USD",
+  "errorCode": null,
+  "errorMessage": null
+}

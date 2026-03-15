@@ -478,6 +478,11 @@
         "IsRequired": true
       },
       {
+        "Name": "X-Signature",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
         "Name": "request",
         "Type": "FulSpectrum.Api.Controllers.PaymentWebhookRequest",
         "IsRequired": true
