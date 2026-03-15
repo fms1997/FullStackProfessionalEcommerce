@@ -33,7 +33,7 @@ public sealed class Order
     public string ShippingCountryCode { get; set; } = string.Empty;
 
     public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
-
+    public ICollection<Payment> Payments { get; set; } = new List<Payment>();
     public bool TryTransitionTo(OrderStatus nextStatus, out string? error)
     {
         error = null;

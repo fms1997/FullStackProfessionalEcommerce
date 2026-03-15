@@ -403,6 +403,89 @@
     ]
   },
   {
+    "ContainingType": "FulSpectrum.Api.Controllers.PaymentsController",
+    "Method": "CreateAttempt",
+    "RelativePath": "api/v1/payments/orders/{orderId}/attempts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "Idempotency-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.CreatePaymentAttemptRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.PaymentAttemptDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.PaymentsController",
+    "Method": "GetOrderPaymentStatus",
+    "RelativePath": "api/v1/payments/orders/{orderId}/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.PaymentStatusDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.PaymentsController",
+    "Method": "ReceiveWebhook",
+    "RelativePath": "api/v1/payments/webhooks/{provider}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "provider",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.PaymentWebhookRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FulSpectrum.Api.Controllers.PingController",
     "Method": "Get",
     "RelativePath": "api/v1/ping",

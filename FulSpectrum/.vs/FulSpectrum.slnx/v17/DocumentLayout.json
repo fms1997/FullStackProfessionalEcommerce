@@ -3,140 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\checkoutdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\checkoutdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\paymentwebhooklogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\paymentwebhooklogconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\orderitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\orderitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\paymentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\paymentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\fulspectrumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\fulspectrumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\paymentwebhooklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\paymentwebhooklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\inventoryitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\inventoryitemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\migrations\\20260314163205_seedproductsstep2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\migrations\\20260314163205_seedproductsstep2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\cartdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\cartdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\migrations\\20260314151157_resyncseedproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\migrations\\20260314151157_resyncseedproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\seed\\seedmarker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\seed\\seedmarker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\migrations\\20260305193023_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\migrations\\20260305193023_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\migrations\\20260314151157_resyncseedproducts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\migrations\\20260314151157_resyncseedproducts.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\seed\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\seed\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\seeds\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\seeds\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\productvariantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\productvariantconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.infrastructure\\persistence\\seed\\seedids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEE8E9B8-EB8E-9123-923D-19D9EF07719F}|FulSpectrum.Infrastructure\\FulSpectrum.Infrastructure.csproj|solutionrelative:fulspectrum.infrastructure\\persistence\\seed\\seedids.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\catalog\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\catalog\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.domain\\identity\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E37230F9-3AFA-E299-178E-D67EE9DA0846}|FulSpectrum.Domain\\FulSpectrum.Domain.csproj|solutionrelative:fulspectrum.domain\\identity\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\logs\\log-20260312.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\logs\\log-20260312.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\fulspectrum.api.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\fulspectrum.api.csproj.backup.tmp||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\fulspectrum.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\fulspectrum.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\logs\\log-20260309.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\logs\\log-20260309.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\paymentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\paymentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -164,429 +68,127 @@
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CheckoutController.cs",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutController.cs",
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CheckoutController.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAgwOwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAN0AAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:22:12.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\OrderItem.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\OrderItem.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\OrderItem.cs",
-              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\OrderItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:21:12.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Order.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\Order.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Order.cs",
-              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\Order.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAIwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:21:05.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OrderConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\OrderConfiguration.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\OrderConfiguration.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\OrderConfiguration.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\OrderConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:20:29.008Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Program.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Program.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Program.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAiwKUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T00:21:48.388Z",
+              "WhenOpened": "2026-03-15T15:06:13.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CheckoutDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Title": "PaymentWebHookLogConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
+              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:22:30.781Z",
+              "WhenOpened": "2026-03-15T14:43:12.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OrderItemConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\OrderItemConfiguration.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\OrderItemConfiguration.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\OrderItemConfiguration.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\OrderItemConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T20:19:36.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Cart.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\Cart.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Cart.cs",
-              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T17:56:06.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "FulSpectrumDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T17:50:24.589Z",
+              "WhenOpened": "2026-03-15T14:42:05.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InventoryItem.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\InventoryItem.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\InventoryItem.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\InventoryItem.cs",
-              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\InventoryItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentsController.cs*",
+              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\PaymentsController.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswDYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T17:49:33.284Z",
+              "WhenOpened": "2026-03-15T14:33:34.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
+              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:43:23.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PaymentWebhookLog.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
+              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:41:19.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Payment.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\Payment.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Payment.cs",
+              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\Payment.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:39:47.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Order.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\Order.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Order.cs",
+              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:38:04.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CartController.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CartController.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAADwv/oAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T17:20:05.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "InventoryItemConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\InventoryItemConfiguration.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\InventoryItemConfiguration.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\InventoryItemConfiguration.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\InventoryItemConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:34:29.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "20260314151157_ResyncSeedProducts.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAIwD8AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T16:22:05.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20260314163205_SeedProductsStep2.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314163205_SeedProductsStep2.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314163205_SeedProductsStep2.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314163205_SeedProductsStep2.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314163205_SeedProductsStep2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T16:34:10.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CartDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CartDtos.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CartDtos.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CartDtos.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CartDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T17:20:36.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAQwGsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T02:59:06.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20260305193023_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260305193023_InitialCreate.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260305193023_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260305193023_InitialCreate.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260305193023_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:24.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SeedMarker.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedMarker.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedMarker.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedMarker.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedMarker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:18.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20260314151157_ResyncSeedProducts.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.Designer.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.Designer.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.Designer.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Migrations\\20260314151157_ResyncSeedProducts.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T16:22:14.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seeds\\SeedData.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Seeds\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seeds\\SeedData.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seeds\\SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T15:04:31.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProductVariantConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\ProductVariantConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:47.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seed\\ProductConfiguration.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Seed\\ProductConfiguration.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seed\\ProductConfiguration.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seed\\ProductConfiguration.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:09.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\appsettings.Development.json",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\appsettings.Development.json",
               "RelativeToolTip": "FulSpectrum.Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-14T15:14:13.63Z",
+              "WhenOpened": "2026-03-15T14:35:54.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\appsettings.json",
-              "RelativeToolTip": "FulSpectrum.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-14T15:14:09.989Z",
+              "DocumentIndex": 9,
+              "Title": "PaymentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T14:34:38.714Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AppUserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\AppUserConfiguration.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\AppUserConfiguration.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\AppUserConfiguration.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\AppUserConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:34:57.335Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SeedIds.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedIds.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedIds.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedIds.cs",
-              "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\Seed\\SeedIds.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:33:14.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\AppUser.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\AppUser.cs",
-              "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:30:24.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Identity\\UserRole.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Domain\\Identity\\UserRole.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Identity\\UserRole.cs",
-              "RelativeToolTip": "FulSpectrum.Domain\\Identity\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T02:30:13.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-14T01:13:15.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "log-20260312.txt",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\logs\\log-20260312.txt",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\logs\\log-20260312.txt",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\logs\\log-20260312.txt",
-              "RelativeToolTip": "FulSpectrum.Api\\logs\\log-20260312.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-14T01:11:37.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "FulSpectrum.Api.csproj.Backup.tmp",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj.Backup.tmp",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\FulSpectrum.Api.csproj.Backup.tmp",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj.Backup.tmp",
-              "RelativeToolTip": "FulSpectrum.Api\\FulSpectrum.Api.csproj.Backup.tmp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-14T01:09:20.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "FulSpectrum.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\FulSpectrum.Api.csproj",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
-              "RelativeToolTip": "FulSpectrum.Api\\FulSpectrum.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-14T01:09:12.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "log-20260309.txt",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\logs\\log-20260309.txt",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\logs\\log-20260309.txt",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\logs\\log-20260309.txt",
-              "RelativeToolTip": "FulSpectrum.Api\\logs\\log-20260309.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-11T00:43:28.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "FulSpectrum.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T00:18:15.032Z"
             }
           ]
         }
