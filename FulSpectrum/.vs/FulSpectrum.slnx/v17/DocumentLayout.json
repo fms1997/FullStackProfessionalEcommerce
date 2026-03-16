@@ -70,8 +70,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:42:05.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:42:05.413Z"
             },
             {
               "$type": "Document",
@@ -81,7 +80,7 @@
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\PaymentsController.cs",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentsController.cs",
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwHEAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-15T14:33:34.587Z",
               "EditorCaption": ""
@@ -96,8 +95,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CheckoutController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAN0AAABzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T15:06:13.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T15:06:13.374Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:43:23.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:43:23.795Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-15T14:35:54.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:35:54.685Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:43:12.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:43:12.999Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:41:19.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:41:19.447Z"
             },
             {
               "$type": "Document",
@@ -161,8 +155,7 @@
               "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\Payment.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:39:47.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:39:47.428Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "RelativeToolTip": "FulSpectrum.Domain\\Catalog\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:38:04.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:38:04.944Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:34:38.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:34:38.714Z"
             }
           ]
         }

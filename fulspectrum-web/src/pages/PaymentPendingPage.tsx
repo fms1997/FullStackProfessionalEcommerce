@@ -111,9 +111,7 @@ export function PaymentPendingPage() {
   const navigate = useNavigate();
 
   const orderId = params.get("orderId") ?? "";
-
-  // token desde Redux
-  const token = useSelector((state: RootState) => state.auth.token);
+  const token = useSelector((state: RootState) => state.auth.accessToken);
 
   const [status, setStatus] = useState<PaymentStatusResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -121,7 +119,26 @@ export function PaymentPendingPage() {
   const canPoll = useMemo(() => Boolean(orderId && token), [orderId, token]);
 
   useEffect(() => {
+    if (!orderId) {
+      setError("Falta el orderId en la URL.");
+      return;
+    }
+
+    if (!token) {
+      setError("No hay sesión activa. Inicia sesión y vuelve a intentar.");
+      return;
+    }
+
+    setError(null);
+  }, [orderId, token]);
+
+  useEffect(() => {
     if (!canPoll) {
+      return;
+    }
+
+    const authToken = token;
+    if (!authToken) {
       return;
     }
 
@@ -132,7 +149,7 @@ export function PaymentPendingPage() {
       if (cancelled) return;
 
       try {
-        const latest = await getPaymentStatus(orderId, token);
+        const latest = await getPaymentStatus(orderId, authToken);
 
         if (cancelled) return;
 
@@ -154,9 +171,7 @@ export function PaymentPendingPage() {
         }
 
         if (Date.now() - start >= POLL_TIMEOUT_MS) {
-          setError(
-            "El pago sigue pendiente. Puedes intentar nuevamente en unos segundos."
-          );
+          setError("El pago sigue pendiente. Puedes intentar nuevamente en unos segundos.");
           return;
         }
 
@@ -164,16 +179,19 @@ export function PaymentPendingPage() {
       } catch (e) {
         if (cancelled) return;
 
-        const message =
-          e instanceof Error
-            ? e.message
-            : "No se pudo consultar el estado del pago.";
+        const message = e instanceof Error ? e.message : "No se pudo consultar el estado del pago.";
+
+        if (message.includes("(401)")) {
+          setError("Tu sesión expiró. Inicia sesión nuevamente para continuar con el pago.");
+          navigate("/login", { replace: true });
+          return;
+        }
 
         setError(message);
       }
     };
 
-    poll();
+    void poll();
 
     return () => {
       cancelled = true;
@@ -183,22 +201,12 @@ export function PaymentPendingPage() {
   return (
     <main>
       <h1>⏳ Pago pendiente</h1>
-
       <p>Estamos confirmando tu pago con el proveedor.</p>
 
-      {status ? (
-        <p>Estado actual: {status.status}</p>
-      ) : (
-        <p>Consultando estado...</p>
-      )}
-
+      {status ? <p>Estado actual: {status.status}</p> : <p>Consultando estado...</p>}
       {error && <p role="alert">{error}</p>}
 
-      {orderId && (
-        <Link to={`/orders/${orderId}`}>
-          Volver al pedido
-        </Link>
-      )}
+      {orderId && <Link to={`/orders/${orderId}`}>Volver al pedido</Link>}
     </main>
   );
 }
