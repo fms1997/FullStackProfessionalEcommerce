@@ -19,8 +19,7 @@ import {
   type UserProfile,
 } from "./authSlice";
 import type { RootState } from "./store";
-import type { CartDto, CheckoutPreview, OrderDto, PagedResponse, ProductDto, ProductListQuery, ShippingAddress } from "../types/api";
-const toQueryString = (query: ProductListQuery) => {
+import type { CartDto, CheckoutPreview, OrderDto, OrderSummaryDto, OrderTrackingDto, PagedResponse, ProductDto, ProductListQuery, ShippingAddress } from "../types/api";const toQueryString = (query: ProductListQuery) => {
   const params = new URLSearchParams();
 
   if (query.search) params.set("search", query.search);
@@ -86,8 +85,7 @@ const baseQueryWithReauth: BaseQueryFn<
 export const catalogApi = createApi({
   reducerPath: "catalogApi",
   baseQuery: baseQueryWithReauth,
-  tagTypes: ["Products", "Auth", "Cart"],
-  endpoints: (builder) => ({
+  tagTypes: ["Products", "Auth", "Cart", "Orders"],  endpoints: (builder) => ({
     login: builder.mutation<AuthResponse, { email: string; password: string }>({
       query: (body) => ({ url: "/api/v1/auth/login", method: "POST", body }),
       invalidatesTags: ["Auth"],
@@ -186,10 +184,22 @@ export const catalogApi = createApi({
     }),
     placeOrder: builder.mutation<OrderDto, { shippingAddress: ShippingAddress }>({
       query: (body) => ({ url: "/api/v1/checkout/orders", method: "POST", body }),
-      invalidatesTags: ["Cart"],
+invalidatesTags: ["Cart", "Orders"],
     }),
+    getMyOrders: builder.query<OrderSummaryDto[], void>({
+      query: () => "/api/v1/orders",
+      providesTags: ["Orders"],
+    }),
+    getOrderDetail: builder.query<OrderDto, string>({
+      query: (orderId) => `/api/v1/orders/${orderId}`,
+      providesTags: ["Orders"],
+    }),
+    getOrderTracking: builder.query<OrderTrackingDto, string>({
+      query: (orderId) => `/api/v1/orders/${orderId}/tracking`,
+      providesTags: ["Orders"],    }),
     updateOrderStatus: builder.mutation<OrderDto, { orderId: string; status: string }>({
-      query: ({ orderId, status }) => ({ url: `/api/v1/checkout/orders/${orderId}/status`, method: "PATCH", body: { status } }),
+      query: ({ orderId, status }) => ({ url: `/api/v1/orders/${orderId}/status`, method: "PATCH", body: { status } }),
+      invalidatesTags: ["Orders"],
     }),
   }),
 });
@@ -210,5 +220,8 @@ export const {
   useMergeCartMutation,
   usePreviewCheckoutMutation,
   usePlaceOrderMutation,
+  useGetMyOrdersQuery,
+  useGetOrderDetailQuery,
+  useGetOrderTrackingQuery,
   useUpdateOrderStatusMutation,
 } = catalogApi;

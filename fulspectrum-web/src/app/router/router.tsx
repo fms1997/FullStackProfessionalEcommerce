@@ -44,6 +44,8 @@ import Checkout from "../../pages/Checkout";
 import { PaymentPendingPage } from "../../pages/PaymentPendingPage";
 import { PaymentSuccessPage } from "../../pages/PaymentSuccessPage";
 import { PaymentFailPage } from "../../pages/PaymentFailPage";
+import MyOrders from "../../pages/MyOrders";
+import OrderDetail from "../../pages/OrderDetail";
 
 export const router = createBrowserRouter([
   {
@@ -55,6 +57,8 @@ export const router = createBrowserRouter([
         children: [
           { index: true, element: <Home /> },
           { path: "checkout", element: <Checkout /> },
+          { path: "orders", element: <MyOrders /> },
+          { path: "orders/:orderId", element: <OrderDetail /> },
           { path: "payment/pending", element: <PaymentPendingPage /> },
           { path: "payment/success", element: <PaymentSuccessPage /> },
           { path: "payment/fail", element: <PaymentFailPage /> },

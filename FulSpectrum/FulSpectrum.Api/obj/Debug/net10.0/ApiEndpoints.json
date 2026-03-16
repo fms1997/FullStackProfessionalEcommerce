@@ -347,8 +347,80 @@
   },
   {
     "ContainingType": "FulSpectrum.Api.Controllers.CheckoutController",
+    "Method": "Preview",
+    "RelativePath": "api/v1/checkout/preview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.CheckoutPreviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.CheckoutPreviewDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.OrdersController",
+    "Method": "GetMyOrders",
+    "RelativePath": "api/v1/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyCollection\u00601[[FulSpectrum.Api.Controllers.OrderSummaryDto, FulSpectrum.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.OrdersController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/orders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.OrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.OrdersController",
     "Method": "UpdateStatus",
-    "RelativePath": "api/v1/checkout/orders/{id}/status",
+    "RelativePath": "api/v1/orders/{id}/status",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -377,22 +449,22 @@
     ]
   },
   {
-    "ContainingType": "FulSpectrum.Api.Controllers.CheckoutController",
-    "Method": "Preview",
-    "RelativePath": "api/v1/checkout/preview",
-    "HttpMethod": "POST",
+    "ContainingType": "FulSpectrum.Api.Controllers.OrdersController",
+    "Method": "GetTracking",
+    "RelativePath": "api/v1/orders/{id}/tracking",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "FulSpectrum.Api.Controllers.CheckoutPreviewRequest",
+        "Name": "id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "FulSpectrum.Api.Controllers.CheckoutPreviewDto",
+        "Type": "FulSpectrum.Api.Controllers.OrderTrackingDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

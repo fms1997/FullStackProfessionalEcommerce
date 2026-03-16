@@ -4,7 +4,8 @@ using FulSpectrum.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using FulSpectrum.Api.Jobs;
+using Hangfire;
 namespace FulSpectrum.Api.Controllers;
 
 [ApiController]
@@ -14,10 +15,11 @@ namespace FulSpectrum.Api.Controllers;
 public sealed class CheckoutController : ControllerBase
 {
     private readonly FulSpectrumDbContext _db;
-
-    public CheckoutController(FulSpectrumDbContext db)
+    private readonly IBackgroundJobClient _backgroundJobs;
+    public CheckoutController(FulSpectrumDbContext db, IBackgroundJobClient backgroundJobs)
     {
         _db = db;
+        _backgroundJobs = backgroundJobs;
     }
 
     [HttpPost("preview")]
@@ -91,7 +93,9 @@ public sealed class CheckoutController : ControllerBase
 
         await _db.SaveChangesAsync(ct);
 
-        return CreatedAtAction(nameof(GetOrderById), new { version = "1", id = order.Id }, MapOrderDto(order));
+        _backgroundJobs.Enqueue<OrderNotificationJobs>(x => x.SendOrderConfirmation(order.Id));
+
+        return CreatedAtAction(nameof(GetOrderById), new { version = "1", id = order.Id }, OrderMapping.MapOrderDto(order));
     }
 
     [HttpGet("orders/{id:guid}")]
@@ -108,37 +112,7 @@ public sealed class CheckoutController : ControllerBase
             return NotFound();
         }
 
-        return Ok(MapOrderDto(order));
-    }
-
-    [HttpPatch("orders/{id:guid}/status")]
-    public async Task<ActionResult<OrderDto>> UpdateStatus(Guid id, [FromBody] UpdateOrderStatusRequest request, CancellationToken ct)
-    {
-        var userId = GetUserId();
-        var order = await _db.Orders
-            .Include(o => o.Items)
-            .FirstOrDefaultAsync(o => o.Id == id && o.UserId == userId, ct);
-
-        if (order is null)
-        {
-            return NotFound();
-        }
-
-        if (!Enum.TryParse<OrderStatus>(request.Status, true, out var nextStatus))
-        {
-            return ValidationProblem(new ValidationProblemDetails(new Dictionary<string, string[]>
-            {
-                [nameof(request.Status)] = ["Estado inválido."]
-            }));
-        }
-
-        if (!order.TryTransitionTo(nextStatus, out var error))
-        {
-            return Conflict(new { message = error });
-        }
-
-        await _db.SaveChangesAsync(ct);
-        return Ok(MapOrderDto(order));
+        return Ok(OrderMapping.MapOrderDto(order));
     }
 
     private async Task<Cart> GetUserCartAsync(CancellationToken ct)
@@ -258,28 +232,4 @@ public sealed class CheckoutController : ControllerBase
         return id;
     }
 
-    private static OrderDto MapOrderDto(Order order)
-    {
-        var address = new ShippingAddressRequest(
-            order.ShippingFullName,
-            order.ShippingAddressLine1,
-            order.ShippingAddressLine2,
-            order.ShippingCity,
-            order.ShippingState,
-            order.ShippingPostalCode,
-            order.ShippingCountryCode);
-
-        return new OrderDto(
-            order.Id,
-            order.UserId,
-            order.Status.ToString(),
-            order.Currency,
-            order.Subtotal,
-            order.ShippingAmount,
-            order.TaxAmount,
-            order.Total,
-            order.Items.Select(i => new OrderItemDto(i.ProductId, i.ProductNameSnapshot, i.SkuSnapshot, i.UnitPriceSnapshot, i.Quantity, i.LineTotal)).ToList(),
-            address,
-            order.CreatedAtUtc);
-    }
-}
+ }

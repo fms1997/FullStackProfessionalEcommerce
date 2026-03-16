@@ -23,6 +23,9 @@ using Serilog.Events;
 using System.Text;
 using System.Threading.RateLimiting;
     using Swashbuckle.AspNetCore.SwaggerGen;
+using FulSpectrum.Api.Services;
+using Hangfire;
+using Hangfire.MemoryStorage;
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
@@ -150,7 +153,9 @@ if (!string.IsNullOrWhiteSpace(hcUiCs))
 }
 
 builder.Services.AddInfrastructure(builder.Configuration);
-
+builder.Services.AddScoped<IEmailNotificationService, LoggingEmailNotificationService>();
+builder.Services.AddHangfire(config => config.UseMemoryStorage());
+builder.Services.AddHangfireServer();
 builder.Services.AddRateLimiter(options =>
 {
     options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
@@ -231,7 +236,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapHangfireDashboard("/jobs");
 app.MapHealthChecks("/health/live", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse

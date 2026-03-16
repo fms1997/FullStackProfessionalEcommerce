@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mTpAYOh2P7E=",
+  "dgSpecHash": "X/ozyeAT0o4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,10 @@
     "C:\\Users\\Franc\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\fractions\\7.3.0\\fractions.7.3.0.nupkg.sha512",
+    "C:\\Users\\Franc\\.nuget\\packages\\hangfire.aspnetcore\\1.8.14\\hangfire.aspnetcore.1.8.14.nupkg.sha512",
+    "C:\\Users\\Franc\\.nuget\\packages\\hangfire.core\\1.8.14\\hangfire.core.1.8.14.nupkg.sha512",
+    "C:\\Users\\Franc\\.nuget\\packages\\hangfire.memorystorage\\1.8.1\\hangfire.memorystorage.1.8.1.nupkg.sha512",
+    "C:\\Users\\Franc\\.nuget\\packages\\hangfire.netcore\\1.8.14\\hangfire.netcore.1.8.14.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\identitymodel\\5.2.0\\identitymodel.5.2.0.nupkg.sha512",
     "C:\\Users\\Franc\\.nuget\\packages\\identitymodel.oidcclient\\5.2.1\\identitymodel.oidcclient.5.2.1.nupkg.sha512",

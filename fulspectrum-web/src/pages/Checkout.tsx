@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useReducer, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../state/hooks";
-import { usePlaceOrderMutation, usePreviewCheckoutMutation, useUpdateOrderStatusMutation } from "../state/api";
+ import { usePlaceOrderMutation, usePreviewCheckoutMutation } from "../state/api";
 import type { ShippingAddress } from "../types/api";
 
 type Step = "shipping" | "review" | "result";
@@ -77,8 +77,7 @@ export default function Checkout() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [previewCheckout, previewResult] = usePreviewCheckoutMutation();
   const [placeOrder, placeOrderResult] = usePlaceOrderMutation();
-  const [updateStatus, updateStatusResult] = useUpdateOrderStatusMutation();
-  const { serverCart } = useAppSelector((s) => s.cart);
+   const { serverCart } = useAppSelector((s) => s.cart);
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -103,13 +102,11 @@ export default function Checkout() {
   const onPlaceOrder = async () => {
     const orderRes = await placeOrder({ shippingAddress: state.address });
     if ("data" in orderRes && orderRes.data) {
-      await updateStatus({ orderId: orderRes.data.id, status: "Paid" });
-      dispatch({ type: "NEXT" });
+       dispatch({ type: "NEXT" });
     }
   };
 
-  const activeOrder = updateStatusResult.data ?? placeOrderResult.data;
-
+  const activeOrder = placeOrderResult.data;
   const progressLabel = useMemo(() => {
     if (state.step === "shipping") return "Paso 1 de 3: dirección";
     if (state.step === "review") return "Paso 2 de 3: revisión";
@@ -193,7 +190,7 @@ export default function Checkout() {
           </div>
           <div className="flex gap-2">
             <button onClick={() => dispatch({ type: "BACK" })} className="rounded border px-4 py-2">Editar dirección</button>
-            <button onClick={onPlaceOrder} disabled={placeOrderResult.isLoading || updateStatusResult.isLoading} className="rounded bg-black text-white px-4 py-2">
+            <button onClick={onPlaceOrder} disabled={placeOrderResult.isLoading} className="rounded bg-black text-white px-4 py-2">
               Confirmar compra
             </button>
           </div>

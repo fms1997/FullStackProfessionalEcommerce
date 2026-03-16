@@ -42,6 +42,7 @@ export default function AppLayout() {
         <nav className="flex items-center gap-3 text-sm">
           <Link to="/">Inicio</Link>
                     {profile && <Link to="/checkout">Checkout</Link>}
+                                        {profile && <Link to="/orders">Mis pedidos</Link>}
           {!profile ? (
             <>
               <Link to="/login">Login</Link>

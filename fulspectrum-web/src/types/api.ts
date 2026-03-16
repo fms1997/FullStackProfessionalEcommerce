@@ -13,6 +13,7 @@ export type ProductDto = {
   currency: string;
   isPublished: boolean;
   createdAtUtc: string;
+    updatedAtUtc: string;
 };
 
 export type PagedResponse<T> = {
@@ -99,4 +100,27 @@ export type OrderDto = {
   items: CheckoutItemSnapshot[];
   shippingAddress: ShippingAddress;
   createdAtUtc: string;
+};
+export type OrderSummaryDto = {
+  id: string;
+  status: string;
+  currency: string;
+  total: number;
+  totalItems: number;
+  createdAtUtc: string;
+  updatedAtUtc: string;
+};
+
+export type OrderTrackingStepDto = {
+  label: string;
+  status: string;
+  isCompleted: boolean;
+  completedAtUtc?: string | null;
+};
+
+export type OrderTrackingDto = {
+  orderId: string;
+  currentStatus: string;
+  lastUpdatedAtUtc: string;
+  steps: OrderTrackingStepDto[];
 };

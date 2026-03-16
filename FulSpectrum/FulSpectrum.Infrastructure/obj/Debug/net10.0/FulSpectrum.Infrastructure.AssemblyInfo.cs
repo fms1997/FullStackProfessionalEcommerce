@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FulSpectrum.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71990ce21e9dcb61eaf05ec2f7893f5057e51a75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90da005688680074b0c894357f153f154278b84a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FulSpectrum.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FulSpectrum.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

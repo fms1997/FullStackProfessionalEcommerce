@@ -6,7 +6,8 @@ using FulSpectrum.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using FulSpectrum.Api.Jobs;
+using Hangfire;
 namespace FulSpectrum.Api.Controllers;
 
 [ApiController]
@@ -16,11 +17,12 @@ public sealed class PaymentsController : ControllerBase
 {
     private readonly FulSpectrumDbContext _db;
     private readonly IConfiguration _configuration;
-
-    public PaymentsController(FulSpectrumDbContext db, IConfiguration configuration)
+    private readonly IBackgroundJobClient _backgroundJobs;
+    public PaymentsController(FulSpectrumDbContext db, IConfiguration configuration, IBackgroundJobClient backgroundJobs)
     {
         _db = db;
         _configuration = configuration;
+        _backgroundJobs = backgroundJobs;
     }
 
     [HttpPost("orders/{orderId:guid}/attempts")]
@@ -195,6 +197,10 @@ public sealed class PaymentsController : ControllerBase
         if (nextStatus == PaymentStatus.Succeeded)
         {
             payment.Order.TryTransitionTo(OrderStatus.Paid, out _);
+            _backgroundJobs.Enqueue<OrderNotificationJobs>(x => x.SendPaymentConfirmation(payment.OrderId));
+            _backgroundJobs.Schedule<OrderWorkflowJobs>(x => x.MoveToProcessing(payment.OrderId), TimeSpan.FromMinutes(1));
+            _backgroundJobs.Schedule<OrderWorkflowJobs>(x => x.MoveToShipped(payment.OrderId), TimeSpan.FromMinutes(2));
+            _backgroundJobs.Schedule<OrderNotificationJobs>(x => x.SendShipmentNotification(payment.OrderId), TimeSpan.FromMinutes(2));
         }
         else if (nextStatus is PaymentStatus.Failed or PaymentStatus.Canceled)
         {
