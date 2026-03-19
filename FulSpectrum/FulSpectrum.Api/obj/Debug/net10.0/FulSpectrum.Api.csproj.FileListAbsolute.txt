@@ -391,3 +391,4 @@ C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectr
 C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\Hangfire.MemoryStorage.dll
 C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\Hangfire.NetCore.dll
 C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\FulSpectrum.Api.staticwebassets.runtime.json

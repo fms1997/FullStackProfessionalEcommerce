@@ -19,7 +19,7 @@ import {
   type UserProfile,
 } from "./authSlice";
 import type { RootState } from "./store";
-import type { CartDto, CheckoutPreview, OrderDto, OrderSummaryDto, OrderTrackingDto, PagedResponse, ProductDto, ProductListQuery, ShippingAddress } from "../types/api";const toQueryString = (query: ProductListQuery) => {
+import type { AdminOrderDto, AdminProductDto, CartDto, CheckoutPreview, OrderDto, OrderSummaryDto, OrderTrackingDto, PagedResponse, ProductDto, ProductListQuery, ShippingAddress } from "../types/api";const toQueryString = (query: ProductListQuery) => {
   const params = new URLSearchParams();
 
   if (query.search) params.set("search", query.search);
@@ -85,8 +85,7 @@ const baseQueryWithReauth: BaseQueryFn<
 export const catalogApi = createApi({
   reducerPath: "catalogApi",
   baseQuery: baseQueryWithReauth,
-  tagTypes: ["Products", "Auth", "Cart", "Orders"],  endpoints: (builder) => ({
-    login: builder.mutation<AuthResponse, { email: string; password: string }>({
+  tagTypes: ["Products", "Auth", "Cart", "Orders", "AdminProducts", "AdminOrders"],  endpoints: (builder) => ({    login: builder.mutation<AuthResponse, { email: string; password: string }>({
       query: (body) => ({ url: "/api/v1/auth/login", method: "POST", body }),
       invalidatesTags: ["Auth"],
     }),
@@ -124,6 +123,55 @@ export const catalogApi = createApi({
     logout: builder.mutation<void, void>({
       query: () => ({ url: "/api/v1/auth/logout", method: "POST" }),
       invalidatesTags: ["Auth"],
+    }),
+        getAdminProducts: builder.query<AdminProductDto[], { search?: string; isPublished?: boolean }>({
+      query: ({ search, isPublished }) => {
+        const params = new URLSearchParams();
+        if (search) params.set("search", search);
+        if (typeof isPublished === "boolean") params.set("isPublished", String(isPublished));
+        return `/api/v1/admin/catalog/products?${params.toString()}`;
+      },
+      providesTags: ["AdminProducts"],
+    }),
+    createAdminProduct: builder.mutation<AdminProductDto, unknown>({
+      query: (body) => ({ url: "/api/v1/admin/catalog/products", method: "POST", body }),
+      invalidatesTags: ["AdminProducts", "Products"],
+    }),
+    updateAdminProduct: builder.mutation<AdminProductDto, { id: string; body: unknown }>({
+      query: ({ id, body }) => ({ url: `/api/v1/admin/catalog/products/${id}`, method: "PUT", body }),
+      invalidatesTags: ["AdminProducts", "Products"],
+    }),
+    bulkPublishProducts: builder.mutation<{ affected: number }, { productIds: string[]; isPublished: boolean }>({
+      query: (body) => ({ url: "/api/v1/admin/catalog/products/bulk-publish", method: "POST", body }),
+      invalidatesTags: ["AdminProducts", "Products"],
+    }),
+    bulkDeleteProducts: builder.mutation<{ affected: number }, { productIds: string[] }>({
+      query: (body) => ({ url: "/api/v1/admin/catalog/products/bulk-delete", method: "DELETE", body }),
+      invalidatesTags: ["AdminProducts", "Products"],
+    }),
+    updateVariantStock: builder.mutation<unknown, { variantId: string; quantityOnHand: number; reservedQuantity: number; reorderThreshold: number }>({
+      query: ({ variantId, ...body }) => ({ url: `/api/v1/admin/catalog/variants/${variantId}/stock`, method: "PATCH", body }),
+      invalidatesTags: ["AdminProducts"],
+    }),
+    uploadAdminImage: builder.mutation<{ url: string }, File>({
+      query: (file) => {
+        const formData = new FormData();
+        formData.append("file", file);
+        return { url: "/api/v1/admin/uploads/images", method: "POST", body: formData };
+      },
+    }),
+    getAdminOrders: builder.query<AdminOrderDto[], { status?: string; search?: string }>({
+      query: ({ status, search }) => {
+        const params = new URLSearchParams();
+        if (status) params.set("status", status);
+        if (search) params.set("search", search);
+        return `/api/v1/admin/orders?${params.toString()}`;
+      },
+      providesTags: ["AdminOrders"],
+    }),
+    updateAdminOrderStatus: builder.mutation<void, { id: string; status: string }>({
+      query: ({ id, status }) => ({ url: `/api/v1/admin/orders/${id}/status`, method: "PATCH", body: { status } }),
+      invalidatesTags: ["AdminOrders", "Orders"],
     }),
     getProducts: builder.query<PagedResponse<ProductDto>, ProductListQuery>({
       query: (q) => `/api/v1/products?${toQueryString(q)}`,
@@ -224,4 +272,13 @@ export const {
   useGetOrderDetailQuery,
   useGetOrderTrackingQuery,
   useUpdateOrderStatusMutation,
+   useGetAdminProductsQuery,
+  useCreateAdminProductMutation,
+  useUpdateAdminProductMutation,
+  useBulkPublishProductsMutation,
+  useBulkDeleteProductsMutation,
+  useUpdateVariantStockMutation,
+  useUploadAdminImageMutation,
+  useGetAdminOrdersQuery,
+  useUpdateAdminOrderStatusMutation,
 } = catalogApi;

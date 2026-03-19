@@ -1,0 +1,1079 @@
+2026-03-18 22:40:45.794 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:40:45.902 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:40:45.999 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:40:46.042 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:40:46.099 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:40:46.166 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:40:46.173 -03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 22:41:05.973 -03:00 [INF] Initializing UI Database
+2026-03-18 22:41:07.219 -03:00 [WRN] The WebRootPath was not found: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\wwwroot. Static files may be unavailable.
+2026-03-18 22:41:07.717 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-18 22:41:07.725 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-18 22:41:08.019 -03:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2026-03-18 22:41:08.025 -03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-03-18 22:41:08.673 -03:00 [INF] Server lenovofms1997:23368:336c840b successfully announced in 538,7643 ms
+2026-03-18 22:41:08.730 -03:00 [INF] Server lenovofms1997:23368:336c840b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-03-18 22:41:08.892 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 22:41:09.035 -03:00 [INF] Hosting environment: Development
+2026-03-18 22:41:09.107 -03:00 [INF] Server lenovofms1997:23368:336c840b all the dispatchers started
+2026-03-18 22:41:09.125 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-18 22:41:16.297 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 270.3144 ms
+2026-03-18 22:41:17.374 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 621.1773 ms
+2026-03-18 22:46:42.742 -03:00 [INF] HTTP GET /api/v1/auth/me responded 401 in 699.8969 ms
+2026-03-18 22:46:49.028 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 401 in 594.4951 ms
+2026-03-18 22:47:32.971 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 2022.2433 ms
+2026-03-18 22:47:50.162 -03:00 [INF] HTTP GET /api/v1/auth/me responded 200 in 174.2001 ms
+2026-03-18 22:49:36.714 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 500.5748 ms
+2026-03-18 22:50:27.671 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 181.7632 ms
+2026-03-18 22:50:39.804 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 403 in 9.3637 ms
+2026-03-18 22:51:47.586 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 215.8349 ms
+2026-03-18 22:51:56.340 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 22.2036 ms
+2026-03-18 22:52:36.896 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 155.6239 ms
+2026-03-18 22:53:04.067 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 23.8481 ms
+2026-03-18 22:53:13.611 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 20.4053 ms
+2026-03-18 22:53:17.435 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 4.0505 ms
+2026-03-18 22:53:20.587 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 22.8336 ms
+2026-03-18 22:55:42.547 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products responded 201 in 829.5570 ms
+2026-03-18 22:59:45.956 -03:00 [ERR] Unhandled exception. TraceId=0HNK5B2BNRJIR:0000001F
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.UpdateProduct(Guid id, UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 170
+   at lambda_method690(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 22:59:46.241 -03:00 [ERR] HTTP PUT /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 500 in 104827.8500 ms
+2026-03-18 23:00:48.593 -03:00 [ERR] Unhandled exception. TraceId=0HNK5B2BNRJIR:00000021
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.UpdateProduct(Guid id, UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 170
+   at lambda_method690(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:00:48.644 -03:00 [ERR] HTTP PUT /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 500 in 6694.9764 ms
+2026-03-18 23:02:44.065 -03:00 [ERR] Unhandled exception. TraceId=0HNK5B2BNRJIR:00000023
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.UpdateProduct(Guid id, UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 170
+   at lambda_method690(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:02:53.885 -03:00 [ERR] HTTP PUT /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 500 in 12318.6445 ms
+2026-03-18 23:03:13.179 -03:00 [ERR] Unhandled exception. TraceId=0HNK5B2BNRJIS:00000001
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.UpdateProduct(Guid id, UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 170
+   at lambda_method690(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:03:13.228 -03:00 [ERR] HTTP PUT /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 500 in 3634.2197 ms
+2026-03-18 23:03:20.325 -03:00 [ERR] Unhandled exception. TraceId=0HNK5B2BNRJIS:00000003
+Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: The database operation was expected to affect 1 row(s), but actually affected 0 row(s); data may have been modified or deleted since entities were loaded. See https://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyExceptionAsync(RelationalDataReader reader, Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.UpdateProduct(Guid id, UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 170
+   at lambda_method690(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:03:20.356 -03:00 [ERR] HTTP PUT /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 500 in 2028.2861 ms
+2026-03-18 23:05:30.488 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:30.650 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:30.655 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:30.662 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:30.666 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:30.671 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:30.681 -03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:05:35.954 -03:00 [INF] Initializing UI Database
+2026-03-18 23:05:37.389 -03:00 [WRN] The WebRootPath was not found: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\wwwroot. Static files may be unavailable.
+2026-03-18 23:05:38.033 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-18 23:05:38.038 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-18 23:05:39.184 -03:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2026-03-18 23:05:39.423 -03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-03-18 23:05:41.595 -03:00 [INF] Server lenovofms1997:35548:1e6ca574 successfully announced in 1817,8006 ms
+2026-03-18 23:05:41.800 -03:00 [INF] Server lenovofms1997:35548:1e6ca574 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-03-18 23:05:42.604 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 23:05:42.661 -03:00 [INF] Server lenovofms1997:35548:1e6ca574 all the dispatchers started
+2026-03-18 23:05:42.691 -03:00 [INF] Hosting environment: Development
+2026-03-18 23:05:42.777 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-18 23:05:43.160 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 313.0760 ms
+2026-03-18 23:05:43.745 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 339.5381 ms
+2026-03-18 23:05:58.718 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 1984.0353 ms
+2026-03-18 23:08:01.037 -03:00 [INF] HTTP PUT /api/v1/admin/catalog/products/6AC41C49-72F2-4EE2-A9AC-4F612869321B responded 404 in 1356.4673 ms
+2026-03-18 23:08:48.184 -03:00 [INF] HTTP PUT /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 200 in 885.1507 ms
+2026-03-18 23:09:57.640 -03:00 [INF] HTTP DELETE /api/v1/admin/catalog/products/AB44D678-2DDD-4278-A6D4-BAF36B8C4A1D responded 204 in 261.2348 ms
+2026-03-18 23:19:39.254 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products responded 201 in 1046.6045 ms
+2026-03-18 23:19:44.376 -03:00 [ERR] Failed executing DbCommand (161ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 3), @p5='?' (DbType = Boolean), @p6='?' (Size = 180), @p7='?' (Size = 64), @p8='?' (Size = 200), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (Size = 120), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (DbType = Guid), @p14='?' (Size = 80), @p15='?' (DbType = Guid), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BasePrice], [CategoryId], [CreatedAtUtc], [Currency], [IsPublished], [Name], [Sku], [Slug])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INSERT INTO [Variants] ([Id], [IsDefault], [Name], [PriceDelta], [ProductId], [VariantSku])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+INSERT INTO [Inventory] ([Id], [QuantityOnHand], [ReorderThreshold], [ReservedQuantity], [UpdatedAtUtc], [VariantId])
+VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+2026-03-18 23:19:44.866 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 23:20:05.408 -03:00 [ERR] Unhandled exception. TraceId=0HNK5BG1THF5S:00000003
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.CreateProduct(UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 115
+   at lambda_method705(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:20:05.580 -03:00 [ERR] HTTP POST /api/v1/admin/catalog/products responded 500 in 21426.8148 ms
+2026-03-18 23:20:12.912 -03:00 [ERR] Failed executing DbCommand (80ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 3), @p5='?' (DbType = Boolean), @p6='?' (Size = 180), @p7='?' (Size = 64), @p8='?' (Size = 200), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (Size = 120), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (DbType = Guid), @p14='?' (Size = 80), @p15='?' (DbType = Guid), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BasePrice], [CategoryId], [CreatedAtUtc], [Currency], [IsPublished], [Name], [Sku], [Slug])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INSERT INTO [Variants] ([Id], [IsDefault], [Name], [PriceDelta], [ProductId], [VariantSku])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+INSERT INTO [Inventory] ([Id], [QuantityOnHand], [ReorderThreshold], [ReservedQuantity], [UpdatedAtUtc], [VariantId])
+VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+2026-03-18 23:20:13.018 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 23:20:15.480 -03:00 [ERR] Unhandled exception. TraceId=0HNK5BG1THF5S:00000005
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.CreateProduct(UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 115
+   at lambda_method705(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:20:15.578 -03:00 [ERR] HTTP POST /api/v1/admin/catalog/products responded 500 in 2759.1331 ms
+2026-03-18 23:21:02.560 -03:00 [ERR] Failed executing DbCommand (21ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 3), @p5='?' (DbType = Boolean), @p6='?' (Size = 180), @p7='?' (Size = 64), @p8='?' (Size = 200), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (Size = 120), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (DbType = Guid), @p14='?' (Size = 80), @p15='?' (DbType = Guid), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BasePrice], [CategoryId], [CreatedAtUtc], [Currency], [IsPublished], [Name], [Sku], [Slug])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INSERT INTO [Variants] ([Id], [IsDefault], [Name], [PriceDelta], [ProductId], [VariantSku])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+INSERT INTO [Inventory] ([Id], [QuantityOnHand], [ReorderThreshold], [ReservedQuantity], [UpdatedAtUtc], [VariantId])
+VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+2026-03-18 23:21:02.579 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 23:22:13.985 -03:00 [ERR] Unhandled exception. TraceId=0HNK5BG1THF5S:00000007
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Sku'. The duplicate key value is (ADM-TEST-001).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.CreateProduct(UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 115
+   at lambda_method705(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:22:14.063 -03:00 [ERR] HTTP POST /api/v1/admin/catalog/products responded 500 in 71533.3685 ms
+2026-03-18 23:22:14.107 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products responded 401 in 61.4813 ms
+2026-03-18 23:22:42.451 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products responded 401 in 4.4811 ms
+2026-03-18 23:22:53.272 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 132.7708 ms
+2026-03-18 23:23:03.153 -03:00 [ERR] Failed executing DbCommand (28ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 3), @p5='?' (DbType = Boolean), @p6='?' (Size = 180), @p7='?' (Size = 64), @p8='?' (Size = 200), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (Size = 120), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (DbType = Guid), @p14='?' (Size = 80), @p15='?' (DbType = Guid), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BasePrice], [CategoryId], [CreatedAtUtc], [Currency], [IsPublished], [Name], [Sku], [Slug])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INSERT INTO [Variants] ([Id], [IsDefault], [Name], [PriceDelta], [ProductId], [VariantSku])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+INSERT INTO [Inventory] ([Id], [QuantityOnHand], [ReorderThreshold], [ReservedQuantity], [UpdatedAtUtc], [VariantId])
+VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+2026-03-18 23:23:03.171 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 23:24:26.016 -03:00 [ERR] Unhandled exception. TraceId=0HNK5BG1THF5T:00000007
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+Cannot insert duplicate key row in object 'dbo.Variants' with unique index 'IX_Variants_VariantSku'. The duplicate key value is (ADM-TEST-001-BLK).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.CreateProduct(UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 115
+   at lambda_method705(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:24:26.062 -03:00 [ERR] Failed executing DbCommand (33ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 3), @p5='?' (DbType = Boolean), @p6='?' (Size = 180), @p7='?' (Size = 64), @p8='?' (Size = 200), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (Size = 120), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (DbType = Guid), @p14='?' (Size = 80), @p15='?' (DbType = Guid), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BasePrice], [CategoryId], [CreatedAtUtc], [Currency], [IsPublished], [Name], [Sku], [Slug])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INSERT INTO [Variants] ([Id], [IsDefault], [Name], [PriceDelta], [ProductId], [VariantSku])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+INSERT INTO [Inventory] ([Id], [QuantityOnHand], [ReorderThreshold], [ReservedQuantity], [UpdatedAtUtc], [VariantId])
+VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+2026-03-18 23:24:26.101 -03:00 [ERR] HTTP POST /api/v1/admin/catalog/products responded 500 in 82982.6242 ms
+2026-03-18 23:24:26.116 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 23:24:32.831 -03:00 [ERR] Unhandled exception. TraceId=0HNK5BG1THF5T:00000009
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.CreateProduct(UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 115
+   at lambda_method705(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:24:32.877 -03:00 [ERR] HTTP POST /api/v1/admin/catalog/products responded 500 in 7138.6641 ms
+2026-03-18 23:24:35.449 -03:00 [ERR] Failed executing DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime2), @p4='?' (Size = 3), @p5='?' (DbType = Boolean), @p6='?' (Size = 180), @p7='?' (Size = 64), @p8='?' (Size = 200), @p9='?' (DbType = Guid), @p10='?' (DbType = Boolean), @p11='?' (Size = 120), @p12='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p13='?' (DbType = Guid), @p14='?' (Size = 80), @p15='?' (DbType = Guid), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = DateTime2), @p20='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [BasePrice], [CategoryId], [CreatedAtUtc], [Currency], [IsPublished], [Name], [Sku], [Slug])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+INSERT INTO [Variants] ([Id], [IsDefault], [Name], [PriceDelta], [ProductId], [VariantSku])
+VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+INSERT INTO [Inventory] ([Id], [QuantityOnHand], [ReorderThreshold], [ReservedQuantity], [UpdatedAtUtc], [VariantId])
+VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+2026-03-18 23:24:35.522 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'FulSpectrum.Infrastructure.Persistence.FulSpectrumDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-18 23:26:12.009 -03:00 [ERR] Unhandled exception. TraceId=0HNK5BG1THF5U:00000001
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Products' with unique index 'IX_Products_Slug'. The duplicate key value is (producto-admin-test).
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Variants_Products_ProductId". The conflict occurred in database "FulSpectrum", table "dbo.Products", column 'Id'.
+The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Inventory_Variants_VariantId". The conflict occurred in database "FulSpectrum", table "dbo.Variants", column 'Id'.
+The statement has been terminated.
+The statement has been terminated.
+The statement has been terminated.
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:895a2a7e-e06e-43fb-a4b0-6085518eec96
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FulSpectrum.Api.Controllers.AdminController.CreateProduct(UpsertAdminProductRequest request, CancellationToken ct) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Controllers\AdminController.cs:line 115
+   at lambda_method705(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at Program.<>c.<<<Main>$>b__0_9>d.MoveNext() in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Program.cs:line 231
+--- End of stack trace from previous location ---
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at FulSpectrum.Api.Middlewares.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\Middlewares\ExceptionHandlingMiddleware.cs:line 20
+2026-03-18 23:26:12.056 -03:00 [ERR] HTTP POST /api/v1/admin/catalog/products responded 500 in 96636.3575 ms
+2026-03-18 23:26:16.833 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products responded 201 in 35.6306 ms
+2026-03-18 23:27:45.001 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 311.2062 ms
+2026-03-18 23:29:01.693 -03:00 [INF] HTTP DELETE /api/v1/admin/catalog/products/bulk-delete responded 200 in 130.3363 ms
+2026-03-18 23:30:44.181 -03:00 [INF] HTTP PATCH /api/v1/admin/catalog/variants/6187A732-850C-4200-AD85-65A221E83F11/stock responded 200 in 111.6139 ms
+2026-03-18 23:32:20.937 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 264.2808 ms
+2026-03-18 23:32:32.866 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 79.3658 ms
+2026-03-18 23:32:45.353 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 18.1769 ms
+2026-03-18 23:33:52.753 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 23.5198 ms
+2026-03-18 23:34:13.109 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 18.9476 ms
+2026-03-18 23:34:31.368 -03:00 [INF] HTTP PATCH /api/v1/admin/orders/1fed817d-c332-45f0-94ba-36cbf6167339/status responded 204 in 183.6240 ms
+2026-03-18 23:38:15.774 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 357.7279 ms
+2026-03-18 23:38:26.700 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 26.0196 ms
+2026-03-18 23:38:27.636 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 8.4263 ms
+2026-03-18 23:38:29.969 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 9.3915 ms
+2026-03-18 23:38:32.386 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 8.4539 ms
+2026-03-18 23:38:54.197 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 4.4508 ms
+2026-03-18 23:38:54.735 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 1.7767 ms
+2026-03-18 23:39:19.395 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 3.6926 ms
+2026-03-18 23:40:30.981 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 401 in 4.5325 ms
+2026-03-18 23:40:41.856 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 195.7022 ms
+2026-03-18 23:40:53.551 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 25.2276 ms
+2026-03-18 23:43:32.749 -03:00 [INF] HTTP POST /api/v1/admin/uploads/images responded 200 in 471.7409 ms
+2026-03-18 23:44:37.001 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:37.344 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:37.353 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:37.360 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:37.366 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:37.374 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:37.385 -03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-18 23:44:47.736 -03:00 [INF] Initializing UI Database
+2026-03-18 23:44:49.987 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-18 23:44:49.992 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-18 23:44:51.070 -03:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2026-03-18 23:44:51.245 -03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-03-18 23:44:52.653 -03:00 [INF] Server lenovofms1997:16944:fd64a998 successfully announced in 1011,325 ms
+2026-03-18 23:44:52.770 -03:00 [INF] Server lenovofms1997:16944:fd64a998 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-03-18 23:44:53.365 -03:00 [INF] Server lenovofms1997:16944:fd64a998 all the dispatchers started
+2026-03-18 23:44:53.665 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-18 23:44:53.727 -03:00 [INF] Hosting environment: Development
+2026-03-18 23:44:53.830 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-18 23:44:54.465 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 421.4513 ms
+2026-03-18 23:44:55.179 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 288.2457 ms
+2026-03-18 23:45:13.896 -03:00 [INF] HTTP POST /api/v1/auth/refresh responded 200 in 3327.1219 ms
+2026-03-18 23:45:57.006 -03:00 [INF] HTTP POST /api/v1/admin/uploads/images responded 200 in 437.9948 ms
+2026-03-18 23:46:17.860 -03:00 [INF] HTTP GET /uploads/20260319024556_cc0f7b9631e245b080a22d28f3581653.jpg responded 200 in 465.0787 ms
+2026-03-18 23:46:29.580 -03:00 [INF] HTTP GET /favicon.ico responded 404 in 42.0397 ms
+2026-03-18 23:47:01.469 -03:00 [INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 37.0222 ms
+2026-03-18 23:47:02.390 -03:00 [INF] HTTP POST /api/v1/auth/login responded 200 in 889.1135 ms
+2026-03-18 23:47:02.842 -03:00 [INF] HTTP OPTIONS /api/v1/products responded 204 in 0.2781 ms
+2026-03-18 23:47:02.846 -03:00 [INF] HTTP OPTIONS /api/v1/cart responded 204 in 0.1994 ms
+2026-03-18 23:47:03.865 -03:00 [INF] HTTP GET /api/v1/products responded 200 in 1000.7154 ms
+2026-03-18 23:47:04.011 -03:00 [INF] HTTP GET /api/v1/cart responded 200 in 1130.0100 ms
+2026-03-18 23:48:13.596 -03:00 [INF] HTTP OPTIONS /api/v1/admin/orders responded 204 in 0.6141 ms
+2026-03-18 23:48:13.596 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.3551 ms
+2026-03-18 23:48:13.792 -03:00 [INF] HTTP GET /api/v1/admin/orders responded 200 in 177.2597 ms
+2026-03-18 23:48:13.959 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 343.1017 ms
+2026-03-18 23:53:24.096 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 4.7184 ms
+2026-03-18 23:53:24.430 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 298.3489 ms
+2026-03-18 23:53:35.588 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.2668 ms
+2026-03-18 23:53:35.646 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 23.9626 ms
+2026-03-18 23:53:35.646 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1865 ms
+2026-03-18 23:53:35.672 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 7.6225 ms
+2026-03-18 23:53:35.976 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1545 ms
+2026-03-18 23:53:35.994 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 5.6454 ms
+2026-03-18 23:53:36.123 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.2093 ms
+2026-03-18 23:53:36.141 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 5.0050 ms
+2026-03-18 23:53:42.448 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.4802 ms
+2026-03-18 23:53:42.448 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1303 ms
+2026-03-18 23:53:42.448 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.4796 ms
+2026-03-18 23:53:42.485 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 5.1970 ms
+2026-03-18 23:53:42.557 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 16.7970 ms
+2026-03-18 23:53:42.552 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 9.2271 ms
+2026-03-18 23:53:42.450 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1142 ms
+2026-03-18 23:53:42.558 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 15.3530 ms
+2026-03-18 23:53:42.696 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 42.8723 ms
+2026-03-18 23:53:42.796 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 7.5982 ms
+2026-03-18 23:56:46.609 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.5260 ms
+2026-03-18 23:56:47.082 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 456.6446 ms
+2026-03-18 23:56:47.092 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1200 ms
+2026-03-18 23:56:47.130 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 31.0139 ms
+2026-03-18 23:56:56.941 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.4084 ms
+2026-03-18 23:56:56.965 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 12.4113 ms
+2026-03-18 23:56:56.983 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.0898 ms
+2026-03-18 23:56:57.007 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 6.3741 ms
+2026-03-18 23:57:08.750 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.2269 ms
+2026-03-18 23:57:08.812 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 48.6601 ms
+2026-03-18 23:57:08.829 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.0640 ms
+2026-03-18 23:57:08.850 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 6.2295 ms
+2026-03-18 23:57:23.729 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.1193 ms
+2026-03-18 23:57:23.753 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 12.9626 ms
+2026-03-18 23:57:23.769 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1171 ms
+2026-03-18 23:57:23.795 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 13.7012 ms
+2026-03-18 23:57:31.876 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.1101 ms
+2026-03-18 23:57:31.922 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 26.0806 ms
+2026-03-18 23:57:31.932 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.1082 ms
+2026-03-18 23:57:31.958 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 18.3189 ms
+2026-03-18 23:57:34.266 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.1693 ms
+2026-03-18 23:57:34.319 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 7.6166 ms
+2026-03-18 23:57:34.335 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.0960 ms
+2026-03-18 23:57:34.364 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 20.2543 ms
+2026-03-18 23:57:35.036 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.2078 ms
+2026-03-18 23:57:35.061 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 14.3728 ms
+2026-03-18 23:57:35.074 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.0962 ms
+2026-03-18 23:57:35.098 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 15.5463 ms
+2026-03-18 23:57:35.927 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products/bulk-publish responded 204 in 0.1301 ms
+2026-03-18 23:57:35.972 -03:00 [INF] HTTP POST /api/v1/admin/catalog/products/bulk-publish responded 200 in 29.7238 ms
+2026-03-18 23:57:35.988 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.0968 ms
+2026-03-18 23:57:36.031 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 26.2013 ms
+2026-03-18 23:57:56.074 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/variants/6187a732-850c-4200-ad85-65a221e83f11/stock responded 204 in 0.1167 ms
+2026-03-18 23:57:56.276 -03:00 [INF] HTTP PATCH /api/v1/admin/catalog/variants/6187a732-850c-4200-ad85-65a221e83f11/stock responded 200 in 190.9208 ms
+2026-03-18 23:57:56.286 -03:00 [INF] HTTP OPTIONS /api/v1/admin/catalog/products responded 204 in 0.0426 ms
+2026-03-18 23:57:56.311 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 15.3358 ms
+2026-03-18 23:57:56.726 -03:00 [INF] HTTP PATCH /api/v1/admin/catalog/variants/6187a732-850c-4200-ad85-65a221e83f11/stock responded 200 in 6.3716 ms
+2026-03-18 23:57:56.744 -03:00 [INF] HTTP GET /api/v1/admin/catalog/products responded 200 in 3.6634 ms

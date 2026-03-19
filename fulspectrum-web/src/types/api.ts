@@ -124,3 +124,38 @@ export type OrderTrackingDto = {
   lastUpdatedAtUtc: string;
   steps: OrderTrackingStepDto[];
 };
+export type AdminVariantDto = {
+  id: string;
+  productId: string;
+  variantSku: string;
+  name: string;
+  priceDelta: number;
+  isDefault: boolean;
+  quantityOnHand: number;
+  reservedQuantity: number;
+  reorderThreshold: number;
+};
+
+export type AdminProductDto = {
+  id: string;
+  categoryId: string;
+  name: string;
+  slug: string;
+  sku: string;
+  basePrice: number;
+  currency: string;
+  isPublished: boolean;
+  createdAtUtc: string;
+  variants: AdminVariantDto[];
+};
+
+export type AdminOrderDto = {
+  id: string;
+  userId: string;
+  status: string;
+  currency: string;
+  total: number;
+  totalItems: number;
+  createdAtUtc: string;
+  updatedAtUtc: string;
+};

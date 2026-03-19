@@ -1,5 +1,250 @@
 [
   {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "GetProducts",
+    "RelativePath": "api/v1/admin/catalog/products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isPublished",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyCollection\u00601[[FulSpectrum.Api.Controllers.AdminProductDto, FulSpectrum.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "CreateProduct",
+    "RelativePath": "api/v1/admin/catalog/products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.UpsertAdminProductRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.AdminProductDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/v1/admin/catalog/products/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.UpsertAdminProductRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.AdminProductDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "DeleteProduct",
+    "RelativePath": "api/v1/admin/catalog/products/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "BulkDelete",
+    "RelativePath": "api/v1/admin/catalog/products/bulk-delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.BulkDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "BulkPublish",
+    "RelativePath": "api/v1/admin/catalog/products/bulk-publish",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.BulkPublishRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "UpdateVariantStock",
+    "RelativePath": "api/v1/admin/catalog/variants/{variantId}/stock",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "variantId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.UpdateVariantStockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.AdminVariantDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "GetOrders",
+    "RelativePath": "api/v1/admin/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyCollection\u00601[[FulSpectrum.Api.Controllers.AdminOrderDto, FulSpectrum.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "UpdateAdminOrderStatus",
+    "RelativePath": "api/v1/admin/orders/{id}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "FulSpectrum.Api.Controllers.UpdateOrderStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AdminController",
+    "Method": "UploadImage",
+    "RelativePath": "api/v1/admin/uploads/images",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FulSpectrum.Api.Controllers.ImageUploadResultDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FulSpectrum.Api.Controllers.AuthController",
     "Method": "ForgotPassword",
     "RelativePath": "api/v1/auth/forgot-password",

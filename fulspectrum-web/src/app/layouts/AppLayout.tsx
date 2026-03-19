@@ -43,6 +43,7 @@ export default function AppLayout() {
           <Link to="/">Inicio</Link>
                     {profile && <Link to="/checkout">Checkout</Link>}
                                         {profile && <Link to="/orders">Mis pedidos</Link>}
+                                                            {profile?.role === "Admin" && <Link to="/admin">Admin</Link>}
           {!profile ? (
             <>
               <Link to="/login">Login</Link>

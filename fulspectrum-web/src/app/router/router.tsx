@@ -46,6 +46,7 @@ import { PaymentSuccessPage } from "../../pages/PaymentSuccessPage";
 import { PaymentFailPage } from "../../pages/PaymentFailPage";
 import MyOrders from "../../pages/MyOrders";
 import OrderDetail from "../../pages/OrderDetail";
+import AdminPanel from "../../pages/AdminPanel";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +63,7 @@ export const router = createBrowserRouter([
           { path: "payment/pending", element: <PaymentPendingPage /> },
           { path: "payment/success", element: <PaymentSuccessPage /> },
           { path: "payment/fail", element: <PaymentFailPage /> },
+                    { element: <RequireAuth roles={["Admin"]} />, children: [{ path: "admin", element: <AdminPanel /> }] },
         ],
       },
       { path: "forbidden", element: <Forbidden /> },

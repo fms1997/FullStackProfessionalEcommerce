@@ -42,7 +42,7 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 builder.Services.AddControllers();
-
+builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<JwtOptions>(
     builder.Configuration.GetSection(JwtOptions.SectionName));
 
@@ -154,7 +154,9 @@ if (!string.IsNullOrWhiteSpace(hcUiCs))
 
 builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddScoped<IEmailNotificationService, LoggingEmailNotificationService>();
+builder.Services.AddScoped<IImageStorageService, LocalImageStorageService>();
 builder.Services.AddHangfire(config => config.UseMemoryStorage());
+
 builder.Services.AddHangfireServer();
 builder.Services.AddRateLimiter(options =>
 {
@@ -220,7 +222,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStaticFiles();
 app.Use(async (ctx, next) =>
 {
     ctx.Response.Headers["X-Content-Type-Options"] = "nosniff";

@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\checkoutdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\checkoutdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\services\\iimagestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\services\\iimagestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\services\\localimagestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\services\\localimagestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\jobs\\ordernotificationjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\jobs\\ordernotificationjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,24 +51,12 @@
       "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\ordermapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\jobs\\orderworkflowjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\jobs\\orderworkflowjobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\fulspectrum.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\fulspectrum.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\checkoutdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|solutionrelative:fulspectrum.api\\controllers\\checkoutdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{555F71EA-BFA3-E688-10D4-D5E41C838F73}|FulSpectrum.Api\\FulSpectrum.Api.csproj|c:\\users\\franc\\desktop\\efsp\\fullstackprofessionalecommerce\\fulspectrum\\fulspectrum.api\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,6 +111,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAAwB4BAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T02:42:29.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "OrderNotificationJobs.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Jobs\\OrderNotificationJobs.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Jobs\\OrderNotificationJobs.cs",
@@ -106,25 +131,11 @@
               "RelativeToolTip": "FulSpectrum.Api\\Jobs\\OrderNotificationJobs.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAkwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T03:59:11.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T03:59:11.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoggingEmailNotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T04:03:02.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "PaymentDtos.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
@@ -132,12 +143,86 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\PaymentDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:34:38.714Z",
+              "WhenOpened": "2026-03-15T14:34:38.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CheckoutDtos.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T03:54:15.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LocalImageStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\LocalImageStorageService.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Services\\LocalImageStorageService.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\LocalImageStorageService.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Services\\LocalImageStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T02:45:17.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Program.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Program.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Program.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAD4v+AAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T04:00:42.139Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwCIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T03:56:22.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IImageStorageService.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\IImageStorageService.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Services\\IImageStorageService.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\IImageStorageService.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Services\\IImageStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T02:44:59.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoggingEmailNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
+              "RelativeDocumentMoniker": "FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
+              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
+              "RelativeToolTip": "FulSpectrum.Api\\Services\\LoggingEmailNotificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T04:03:02.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PaymentsController.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\PaymentsController.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\PaymentsController.cs",
@@ -145,12 +230,11 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\PaymentsController.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAhwMoAAACHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T14:33:34.587Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T14:33:34.587Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "IEmailNotificationService.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Services\\IEmailNotificationService.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Services\\IEmailNotificationService.cs",
@@ -158,12 +242,11 @@
               "RelativeToolTip": "FulSpectrum.Api\\Services\\IEmailNotificationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T04:02:41.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T04:02:41.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "OrderMapping.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\OrderMapping.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\OrderMapping.cs",
@@ -171,25 +254,11 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\OrderMapping.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T03:55:45.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T03:55:45.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Program.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Program.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Program.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAO4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T04:00:42.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "OrderWorkflowJobs.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Jobs\\OrderWorkflowJobs.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Jobs\\OrderWorkflowJobs.cs",
@@ -197,51 +266,23 @@
               "RelativeToolTip": "FulSpectrum.Api\\Jobs\\OrderWorkflowJobs.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T04:00:02.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T04:00:02.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FulSpectrum.Api",
+              "DocumentIndex": 13,
+              "Title": "FulSpectrum.Api.csproj",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "RelativeToolTip": "FulSpectrum.Api\\FulSpectrum.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-16T03:58:05.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-16T03:58:05.795Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAIwKoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T03:56:22.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CheckoutDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "ToolTip": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CheckoutDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T03:54:15.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "FulSpectrumDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\FulSpectrumDbContext.cs",
@@ -253,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "CheckoutController.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\Controllers\\CheckoutController.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\Controllers\\CheckoutController.cs",
@@ -261,12 +302,11 @@
               "RelativeToolTip": "FulSpectrum.Api\\Controllers\\CheckoutController.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAwwOoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-15T15:06:13.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-15T15:06:13.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "PaymentConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\PaymentConfiguration.cs",
@@ -278,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Api\\appsettings.Development.json",
               "RelativeDocumentMoniker": "FulSpectrum.Api\\appsettings.Development.json",
@@ -290,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "PaymentWebHookLogConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Infrastructure\\Persistence\\PaymentWebHookLogConfiguration.cs",
@@ -302,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "PaymentWebhookLog.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\PaymentWebhookLog.cs",
@@ -314,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Payment.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\Payment.cs",
@@ -326,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Franc\\Desktop\\EFSP\\FullStackProfessionalEcommerce\\FulSpectrum\\FulSpectrum.Domain\\Catalog\\Order.cs",
               "RelativeDocumentMoniker": "FulSpectrum.Domain\\Catalog\\Order.cs",

@@ -979,3 +979,28 @@
 2026-03-16 02:03:53.725 -03:00 [INF] HTTP POST /jobs/stats responded 200 in 1.9912 ms
 2026-03-16 02:03:56.735 -03:00 [INF] HTTP POST /jobs/stats responded 200 in 0.5713 ms
 2026-03-16 02:03:59.389 -03:00 [INF] HTTP POST /jobs/stats responded 200 in 0.3203 ms
+2026-03-16 23:53:55.601 -03:00 [WRN] No store type was specified for the decimal property 'ShippingAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:53:55.949 -03:00 [WRN] No store type was specified for the decimal property 'Subtotal' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:53:55.964 -03:00 [WRN] No store type was specified for the decimal property 'TaxAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:53:55.976 -03:00 [WRN] No store type was specified for the decimal property 'Total' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:53:55.989 -03:00 [WRN] No store type was specified for the decimal property 'LineTotal' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:53:56.002 -03:00 [WRN] No store type was specified for the decimal property 'UnitPriceSnapshot' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:53:56.012 -03:00 [WRN] No store type was specified for the decimal property 'Amount' on entity type 'Payment'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-16 23:54:05.374 -03:00 [INF] Initializing UI Database
+2026-03-16 23:54:06.545 -03:00 [WRN] The WebRootPath was not found: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\wwwroot. Static files may be unavailable.
+2026-03-16 23:54:07.152 -03:00 [INF] Now listening on: https://localhost:7193
+2026-03-16 23:54:07.157 -03:00 [INF] Now listening on: http://localhost:5006
+2026-03-16 23:54:07.549 -03:00 [INF] Starting Hangfire Server using job storage: 'Hangfire.MemoryStorage.MemoryStorage'
+2026-03-16 23:54:07.554 -03:00 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-03-16 23:54:08.020 -03:00 [INF] Server lenovofms1997:20328:bc157eb5 successfully announced in 385,7361 ms
+2026-03-16 23:54:08.052 -03:00 [INF] Server lenovofms1997:20328:bc157eb5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-03-16 23:54:08.713 -03:00 [INF] Server lenovofms1997:20328:bc157eb5 all the dispatchers started
+2026-03-16 23:54:08.784 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-16 23:54:08.792 -03:00 [INF] Hosting environment: Development
+2026-03-16 23:54:08.796 -03:00 [INF] Content root path: C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api
+2026-03-16 23:54:10.823 -03:00 [INF] HTTP GET /swagger/index.html responded 200 in 401.0835 ms
+2026-03-16 23:54:11.456 -03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 151.5012 ms

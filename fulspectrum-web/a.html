@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía para Estudiar IA — Desde Cero</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --card: #1a1a26;
+    --border: #2a2a3d;
+    --accent1: #00e5c0;
+    --accent2: #ff6b6b;
+    --accent3: #ffd93d;
+    --accent4: #6bcbff;
+    --text: #e8e8f0;
+    --muted: #7070a0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Lora', Georgia, serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background grid */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,192,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,192,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* HEADER */
+  header {
+    text-align: center;
+    margin-bottom: 70px;
+    animation: fadeDown 0.8s ease both;
+  }
+
+  .tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent1);
+    border: 1px solid var(--accent1);
+    padding: 5px 14px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+    opacity: 0.85;
+  }
+
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+  }
+
+  h1 span {
+    background: linear-gradient(135deg, var(--accent1), var(--accent4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    font-style: italic;
+    max-width: 480px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* PROGRESS BAR */
+  .progress-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 28px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: fadeDown 0.8s 0.1s ease both;
+  }
+
+  .progress-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 90px;
+  }
+
+  .progress-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent1), var(--accent4));
+    border-radius: 3px;
+    transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  .progress-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--accent1);
+    white-space: nowrap;
+  }
+
+  /* SECTION TITLES */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    margin-top: 56px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .section-header:first-of-type { margin-top: 0; }
+
+  .section-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent3);
+    letter-spacing: 0.1em;
+    opacity: 0.7;
+  }
+
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .section-bar {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ROADMAP */
+  .roadmap {
+    position: relative;
+    padding-left: 28px;
+  }
+
+  .roadmap::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    bottom: 10px;
+    width: 1px;
+    background: linear-gradient(180deg, var(--accent1), var(--accent4), var(--accent2));
+    opacity: 0.3;
+  }
+
+  .phase {
+    position: relative;
+    margin-bottom: 20px;
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .phase::before {
+    content: '';
+    position: absolute;
+    left: -23px;
+    top: 18px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid var(--accent1);
+    background: var(--bg);
+    transition: background 0.3s;
+  }
+
+  .phase.done::before {
+    background: var(--accent1);
+  }
+
+  .phase-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    cursor: pointer;
+    transition: border-color 0.2s, transform 0.2s;
+    user-select: none;
+  }
+
+  .phase-card:hover {
+    border-color: var(--accent1);
+    transform: translateX(4px);
+  }
+
+  .phase-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .phase-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .phase-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .phase-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .phase-time {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+
+  .phase-arrow {
+    color: var(--muted);
+    font-size: 0.9rem;
+    transition: transform 0.3s, color 0.2s;
+    flex-shrink: 0;
+  }
+
+  .phase.open .phase-arrow {
+    transform: rotate(180deg);
+    color: var(--accent1);
+  }
+
+  .phase-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .phase.open .phase-body {
+    max-height: 700px;
+  }
+
+  .phase-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 14px 0;
+  }
+
+  .phase-desc {
+    font-size: 0.92rem;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+
+  .topic-list {
+    list-style: none;
+  }
+
+  .topic-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .topic-item:last-child { border-bottom: none; }
+
+  .topic-check {
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid var(--muted);
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s, background 0.2s;
+    font-size: 11px;
+  }
+
+  .topic-item.checked .topic-check {
+    background: var(--accent1);
+    border-color: var(--accent1);
+    color: #000;
+  }
+
+  .topic-item.checked .topic-text {
+    text-decoration: line-through;
+    opacity: 0.45;
+  }
+
+  .topic-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .topic-tag {
+    margin-left: auto;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  .tag-free { background: rgba(0,229,192,0.1); color: var(--accent1); }
+  .tag-video { background: rgba(107,203,255,0.1); color: var(--accent4); }
+  .tag-practica { background: rgba(255,107,107,0.1); color: var(--accent2); }
+  .tag-lectura { background: rgba(255,217,61,0.1); color: var(--accent3); }
+
+  /* RESOURCES */
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 14px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .res-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .res-card:hover {
+    border-color: var(--accent4);
+    transform: translateY(-3px);
+  }
+
+  .res-icon { font-size: 1.6rem; margin-bottom: 10px; }
+
+  .res-name {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+
+  .res-desc {
+    font-size: 0.83rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* TIPS */
+  .tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .tip {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent3);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #c0c0d8;
+  }
+
+  .tip strong {
+    font-family: 'Syne', sans-serif;
+    color: var(--accent3);
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* MOTIVATIONAL FOOTER */
+  .footer-card {
+    margin-top: 70px;
+    background: linear-gradient(135deg, rgba(0,229,192,0.07), rgba(107,203,255,0.07));
+    border: 1px solid rgba(0,229,192,0.2);
+    border-radius: 14px;
+    padding: 36px 32px;
+    text-align: center;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .footer-card h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .footer-card p {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .phase { animation-delay: calc(var(--i, 0) * 0.07s); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="tag">📍 Hoja de Ruta · Principiante Total</div>
+    <h1>Aprende <span>Inteligencia<br>Artificial</span> desde cero</h1>
+    <p class="subtitle">Una guía interactiva con fases, temas y recursos. Marca cada tema al completarlo.</p>
+  </header>
+
+  <div class="progress-wrap">
+    <span class="progress-label">Tu avance</span>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <span class="progress-count" id="progressCount">0 / 0</span>
+  </div>
+
+  <!-- ROADMAP -->
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <span class="section-title">Hoja de ruta completa</span>
+    <div class="section-bar"></div>
+  </div>
+
+  <div class="roadmap" id="roadmap">
+
+    <div class="phase" style="--i:0">
+      <div class="phase-card" onclick="togglePhase(this)">
+        <div class="phase-top">
+          <div class="phase-left">
+            <span class="phase-icon">🧮</span>
+            <span class="phase-name">Fase 1 — Fundamentos matemáticos</span>
+          </div>
+          <span class="phase-time">4–6 semanas</span>
+          <span class="phase-arrow">▾</span>
+        </div>
+        <div class="phase-body">
+          <div class="phase-divider"></div>
+          <p class="phase-desc">No necesitas ser un genio en mate. Solo necesitas entender las ideas clave que usan los algoritmos de IA.</p>
+          <ul class="topic-list">
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Álgebra lineal básica: vectores, matrices, multiplicación</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Estadística: media, varianza, distribuciones</span><span class="topic-tag tag-free">GRATIS</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Probabilidad: Bayes, probabilidad condicional</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Cálculo: derivadas e intuición del gradiente</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Funciones, gráficas y optimización básica</span><span class="topic-tag tag-free">GRATIS</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase" style="--i:1">
+      <div class="phase-card" onclick="togglePhase(this)">
+        <div class="phase-top">
+          <div class="phase-left">
+            <span class="phase-icon">🐍</span>
+            <span class="phase-name">Fase 2 — Python para IA</span>
+          </div>
+          <span class="phase-time">3–5 semanas</span>
+          <span class="phase-arrow">▾</span>
+        </div>
+        <div class="phase-body">
+          <div class="phase-divider"></div>
+          <p class="phase-desc">Python es el lenguaje universal de la IA. Aprende lo esencial: no necesitas ser programador experto.</p>
+          <ul class="topic-list">
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Sintaxis básica: variables, listas, bucles, funciones</span><span class="topic-tag tag-free">GRATIS</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">NumPy: arrays y operaciones numéricas</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Pandas: manejo de datos en tablas</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Matplotlib / Seaborn: visualización de datos</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Jupyter Notebooks: tu entorno de trabajo</span><span class="topic-tag tag-free">GRATIS</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase" style="--i:2">
+      <div class="phase-card" onclick="togglePhase(this)">
+        <div class="phase-top">
+          <div class="phase-left">
+            <span class="phase-icon">🤖</span>
+            <span class="phase-name">Fase 3 — Machine Learning clásico</span>
+          </div>
+          <span class="phase-time">6–8 semanas</span>
+          <span class="phase-arrow">▾</span>
+        </div>
+        <div class="phase-body">
+          <div class="phase-divider"></div>
+          <p class="phase-desc">El corazón del aprendizaje automático. Aquí empiezas a hacer que las máquinas "aprendan" de datos.</p>
+          <ul class="topic-list">
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">¿Qué es ML? Supervisado vs no supervisado</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Regresión lineal y logística</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Árboles de decisión y Random Forest</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">K-Means: agrupamiento de datos</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Scikit-learn: la librería de ML más usada</span><span class="topic-tag tag-free">GRATIS</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Overfitting, underfitting y validación cruzada</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase" style="--i:3">
+      <div class="phase-card" onclick="togglePhase(this)">
+        <div class="phase-top">
+          <div class="phase-left">
+            <span class="phase-icon">🧠</span>
+            <span class="phase-name">Fase 4 — Redes Neuronales y Deep Learning</span>
+          </div>
+          <span class="phase-time">6–10 semanas</span>
+          <span class="phase-arrow">▾</span>
+        </div>
+        <div class="phase-body">
+          <div class="phase-divider"></div>
+          <p class="phase-desc">El corazón de la IA moderna. Las redes neuronales imitan (vagamente) cómo funciona el cerebro humano.</p>
+          <ul class="topic-list">
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">¿Qué es una neurona artificial? Perceptrón</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Redes densas (fully connected): cómo funcionan</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Backpropagation y descenso del gradiente</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">TensorFlow o PyTorch: primeros pasos</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Redes convolucionales (CNN) para imágenes</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Redes recurrentes (RNN/LSTM) para texto</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase" style="--i:4">
+      <div class="phase-card" onclick="togglePhase(this)">
+        <div class="phase-top">
+          <div class="phase-left">
+            <span class="phase-icon">✨</span>
+            <span class="phase-name">Fase 5 — IA Generativa y LLMs</span>
+          </div>
+          <span class="phase-time">4–6 semanas</span>
+          <span class="phase-arrow">▾</span>
+        </div>
+        <div class="phase-body">
+          <div class="phase-divider"></div>
+          <p class="phase-desc">La frontera más emocionante: modelos como ChatGPT y Claude. Aprende cómo funcionan y cómo usarlos.</p>
+          <ul class="topic-list">
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Transformers: la arquitectura que cambió todo</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">¿Qué es un LLM? (GPT, Claude, Gemini, LLaMA)</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Prompt Engineering: el arte de hablar con la IA</span><span class="topic-tag tag-free">GRATIS</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Fine-tuning y RAG (Retrieval Augmented Generation)</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Modelos de imágenes: Diffusion, DALL·E, Stable Diffusion</span><span class="topic-tag tag-video">VIDEO</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">APIs de IA: integrar modelos en tus proyectos</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="phase" style="--i:5">
+      <div class="phase-card" onclick="togglePhase(this)">
+        <div class="phase-top">
+          <div class="phase-left">
+            <span class="phase-icon">🚀</span>
+            <span class="phase-name">Fase 6 — Proyectos y especialización</span>
+          </div>
+          <span class="phase-time">Ongoing</span>
+          <span class="phase-arrow">▾</span>
+        </div>
+        <div class="phase-body">
+          <div class="phase-divider"></div>
+          <p class="phase-desc">El aprendizaje real viene al construir cosas. Elige un área que te apasione y empieza a crear.</p>
+          <ul class="topic-list">
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Sube proyectos a GitHub: tu portafolio de IA</span><span class="topic-tag tag-practica">PRÁCTICA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Kaggle: competencias de ML con datos reales</span><span class="topic-tag tag-free">GRATIS</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Elige especialidad: NLP, visión, robótica, ética IA…</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Leer papers: arxiv.org y Hugging Face blog</span><span class="topic-tag tag-lectura">LECTURA</span></li>
+            <li class="topic-item" onclick="toggleCheck(this)"><div class="topic-check"></div><span class="topic-text">Comunidad: Reddit r/MachineLearning, Discord AI</span><span class="topic-tag tag-free">GRATIS</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /roadmap -->
+
+  <!-- RESOURCES -->
+  <div class="section-header" style="animation-delay:0.3s">
+    <span class="section-num">02</span>
+    <span class="section-title">Recursos recomendados</span>
+    <div class="section-bar"></div>
+  </div>
+
+  <div class="resources-grid" style="animation-delay:0.35s">
+    <div class="res-card">
+      <div class="res-icon">🎓</div>
+      <div class="res-name">fast.ai</div>
+      <div class="res-desc">Cursos gratuitos de Deep Learning con enfoque práctico. Ideal para principiantes con ganas de hacer cosas.</div>
+    </div>
+    <div class="res-card">
+      <div class="res-icon">📺</div>
+      <div class="res-name">3Blue1Brown</div>
+      <div class="res-desc">Canal de YouTube con las mejores visualizaciones de redes neuronales y matemáticas que existen.</div>
+    </div>
+    <div class="res-card">
+      <div class="res-icon">🏫</div>
+      <div class="res-name">CS50 AI (Harvard)</div>
+      <div class="res-desc">Curso gratuito introductorio de IA de Harvard. Certificado gratuito, muy bien explicado.</div>
+    </div>
+    <div class="res-card">
+      <div class="res-icon">📖</div>
+      <div class="res-name">Kaggle Learn</div>
+      <div class="res-desc">Mini-cursos gratuitos y prácticos de ML, Python y Deep Learning con certificados.</div>
+    </div>
+    <div class="res-card">
+      <div class="res-icon">🤗</div>
+      <div class="res-name">Hugging Face</div>
+      <div class="res-desc">La plataforma central de la IA moderna. Modelos, datasets, tutoriales y comunidad enorme.</div>
+    </div>
+    <div class="res-card">
+      <div class="res-icon">📚</div>
+      <div class="res-name">"Hands-On ML" (libro)</div>
+      <div class="res-desc">El libro más recomendado para aprender ML/DL con Scikit-Learn, Keras y TensorFlow.</div>
+    </div>
+  </div>
+
+  <!-- TIPS -->
+  <div class="section-header" style="animation-delay:0.4s">
+    <span class="section-num">03</span>
+    <span class="section-title">Consejos clave</span>
+    <div class="section-bar"></div>
+  </div>
+
+  <div class="tips-list" style="animation-delay:0.45s">
+    <div class="tip"><strong>🎯 No intentes aprenderlo todo</strong>La IA es un campo enorme. Elige una dirección (NLP, visión, datos) y ve en profundidad. Es mejor saber mucho de algo que poco de todo.</div>
+    <div class="tip"><strong>⚡ Código antes que teoría</strong>Escribe código desde el día 1. Ejecuta los ejemplos, rómpelos, arréglales. El 80% del aprendizaje real viene de experimentar.</div>
+    <div class="tip"><strong>🔄 La repetición es tu aliada</strong>Los conceptos como backpropagation o transformers no se entienden en un día. Vuelve a ellos cada semana y cada vez los entenderás mejor.</div>
+    <div class="tip"><strong>🤝 Únete a una comunidad</strong>Kaggle, Discord, Reddit. Hacer preguntas y ver los proyectos de otros acelera tu aprendizaje de forma dramática.</div>
+    <div class="tip"><strong>📅 Constancia > intensidad</strong>30 minutos diarios son mucho mejores que 5 horas el fin de semana. Programa bloques pequeños y regulares.</div>
+  </div>
+
+  <div class="footer-card" style="animation-delay:0.5s">
+    <h2>✨ El mejor momento para empezar es ahora</h2>
+    <p>No necesitas ser matemático ni programador experto.<br>Solo necesitas curiosidad y consistencia.</p>
+  </div>
+
+</div>
+
+<script>
+  function togglePhase(card) {
+    const phase = card.parentElement;
+    const isOpen = phase.classList.contains('open');
+    phase.classList.toggle('open', !isOpen);
+  }
+
+  function toggleCheck(item) {
+    item.classList.toggle('checked');
+    const phase = item.closest('.phase');
+    const allChecked = [...phase.querySelectorAll('.topic-item')].every(i => i.classList.contains('checked'));
+    phase.classList.toggle('done', allChecked);
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const total = document.querySelectorAll('.topic-item').length;
+    const done  = document.querySelectorAll('.topic-item.checked').length;
+    document.getElementById('progressCount').textContent = `${done} / ${total}`;
+    document.getElementById('progressFill').style.width = `${(done/total)*100}%`;
+  }
+
+  updateProgress();
+
+  // Open first phase by default
+  document.querySelector('.phase .phase-card').click();
+</script>
+</body>
+</html>
