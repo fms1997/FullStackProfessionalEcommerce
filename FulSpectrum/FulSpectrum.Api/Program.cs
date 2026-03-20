@@ -22,12 +22,35 @@ using Serilog;
 using Serilog.Events;
 using System.Text;
 using System.Threading.RateLimiting;
-    using Swashbuckle.AspNetCore.SwaggerGen;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using FulSpectrum.Api.Services;
 using Hangfire;
 using Hangfire.MemoryStorage;
+using Asp.Versioning.ApiExplorer;
+using FulSpectrum.Api.Observability;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
+using Serilog.Formatting.Compact;
+using System.Diagnostics;
+
+
+
+
+
+
+
+
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<TelemetryOptions>(builder.Configuration.GetSection(TelemetryOptions.SectionName));
+
+var telemetryOptions = builder.Configuration
+    .GetSection(TelemetryOptions.SectionName)
+    .Get<TelemetryOptions>() ?? new TelemetryOptions();
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
@@ -35,12 +58,43 @@ Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
     .Enrich.WithEnvironmentName()
     .Enrich.WithThreadId()
-    .WriteTo.Console()
-    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+   .WriteTo.Console(new RenderedCompactJsonFormatter())
+    .WriteTo.File(new RenderedCompactJsonFormatter(), "logs/log-.json", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 builder.Host.UseSerilog();
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(resource => resource
+        .AddService(telemetryOptions.ServiceName)
+        .AddAttributes(new Dictionary<string, object>
+        {
+            ["deployment.environment"] = builder.Environment.EnvironmentName,
+            ["service.namespace"] = "FulSpectrum"
+        }))
+    .WithTracing(tracing => tracing
+        .AddAspNetCoreInstrumentation(options =>
+        {
+            options.RecordException = true;
+            options.EnrichWithHttpRequest = (activity, request) =>
+            {
+                activity.SetTag("correlation.id", request.HttpContext.TraceIdentifier);
+            };
+        })
+        .AddEntityFrameworkCoreInstrumentation()
+        .AddHttpClientInstrumentation())
+    .WithMetrics(metrics => metrics
+        .AddAspNetCoreInstrumentation()
+        .AddHttpClientInstrumentation()
+        .AddRuntimeInstrumentation()
+        .AddProcessInstrumentation()
+        .AddPrometheusExporter());
 
+if (telemetryOptions.EnableOtlpExporter && !string.IsNullOrWhiteSpace(telemetryOptions.OtlpEndpoint))
+{
+    builder.Services.AddOpenTelemetry()
+        .WithTracing(tracing => tracing.AddOtlpExporter(options => options.Endpoint = new Uri(telemetryOptions.OtlpEndpoint)))
+        .WithMetrics(metrics => metrics.AddOtlpExporter(options => options.Endpoint = new Uri(telemetryOptions.OtlpEndpoint)));
+}
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<JwtOptions>(
@@ -211,7 +265,19 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-app.UseSerilogRequestLogging();
+//app.UseSerilogRequestLogging();
+app.UseMiddleware<CorrelationIdMiddleware>();
+app.UseSerilogRequestLogging(options =>
+{
+    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+    {
+        diagnosticContext.Set("CorrelationId", httpContext.TraceIdentifier);
+        diagnosticContext.Set("RequestHost", httpContext.Request.Host.Value);
+        diagnosticContext.Set("RequestScheme", httpContext.Request.Scheme);
+        diagnosticContext.Set("TraceId", Activity.Current?.TraceId.ToString() ?? string.Empty);
+    };
+});
+app.UseMiddleware<RequestLogEnrichmentMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
@@ -248,7 +314,7 @@ app.MapHealthChecks("/health/ready", new HealthCheckOptions
 {
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
-
+app.MapPrometheusScrapingEndpoint("/metrics");
 if (!string.IsNullOrWhiteSpace(hcUiCs))
 {
     app.MapHealthChecksUI(options => options.UIPath = "/health-ui");

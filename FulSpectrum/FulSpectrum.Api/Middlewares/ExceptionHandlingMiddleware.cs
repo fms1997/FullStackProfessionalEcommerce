@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
-
-namespace FulSpectrum.Api.Middlewares;
+using System.Diagnostics;
+ namespace FulSpectrum.Api.Middlewares;
 
 public sealed class ExceptionHandlingMiddleware : IMiddleware
 {
@@ -21,7 +21,14 @@ public sealed class ExceptionHandlingMiddleware : IMiddleware
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Unhandled exception. TraceId={TraceId}", context.TraceIdentifier);
+            var traceId = Activity.Current?.TraceId.ToString() ?? context.TraceIdentifier;
+            var correlationId = context.TraceIdentifier;
+
+            _logger.LogError(
+                ex,
+                "Unhandled exception. CorrelationId={CorrelationId} TraceId={TraceId}",
+                correlationId,
+                traceId);
 
             context.Response.ContentType = "application/problem+json";
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
@@ -32,7 +39,8 @@ public sealed class ExceptionHandlingMiddleware : IMiddleware
                 title = "Unexpected error",
                 status = 500,
                 detail = _env.IsDevelopment() ? ex.ToString() : "An unexpected error occurred.",
-                traceId = context.TraceIdentifier
+                traceId,
+                correlationId
             };
 
             await context.Response.WriteAsync(JsonSerializer.Serialize(problem));
