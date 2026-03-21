@@ -16,11 +16,12 @@ public sealed class AdminController : ControllerBase
 {
     private readonly FulSpectrumDbContext _db;
     private readonly IImageStorageService _imageStorageService;
-
-    public AdminController(FulSpectrumDbContext db, IImageStorageService imageStorageService)
+    private readonly ICatalogCacheService _catalogCache;
+    public AdminController(FulSpectrumDbContext db, IImageStorageService imageStorageService, ICatalogCacheService catalogCache)
     {
         _db = db;
         _imageStorageService = imageStorageService;
+        _catalogCache = catalogCache;
     }
 
     [HttpGet("catalog/products")]
@@ -113,7 +114,7 @@ public sealed class AdminController : ControllerBase
 
         _db.Products.Add(product);
         await _db.SaveChangesAsync(ct);
-
+        await _catalogCache.InvalidateCatalogAsync(ct);
         return CreatedAtAction(nameof(GetProducts), new { version = "1" }, await BuildProductDto(product.Id, ct));
     }
 
@@ -177,7 +178,7 @@ public sealed class AdminController : ControllerBase
         }
 
         await _db.SaveChangesAsync(ct);
-
+        await _catalogCache.InvalidateCatalogAsync(ct);
         return Ok(await BuildProductDto(product.Id, ct));
     }
     [HttpDelete("catalog/products/{id:guid}")]
@@ -188,6 +189,7 @@ public sealed class AdminController : ControllerBase
 
         _db.Products.Remove(product);
         await _db.SaveChangesAsync(ct);
+        await _catalogCache.InvalidateCatalogAsync(ct);
         return NoContent();
     }
 
@@ -197,6 +199,7 @@ public sealed class AdminController : ControllerBase
         var products = await _db.Products.Where(x => request.ProductIds.Contains(x.Id)).ToListAsync(ct);
         products.ForEach(x => x.IsPublished = request.IsPublished);
         await _db.SaveChangesAsync(ct);
+        await _catalogCache.InvalidateCatalogAsync(ct);
         return Ok(new { affected = products.Count });
     }
 
@@ -206,6 +209,7 @@ public sealed class AdminController : ControllerBase
         var products = await _db.Products.Where(x => request.ProductIds.Contains(x.Id)).ToListAsync(ct);
         _db.Products.RemoveRange(products);
         await _db.SaveChangesAsync(ct);
+        await _catalogCache.InvalidateCatalogAsync(ct);
         return Ok(new { affected = products.Count });
     }
 
@@ -271,8 +275,7 @@ public sealed class AdminController : ControllerBase
         var items = await query.OrderByDescending(o => o.CreatedAtUtc)
             .Select(o => new AdminOrderDto(o.Id, o.UserId, o.Status.ToString(), o.Currency, o.Total, o.Items.Sum(i => i.Quantity), o.CreatedAtUtc, o.UpdatedAtUtc))
             .ToListAsync(ct);
-
-        return Ok(items);
+         return Ok(items);
     }
 
     [HttpPatch("orders/{id:guid}/status")]
@@ -295,6 +298,7 @@ public sealed class AdminController : ControllerBase
         }
 
         await _db.SaveChangesAsync(ct);
+        await _catalogCache.InvalidateCatalogAsync(ct);
         return NoContent();
     }
 

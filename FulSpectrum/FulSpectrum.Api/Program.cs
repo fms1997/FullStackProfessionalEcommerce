@@ -33,7 +33,7 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Serilog.Formatting.Compact;
 using System.Diagnostics;
-
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 
 
 
@@ -96,7 +96,21 @@ if (telemetryOptions.EnableOtlpExporter && !string.IsNullOrWhiteSpace(telemetryO
         .WithMetrics(metrics => metrics.AddOtlpExporter(options => options.Endpoint = new Uri(telemetryOptions.OtlpEndpoint)));
 }
 builder.Services.AddControllers();
-builder.Services.AddHttpContextAccessor();
+var redisCs = builder.Configuration.GetConnectionString("Redis");
+if (!string.IsNullOrWhiteSpace(redisCs))
+{
+    builder.Services.AddStackExchangeRedisCache(options =>
+    {
+        options.Configuration = redisCs;
+        options.InstanceName = "fulspectrum:";
+    });
+}
+else
+{
+    builder.Services.AddDistributedMemoryCache();
+}
+
+builder.Services.AddResponseCaching(); builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<JwtOptions>(
     builder.Configuration.GetSection(JwtOptions.SectionName));
 
@@ -288,7 +302,19 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    OnPrepareResponse = context =>
+    {
+        if (context.File.Name.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase)
+            || context.File.Name.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase)
+            || context.File.Name.EndsWith(".png", StringComparison.OrdinalIgnoreCase)
+            || context.File.Name.EndsWith(".webp", StringComparison.OrdinalIgnoreCase))
+        {
+            context.Context.Response.Headers.CacheControl = "public,max-age=604800";
+        }
+    }
+}); 
 app.Use(async (ctx, next) =>
 {
     ctx.Response.Headers["X-Content-Type-Options"] = "nosniff";
@@ -298,6 +324,7 @@ app.Use(async (ctx, next) =>
 });
 
 app.UseCors("Default");
+app.UseResponseCaching();
 app.UseRateLimiter();
 
 app.UseAuthentication();

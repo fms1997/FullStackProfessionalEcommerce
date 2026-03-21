@@ -4,11 +4,15 @@ public sealed class LocalImageStorageService : IImageStorageService
 {
     private readonly IWebHostEnvironment _environment;
     private readonly IHttpContextAccessor _httpContextAccessor;
-
-    public LocalImageStorageService(IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
+    private readonly IConfiguration _configuration;
+    public LocalImageStorageService(
+            IWebHostEnvironment environment,
+            IHttpContextAccessor httpContextAccessor,
+            IConfiguration configuration)
     {
         _environment = environment;
         _httpContextAccessor = httpContextAccessor;
+        _configuration = configuration;
     }
 
     public async Task<string> UploadAsync(Stream stream, string fileName, string contentType, CancellationToken ct)
@@ -23,13 +27,21 @@ public sealed class LocalImageStorageService : IImageStorageService
 
         await using var fs = File.Create(fullPath);
         await stream.CopyToAsync(fs, ct);
+        var relativePath = $"/uploads/{generated}";
+        var cdnBaseUrl = _configuration["Images:CdnBaseUrl"];
+        if (!string.IsNullOrWhiteSpace(cdnBaseUrl))
+        {
+            return $"{cdnBaseUrl.TrimEnd('/')}{relativePath}";
+        }
+
+
 
         var request = _httpContextAccessor.HttpContext?.Request;
         if (request is null)
         {
-            return $"/uploads/{generated}";
+            return relativePath;
         }
 
-        return $"{request.Scheme}://{request.Host}/uploads/{generated}";
+        return $"{request.Scheme}://{request.Host}{relativePath}";
     }
 }

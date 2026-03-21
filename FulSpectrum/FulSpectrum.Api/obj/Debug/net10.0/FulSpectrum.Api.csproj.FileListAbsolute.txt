@@ -432,3 +432,7 @@ C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectr
 C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Http.dll
 C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Process.dll
 C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\OpenTelemetry.Instrumentation.Runtime.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\logs\log-20260321.json
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Franc\Desktop\EFSP\FullStackProfessionalEcommerce\FulSpectrum\FulSpectrum.Api\bin\Debug\net10.0\StackExchange.Redis.dll
