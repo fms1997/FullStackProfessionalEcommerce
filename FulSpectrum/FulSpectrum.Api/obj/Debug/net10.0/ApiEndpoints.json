@@ -246,6 +246,16 @@
   },
   {
     "ContainingType": "FulSpectrum.Api.Controllers.AuthController",
+    "Method": "GetCsrfToken",
+    "RelativePath": "api/v1/auth/csrf-token",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FulSpectrum.Api.Controllers.AuthController",
     "Method": "ForgotPassword",
     "RelativePath": "api/v1/auth/forgot-password",
     "HttpMethod": "POST",

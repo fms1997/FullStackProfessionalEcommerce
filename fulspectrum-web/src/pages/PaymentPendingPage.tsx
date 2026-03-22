@@ -102,7 +102,7 @@ import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import type { RootState } from "../state/store";
 import { getPaymentStatus, type PaymentStatusResponse } from "../api/payments";
-
+import { sanitizeIdentifier } from "../security/input";
 const POLL_INTERVAL_MS = 3000;
 const POLL_TIMEOUT_MS = 60000;
 
@@ -110,28 +110,19 @@ export function PaymentPendingPage() {
   const [params] = useSearchParams();
   const navigate = useNavigate();
 
-  const orderId = params.get("orderId") ?? "";
-  const token = useSelector((state: RootState) => state.auth.accessToken);
+  const orderId = sanitizeIdentifier(params.get("orderId") ?? "");
+    const token = useSelector((state: RootState) => state.auth.accessToken);
 
   const [status, setStatus] = useState<PaymentStatusResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const canPoll = useMemo(() => Boolean(orderId && token), [orderId, token]);
 
-  useEffect(() => {
-    if (!orderId) {
-      setError("Falta el orderId en la URL.");
-      return;
-    }
-
-    if (!token) {
-      setError("No hay sesión activa. Inicia sesión y vuelve a intentar.");
-      return;
-    }
-
-    setError(null);
-  }, [orderId, token]);
-
+  const validationError = !orderId
+    ? "Falta el orderId en la URL."
+    : !token
+      ? "No hay sesión activa. Inicia sesión y vuelve a intentar."
+      : null;
   useEffect(() => {
     if (!canPoll) {
       return;
@@ -204,8 +195,8 @@ export function PaymentPendingPage() {
       <p>Estamos confirmando tu pago con el proveedor.</p>
 
       {status ? <p>Estado actual: {status.status}</p> : <p>Consultando estado...</p>}
-      {error && <p role="alert">{error}</p>}
-
+      {(validationError || error) && <p role="alert">{validationError ?? error}</p>}
+      
       {orderId && <Link to={`/orders/${orderId}`}>Volver al pedido</Link>}
     </main>
   );

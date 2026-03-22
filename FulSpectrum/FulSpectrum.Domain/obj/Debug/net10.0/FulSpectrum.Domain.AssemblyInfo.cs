@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FulSpectrum.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bc8a9386b9367e44bab6e866839d195352006b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f8112eeb427d164994700f620a568a2eac57ba7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FulSpectrum.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FulSpectrum.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,15 +2,14 @@ import { useSearchParams } from "react-router-dom";
 import { RetryPaymentButton } from "../components/RetryPaymentButton";
 import { useSelector } from "react-redux";
 import type { RootState } from "../state/store";
-
+import { sanitizeIdentifier, sanitizeText } from "../security/input";
 
 export function PaymentFailPage() {
   const [params] = useSearchParams();
   const token = useSelector((state: RootState) => state.auth.accessToken);
-  const orderId = params.get("orderId") ?? "";
-  const provider = (params.get("provider") as "Stripe" | "MercadoPago") ?? "Stripe";
-  const reason = params.get("reason") ?? "El proveedor rechazó el pago.";
-
+  const orderId = sanitizeIdentifier(params.get("orderId") ?? "");
+    const provider = (params.get("provider") as "Stripe" | "MercadoPago") ?? "Stripe";
+  const reason = sanitizeText(params.get("reason") ?? "", "El proveedor rechazó el pago.");
   return (
     <main>
       <h1>❌ Pago rechazado</h1>

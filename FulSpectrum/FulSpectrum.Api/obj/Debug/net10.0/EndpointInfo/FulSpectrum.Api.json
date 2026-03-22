@@ -451,6 +451,18 @@
         }
       }
     },
+    "/api/v1/auth/csrf-token": {
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/auth/register": {
       "post": {
         "tags": [
@@ -2755,7 +2767,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Ingresá el token JWT. Ejemplo: Bearer eyJhbGciOi...",
+        "description": "Ingresá el token JWT así: Bearer {token}",
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }

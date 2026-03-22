@@ -15,12 +15,22 @@ type AuthState = {
 };
 
 const storageKey = "fulspectrum_auth";
+const getStorage = (): Storage | null => {
+  if (typeof window === "undefined") {
+    return null;
+  }
+
+  return window.sessionStorage;
+};
 
 const loadInitialState = (): AuthState => {
   try {
-    const raw = localStorage.getItem(storageKey);
-    if (!raw)
+  const storage = getStorage();
+    const raw = storage?.getItem(storageKey);
+    if (!raw) {
       return { accessToken: null, profile: null, forbiddenMessage: null };
+    }
+
     const parsed = JSON.parse(raw) as AuthState;
     return {
       accessToken: parsed.accessToken,
@@ -33,8 +43,8 @@ const loadInitialState = (): AuthState => {
 };
 
 const persist = (state: AuthState) => {
-  localStorage.setItem(
-    storageKey,
+const storage = getStorage();
+  storage?.setItem(    storageKey,
     JSON.stringify({
       accessToken: state.accessToken,
       profile: state.profile,
