@@ -776,3 +776,4 @@ if (!string.IsNullOrWhiteSpace(healthChecksUiConnectionString))
 }
 
 app.Run();
+public partial class Program;
